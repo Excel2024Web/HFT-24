@@ -239,7 +239,7 @@ const BlobAnimation = () => {
           var a = i.screen.init(canvas, null, true);
           ctx = a.ctx;
           a.resize();
-          t = new e(a.width, a.height, 6, "#12FF71", "#8E69FF");
+          t = new e(a.width, a.height, 6, "#124dff", "#ff69f5");
         },
         animate: function () {
           ctx.clearRect(0, 0, canvas.width, canvas.height);
