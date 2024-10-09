@@ -1,254 +1,263 @@
-// import React, { useEffect, useRef } from "react";
-
-// const BlobAnimation = () => {
-//   const canvasRef = useRef(null);
-
-//   useEffect(() => {
-//     const canvas = canvasRef.current;
-//     const ctx = canvas.getContext("2d");
-//     let animationFrameId;
-
-//     const resizeCanvas = () => {
-//       canvas.width = window.innerWidth;
-//       canvas.height = window.innerHeight;
-//     };
-
-//     window.addEventListener("resize", resizeCanvas);
-//     resizeCanvas();
-
-//     class Vector {
-//       constructor(x, y) {
-//         this.x = x;
-//         this.y = y;
-//       }
-
-//       add(v) {
-//         return new Vector(this.x + v.x, this.y + v.y);
-//       }
-//     }
-
-//     class Ball {
-//       constructor(width, height) {
-//         this.pos = new Vector(
-//           0.2 * width + Math.random() * width * 0.6,
-//           0.2 * height + Math.random() * height * 0.6
-//         );
-//         this.vel = new Vector(
-//           (Math.random() > 0.5 ? 1 : -1) * (0.2 + 0.25 * Math.random()),
-//           (Math.random() > 0.5 ? 1 : -1) * (0.2 + Math.random())
-//         );
-//         this.radius =
-//           Math.min(width, height) / 165 +
-//           (Math.random() * 1.4 + 0.1) * (Math.min(width, height) / 15);
-//         this.width = width;
-//         this.height = height;
-//         this.color = Math.random() > 0.5 ? "pink" : "purple";
-//       }
-
-//       move() {
-//         if (this.pos.x >= this.width - this.radius) {
-//           if (this.vel.x > 0) this.vel.x = -this.vel.x;
-//           this.pos.x = this.width - this.radius;
-//         } else if (this.pos.x <= this.radius) {
-//           if (this.vel.x < 0) this.vel.x = -this.vel.x;
-//           this.pos.x = this.radius;
-//         }
-//         if (this.pos.y >= this.height - this.radius) {
-//           if (this.vel.y > 0) this.vel.y = -this.vel.y;
-//           this.pos.y = this.height - this.radius;
-//         } else if (this.pos.y <= this.radius) {
-//           if (this.vel.y < 0) this.vel.y = -this.vel.y;
-//           this.pos.y = this.radius;
-//         }
-//         this.pos = this.pos.add(this.vel);
-//       }
-//     }
-
-//     class BlobAnimation {
-//       constructor(width, height) {
-//         this.width = width;
-//         this.height = height;
-//         this.balls = [];
-//         for (let i = 0; i < 35; i++) {
-//           this.balls.push(new Ball(width, height));
-//         }
-//       }
-
-//       render(ctx) {
-//         ctx.fillStyle = "black";
-//         ctx.fillRect(0, 0, this.width, this.height);
-
-//         for (let i = 0; i < this.balls.length; i++) {
-//           const ball = this.balls[i];
-//           const gradient = ctx.createRadialGradient(
-//             ball.pos.x,
-//             ball.pos.y,
-//             0,
-//             ball.pos.x,
-//             ball.pos.y,
-//             ball.radius
-//           );
-//           gradient.addColorStop(
-//             0,
-//             ball.color === "pink"
-//               ? "rgba(255, 192, 203, 0.8)"
-//               : "rgba(128, 0, 128, 0.8)"
-//           );
-//           gradient.addColorStop(1, "rgba(0, 0, 0, 0)");
-
-//           ctx.beginPath();
-//           ctx.fillStyle = gradient;
-//           ctx.arc(ball.pos.x, ball.pos.y, ball.radius * 2, 0, Math.PI * 2);
-//           ctx.fill();
-
-//           ball.move();
-//         }
-//       }
-//     }
-
-//     const animation = new BlobAnimation(canvas.width, canvas.height);
-
-//     const animate = () => {
-//       animation.render(ctx);
-//       animationFrameId = requestAnimationFrame(animate);
-//     };
-
-//     animate();
-
-//     return () => {
-//       window.removeEventListener("resize", resizeCanvas);
-//       cancelAnimationFrame(animationFrameId);
-//     };
-//   }, []);
-
-//   return (
-//     <canvas
-//       ref={canvasRef}
-//       style={{ width: "100%", height: "100%", background: "black" }}
-//     />
-//   );
-// };
-
-// export default BlobAnimation;
-
 import React, { useEffect, useRef } from "react";
 
 const BlobAnimation = () => {
   const canvasRef = useRef(null);
 
   useEffect(() => {
-    const canvas = canvasRef.current;
-    const ctx = canvas.getContext("2d");
+    var canvas = canvasRef.current;
+    var ctx = canvas.getContext("2d");
     let animationFrameId;
 
-    const resizeCanvas = () => {
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
-    };
-
-    window.addEventListener("resize", resizeCanvas);
-    resizeCanvas();
-
-    class Vector {
-      constructor(x, y) {
-        this.x = x;
-        this.y = y;
-      }
-
-      add(v) {
-        return new Vector(this.x + v.x, this.y + v.y);
-      }
-    }
-
-    class Ball {
-      constructor(width, height) {
-        this.pos = new Vector(
-          0.2 * width + Math.random() * width * 0.6,
-          0.2 * height + Math.random() * height * 0.6
-        );
-        this.vel = new Vector(
+    const lavaAnimation = (function () {
+      "use strict";
+      var t,
+        i = {
+          screen: {
+            elem: null,
+            callback: null,
+            ctx: null,
+            width: 0,
+            height: 0,
+            left: 0,
+            top: 0,
+            init: function (t, i, s) {
+              return (
+                (this.elem = t),
+                (this.callback = i || null),
+                "CANVAS" == this.elem.tagName &&
+                  (this.ctx = this.elem.getContext("2d")),
+                window.addEventListener(
+                  "resize",
+                  function () {
+                    this.resize();
+                  }.bind(this),
+                  !1
+                ),
+                (this.elem.onselectstart = function () {
+                  return !1;
+                }),
+                (this.elem.ondrag = function () {
+                  return !1;
+                }),
+                s && this.resize(),
+                this
+              );
+            },
+            resize: function () {
+              var t = this.elem;
+              for (
+                this.width = t.offsetWidth,
+                  this.height = t.offsetHeight,
+                  this.left = 0,
+                  this.top = 0;
+                null != t;
+                t = t.offsetParent
+              )
+                (this.left += t.offsetLeft), (this.top += t.offsetTop);
+              this.ctx &&
+                ((this.elem.width = this.width),
+                (this.elem.height = this.height)),
+                this.callback && this.callback();
+            },
+          },
+        },
+        s = function (t, i) {
+          (this.x = t),
+            (this.y = i),
+            (this.magnitude = t * t + i * i),
+            (this.computed = 0),
+            (this.force = 0);
+        };
+      s.prototype.add = function (t) {
+        return new s(this.x + t.x, this.y + t.y);
+      };
+      var h = function (t) {
+        var i = 0.1,
+          h = 1.5;
+        (this.vel = new s(
           (Math.random() > 0.5 ? 1 : -1) * (0.2 + 0.25 * Math.random()),
           (Math.random() > 0.5 ? 1 : -1) * (0.2 + Math.random())
-        );
-        this.radius =
-          Math.min(width, height) / 1005 +
-          (Math.random() * 1.4 + 0.1) * (Math.min(width, height) / 15);
-        this.width = width;
-        this.height = height;
-      }
-
-      move() {
-        if (this.pos.x >= this.width - this.radius) {
-          if (this.vel.x > 0) this.vel.x = -this.vel.x;
-          this.pos.x = this.width - this.radius;
-        } else if (this.pos.x <= this.radius) {
-          if (this.vel.x < 0) this.vel.x = -this.vel.x;
-          this.pos.x = this.radius;
+        )),
+          (this.pos = new s(
+            0.2 * t.width + Math.random() * t.width * 0.6,
+            0.2 * t.height + Math.random() * t.height * 0.6
+          )),
+          (this.size = t.wh / 15 + (Math.random() * (h - i) + i) * (t.wh / 15)),
+          (this.width = t.width),
+          (this.height = t.height);
+      };
+      h.prototype.move = function () {
+        this.pos.x >= this.width - this.size
+          ? (this.vel.x > 0 && (this.vel.x = -this.vel.x),
+            (this.pos.x = this.width - this.size))
+          : this.pos.x <= this.size &&
+            (this.vel.x < 0 && (this.vel.x = -this.vel.x),
+            (this.pos.x = this.size)),
+          this.pos.y >= this.height - this.size
+            ? (this.vel.y > 0 && (this.vel.y = -this.vel.y),
+              (this.pos.y = this.height - this.size))
+            : this.pos.y <= this.size &&
+              (this.vel.y < 0 && (this.vel.y = -this.vel.y),
+              (this.pos.y = this.size)),
+          (this.pos = this.pos.add(this.vel));
+      };
+      var e = function (t, i, e, n, a) {
+        (this.step = 5),
+          (this.width = t),
+          (this.height = i),
+          (this.wh = Math.min(t, i)),
+          (this.sx = Math.floor(this.width / this.step)),
+          (this.sy = Math.floor(this.height / this.step)),
+          (this.paint = !1),
+          (this.metaFill = r(t, i, t, n, a)),
+          (this.plx = [0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0]),
+          (this.ply = [0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 0, 1]),
+          (this.mscases = [0, 3, 0, 3, 1, 3, 0, 3, 2, 2, 0, 2, 1, 1, 0]),
+          (this.ix = [
+            1, 0, -1, 0, 0, 1, 0, -1, -1, 0, 1, 0, 0, 1, 1, 0, 0, 0, 1, 1,
+          ]),
+          (this.grid = []),
+          (this.balls = []),
+          (this.iter = 0),
+          (this.sign = 1);
+        for (var o = 0; o < (this.sx + 2) * (this.sy + 2); o++)
+          this.grid[o] = new s(
+            (o % (this.sx + 2)) * this.step,
+            Math.floor(o / (this.sx + 2)) * this.step
+          );
+        for (var l = 0; e > l; l++) this.balls[l] = new h(this);
+      };
+      (e.prototype.computeForce = function (t, i, s) {
+        var h,
+          e = s || t + i * (this.sx + 2);
+        if (0 === t || 0 === i || t === this.sx || i === this.sy)
+          h = 0.6 * this.sign;
+        else {
+          h = 0;
+          for (var r, n = this.grid[e], a = 0; (r = this.balls[a++]); )
+            h +=
+              (r.size * r.size) /
+              (-2 * n.x * r.pos.x -
+                2 * n.y * r.pos.y +
+                r.pos.magnitude +
+                n.magnitude);
+          h *= this.sign;
         }
-        if (this.pos.y >= this.height - this.radius) {
-          if (this.vel.y > 0) this.vel.y = -this.vel.y;
-          this.pos.y = this.height - this.radius;
-        } else if (this.pos.y <= this.radius) {
-          if (this.vel.y < 0) this.vel.y = -this.vel.y;
-          this.pos.y = this.radius;
-        }
-        this.pos = this.pos.add(this.vel);
-      }
-    }
-
-    class BlobAnimation {
-      constructor(width, height) {
-        this.width = width;
-        this.height = height;
-        this.balls = [];
-        for (let i = 0; i < 6; i++) {
-          this.balls.push(new Ball(width, height));
-        }
-      }
-
-      render(ctx) {
-        ctx.clearRect(0, 0, this.width, this.height);
-        const imageData = ctx.createImageData(this.width, this.height);
-        const data = imageData.data;
-
-        for (let y = 0; y < this.height; y++) {
-          for (let x = 0; x < this.width; x++) {
-            let sum = 0;
-            for (let i = 0; i < this.balls.length; i++) {
-              const ball = this.balls[i];
-              const dx = x - ball.pos.x;
-              const dy = y - ball.pos.y;
-              const dist = Math.sqrt(dx * dx + dy * dy);
-              sum += ball.radius / dist;
-            }
-            const index = (y * this.width + x) * 4;
-            const color = Math.min(255, sum * 255);
-            data[index] = 18; // R
-            data[index + 1] = 155; // G
-            data[index + 2] = 113; // B
-            data[index + 3] = color; // A
+        return (this.grid[e].force = h), h;
+      }),
+        (e.prototype.marchingSquares = function (t) {
+          var i = t[0],
+            s = t[1],
+            h = t[2],
+            e = i + s * (this.sx + 2);
+          if (this.grid[e].computed === this.iter) return !1;
+          for (var r, n = 0, a = 0; 4 > a; a++) {
+            var l = i + this.ix[a + 12] + (s + this.ix[a + 16]) * (this.sx + 2),
+              d = this.grid[l].force;
+            ((d > 0 && this.sign < 0) || (0 > d && this.sign > 0) || !d) &&
+              (d = this.computeForce(
+                i + this.ix[a + 12],
+                s + this.ix[a + 16],
+                l
+              )),
+              Math.abs(d) > 1 && (n += Math.pow(2, a));
           }
-        }
+          if (15 === n) return [i, s - 1, !1];
+          5 === n
+            ? (r = 2 === h ? 3 : 1)
+            : 10 === n
+            ? (r = 3 === h ? 0 : 2)
+            : ((r = this.mscases[n]), (this.grid[e].computed = this.iter));
+          var p =
+            this.step /
+            (Math.abs(
+              Math.abs(
+                this.grid[
+                  i +
+                    this.plx[4 * r + 2] +
+                    (s + this.ply[4 * r + 2]) * (this.sx + 2)
+                ].force
+              ) - 1
+            ) /
+              Math.abs(
+                Math.abs(
+                  this.grid[
+                    i +
+                      this.plx[4 * r + 3] +
+                      (s + this.ply[4 * r + 3]) * (this.sx + 2)
+                  ].force
+                ) - 1
+              ) +
+              1);
+          return (
+            ctx.lineTo(
+              this.grid[
+                i + this.plx[4 * r] + (s + this.ply[4 * r]) * (this.sx + 2)
+              ].x +
+                this.ix[r] * p,
+              this.grid[
+                i +
+                  this.plx[4 * r + 1] +
+                  (s + this.ply[4 * r + 1]) * (this.sx + 2)
+              ].y +
+                this.ix[r + 4] * p
+            ),
+            (this.paint = !0),
+            [i + this.ix[r + 4], s + this.ix[r + 8], r]
+          );
+        }),
+        (e.prototype.renderMetaballs = function () {
+          for (var t, i = 0; (t = this.balls[i++]); ) t.move();
+          for (
+            this.iter++,
+              this.sign = -this.sign,
+              this.paint = !1,
+              ctx.fillStyle = this.metaFill,
+              ctx.beginPath(),
+              i = 0;
+            (t = this.balls[i++]);
 
-        ctx.putImageData(imageData, 0, 0);
+          ) {
+            var s = [
+              Math.round(t.pos.x / this.step),
+              Math.round(t.pos.y / this.step),
+              !1,
+            ];
+            do s = this.marchingSquares(s);
+            while (s);
+            this.paint &&
+              (ctx.fill(), ctx.closePath(), ctx.beginPath(), (this.paint = !1));
+          }
+        });
+      var r = function (t, i, s, h, e) {
+        var r = ctx.createRadialGradient(t / 1, i / 1, 0, t / 1, i / 1, s);
+        return r.addColorStop(0, h), r.addColorStop(1, e), r;
+      };
 
-        for (let i = 0; i < this.balls.length; i++) {
-          this.balls[i].move();
-        }
-      }
-    }
+      return {
+        init: function (canvas) {
+          var a = i.screen.init(canvas, null, true);
+          ctx = a.ctx;
+          a.resize();
+          t = new e(a.width, a.height, 6, "#12FF71", "#8E69FF");
+        },
+        animate: function () {
+          ctx.clearRect(0, 0, canvas.width, canvas.height);
+          t.renderMetaballs();
+        },
+      };
+    })();
 
-    const animation = new BlobAnimation(canvas.width, canvas.height);
+    lavaAnimation.init(canvas);
 
     const animate = () => {
-      animation.render(ctx);
+      lavaAnimation.animate();
       animationFrameId = requestAnimationFrame(animate);
     };
 
     animate();
 
     return () => {
-      window.removeEventListener("resize", resizeCanvas);
       cancelAnimationFrame(animationFrameId);
     };
   }, []);
