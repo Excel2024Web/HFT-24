@@ -239,7 +239,7 @@ const BlobAnimation = () => {
           var a = i.screen.init(canvas, null, true);
           ctx = a.ctx;
           a.resize();
-          t = new e(a.width, a.height, 9, "#124dff", "#ff69f5");
+          t = new e(a.width, a.height, 8, "#204fdb", "#da17cd");
         },
         animate: function () {
           ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -285,12 +285,12 @@ const BlobAnimation = () => {
             <div
               data-aos="fade-up"
               data-aos-duration="1100"
-              className="uppercase text-[82px] text-left leading-[90px] max-lg:text-[82px] max-lg:max-w-[480px] max-lg:leading-[70px] font-semibold max-w-[700px]  title__gradient-text"
+              className="uppercase text-[82px] font-bold text-left leading-[90px] max-lg:text-[82px] max-lg:max-w-[480px] max-lg:leading-[70px]  max-w-[700px]  title__gradient-text"
             >
               Hack For Tommorow
             </div>
           </div>
-          <div className="flex flex-col items-center gap-[42px]">
+          <div className="flex flex-col  gap-[42px]">
             <p
               data-aos="fade-up"
               data-aos-duration="1100"
@@ -298,11 +298,9 @@ const BlobAnimation = () => {
             >
               Innovate Today, Impact Tomorrow
             </p>
-            <div
-              className="flex px-[46px] gap-[19px] lg:scale-110 max-md:flex-col"
-              data-aos="fade-up"
-              data-aos-duration="1100"
-            ></div>
+           
+              <button className="uppercase text-[1rem] bg-gradient-to-r from-blue-500 to-purple-500  text-black px-2 py-3 rounded-sm font-normal  max-w-[200px]">Register Now</button>
+            
           </div>
         </div>
       </div>
