@@ -239,7 +239,7 @@ const BlobAnimation = () => {
           var a = i.screen.init(canvas, null, true);
           ctx = a.ctx;
           a.resize();
-          t = new e(a.width, a.height, 6, "#124dff", "#ff69f5");
+          t = new e(a.width, a.height, 9, "#124dff", "#ff69f5");
         },
         animate: function () {
           ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -262,7 +262,52 @@ const BlobAnimation = () => {
     };
   }, []);
 
-  return <canvas ref={canvasRef} style={{ width: "100%", height: "100%" }} />;
+  return (
+    <>
+      <div className="relative h-screen w-screen">
+        <canvas
+          className="absolute top-0 left-0 w-full h-full -z-1"
+          ref={canvasRef}
+        />
+        <div
+          className="container relative m-auto flex flex-col min-h-screen text-our_white justify-center gap-[20px] max-sm:scale-90 z-10"
+          data-aos="fade-up"
+          data-aos-duration="1100"
+        >
+          <div className="flex gap-[30px] flex-col items-left">
+            <h3 className="text-[17px] font-generalSans px-[2px] p-[10px] text-center rounded-full font-[500]">
+              {/* <span className="bg-clip-padding backdrop-filter backdrop-blur-xl rounded-[110px] p-[10px] bg-our_black/[0.95]">
+            <span>Shaping the Future of Innovation </span>
+            🔥
+          </span> */}
+            </h3>
+            {/* <Image src={TopItem} alt="topitem"/> */}
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1100"
+              className="uppercase text-[82px] text-left leading-[90px] max-lg:text-[82px] max-lg:max-w-[480px] max-lg:leading-[70px] font-semibold max-w-[700px]  title__gradient-text"
+            >
+              Hack For Tommorow
+            </div>
+          </div>
+          <div className="flex flex-col items-center gap-[42px]">
+            <p
+              data-aos="fade-up"
+              data-aos-duration="1100"
+              className="text-[21px] font-[500] max-lg:text-[20px] max-md:text-[18px] w-full text-left"
+            >
+              Innovate Today, Impact Tomorrow
+            </p>
+            <div
+              className="flex px-[46px] gap-[19px] lg:scale-110 max-md:flex-col"
+              data-aos="fade-up"
+              data-aos-duration="1100"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
 };
 
 export default BlobAnimation;
