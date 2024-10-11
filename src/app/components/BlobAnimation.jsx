@@ -285,7 +285,7 @@ const BlobAnimation = () => {
             <div
               data-aos="fade-up"
               data-aos-duration="1100"
-              className="uppercase sm:text-[62px] md:text-[82px] font-bold text-left leading-[90px] max-lg:text-[82px] max-lg:max-w-[480px] max-lg:leading-[70px]  max-w-[700px]  "
+              className="uppercase text-[40px] max-w-[100vw] md:text-[82px] font-bold text-left leading-[90px] max-lg:text-[82px] max-lg:max-w-[480px] max-lg:leading-[70px]  md:max-w-[700px]  "
             >
               Hack For Tommorow
             </div>
