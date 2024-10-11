@@ -285,7 +285,7 @@ const BlobAnimation = () => {
             <div
               data-aos="fade-up"
               data-aos-duration="1100"
-              className="uppercase text-[82px] font-bold text-left leading-[90px] max-lg:text-[82px] max-lg:max-w-[480px] max-lg:leading-[70px]  max-w-[700px]  title__gradient-text"
+              className="uppercase sm:text-[62px] md:text-[82px] font-bold text-left leading-[90px] max-lg:text-[82px] max-lg:max-w-[480px] max-lg:leading-[70px]  max-w-[700px]  "
             >
               Hack For Tommorow
             </div>
@@ -298,9 +298,10 @@ const BlobAnimation = () => {
             >
               Innovate Today, Impact Tomorrow
             </p>
-           
-              <button className="btn-hover color-1 uppercase text-[1rem]   text-black px-2 py-3 rounded-sm font-normal  max-w-[200px]">Coming Soon</button>
-            
+
+            <button className="btn-hover color-1 uppercase text-[1rem]   text-black px-2 py-3 rounded-sm font-normal  max-w-[200px]">
+              Coming Soon
+            </button>
           </div>
         </div>
       </div>
