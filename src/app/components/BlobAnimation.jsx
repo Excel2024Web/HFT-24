@@ -266,7 +266,7 @@ const BlobAnimation = () => {
     <>
       <div className="relative h-screen w-screen">
         <canvas
-          className="absolute top-0 left-0 w-full h-full -z-1"
+          className="absolute top-0 left-0 w-[100vw] h-full -z-1"
           ref={canvasRef}
         />
         <div
@@ -299,7 +299,7 @@ const BlobAnimation = () => {
               Innovate Today, Impact Tomorrow
             </p>
            
-              <button className="btn-hover color-1 uppercase text-[1rem]   text-black px-2 py-3 rounded-sm font-normal  max-w-[200px]">Register Now</button>
+              <button className="btn-hover color-1 uppercase text-[1rem]   text-black px-2 py-3 rounded-sm font-normal  max-w-[200px]">Coming Soon</button>
             
           </div>
         </div>

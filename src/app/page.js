@@ -2,12 +2,20 @@
 import Image from "next/image";
 import BlobAnimation from "./components/BlobAnimation";
 import Footer from "./components/Footer";
+import About from "./components/About";
+import CountdownTimer from "./components/Countdown/Countdown";
 
 export default function Home() {
   return (
-    < >
+    <>
       <BlobAnimation />
-      <Footer/>
+      {/* <CountdownTimer
+        targetDate={new Date("December 21, 2024 09:30:00").getTime()}
+      /> */}
+
+      <About />
+
+      <Footer />
     </>
   );
 }

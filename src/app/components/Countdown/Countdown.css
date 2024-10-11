@@ -1,0 +1,8 @@
+ .h2-effect {
+   
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: 3px #ffffff;
+    color: transparent;
+    letter-spacing: 3px !important;
+    
+  }

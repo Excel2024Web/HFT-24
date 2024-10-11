@@ -33,7 +33,7 @@ const Footer = () => {
     },
   ];
   return (
-    <footer className="z-10 flex relative justify-center flex-col items-center font-satoshi container m-auto pb-[34px]">
+    <footer className="z-10 flex relative justify-center flex-col items-center font-satoshi container  m-auto pb-[34px]">
       <div className="flex flex-col items-center gap-[20px] mb-[52px] sm:my-[128px] z-10">
         <Image
           src={excel}
