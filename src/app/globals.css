@@ -88,6 +88,14 @@ body {
 
 @media (max-width: 500px) {
   .small-screen\:text-\[50px\] {
+    font-size: 3.8rem !important;
+  }
+  .small-screen\:leading-\[50px\] {
+    line-height: 30px;
+  }
+}
+@media (max-width: 340px) {
+  .small-screen\:text-\[50px\] {
     font-size: 3.2rem !important;
   }
   .small-screen\:leading-\[50px\] {
