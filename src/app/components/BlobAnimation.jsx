@@ -283,9 +283,8 @@ const BlobAnimation = () => {
             </h3>
             {/* <Image src={TopItem} alt="topitem"/> */}
             <div
-              data-aos="fade-up"
-              data-aos-duration="1100"
-              className="uppercase text-[40px] max-w-[100vw] md:text-[82px] font-bold text-left leading-[90px] max-lg:text-[82px] max-lg:max-w-[480px] max-lg:leading-[70px]  md:max-w-[700px]  "
+              
+              className="uppercase  max-w-[100vw] md:text-[6rem] font-bold text-left leading-[90px] max-lg:text-[82px] max-lg:max-w-[480px] max-lg:leading-[70px]  md:max-w-[700px]  "
             >
               Hack For Tommorow
             </div>
