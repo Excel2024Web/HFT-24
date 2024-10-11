@@ -299,7 +299,7 @@ const BlobAnimation = () => {
               Innovate Today, Impact Tomorrow
             </p>
            
-              <button className="uppercase text-[1rem] bg-gradient-to-r from-blue-500 to-purple-500  text-black px-2 py-3 rounded-sm font-normal  max-w-[200px]">Register Now</button>
+              <button className="btn-hover color-1 uppercase text-[1rem]   text-black px-2 py-3 rounded-sm font-normal  max-w-[200px]">Register Now</button>
             
           </div>
         </div>

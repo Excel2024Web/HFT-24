@@ -2,9 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 @font-face {
-  
-  font-family: 'Geist VF';
-  src: url('./fonts/GeistVF.woff') format('woff');
+  font-family: "Geist VF";
+  src: url("./fonts/GeistVF.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -27,8 +26,8 @@ body {
   /* font-family: Helvetica, sans-serif; */
   /* font-family: 'Inter', sans-serif; */
   /* geist */
-   font-family: 'Geist VF', sans-serif;
-  
+  font-family: "Geist VF", sans-serif;
+  overflow-x: hidden;
 }
 
 @layer utilities {
@@ -51,15 +50,33 @@ body {
 }
 
 .heart {
-  mask: url('data:image/svg+xml,<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"white\"><path d=\"M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z\"/></svg>');
-  mask-size:"cover";
+  mask: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>');
+  mask-size: "cover";
   mask-repeat: "no-repeat";
   mask-position: "center";
   display: inline-block;
 }
 
+.btn-hover{
+  moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    background-size: 300% 100%;
+}
+.btn-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+.btn-hover.color-1 {
+    background-image: linear-gradient(to right, #865aec, #b57df4, #7650f1, #b361f1);
+    
+}
 @keyframes shine {
-	to {
-		background-position: right -40px top 0;
-	}
+  to {
+    background-position: right -40px top 0;
+  }
 }
