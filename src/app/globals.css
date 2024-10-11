@@ -57,26 +57,40 @@ body {
   display: inline-block;
 }
 
-.btn-hover{
-  moz-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
-    background-size: 300% 100%;
+.btn-hover {
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  background-size: 300% 100%;
 }
 .btn-hover:hover {
-    background-position: 100% 0;
-    moz-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
+  background-position: 100% 0;
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 .btn-hover.color-1 {
-    background-image: linear-gradient(to right, #865aec, #b57df4, #7650f1, #b361f1);
-    
+  background-image: linear-gradient(
+    to right,
+    #865aec,
+    #b57df4,
+    #7650f1,
+    #b361f1
+  );
 }
 @keyframes shine {
   to {
     background-position: right -40px top 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .small-screen\:text-\[50px\] {
+    font-size: 3.2rem !important;
+  }
+  .small-screen\:leading-\[50px\] {
+    line-height: 30px;
   }
 }

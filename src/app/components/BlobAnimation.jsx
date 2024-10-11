@@ -282,11 +282,8 @@ const BlobAnimation = () => {
           </span> */}
             </h3>
             {/* <Image src={TopItem} alt="topitem"/> */}
-            <div
-              
-              className="uppercase  max-w-[100vw] md:text-[6rem] font-bold text-left leading-[90px] max-lg:text-[82px] max-lg:max-w-[480px] max-lg:leading-[70px]  md:max-w-[700px]  "
-            >
-              Hack For Tommorow
+            <div className="uppercase max-w-[100vw] md:text-[6rem] font-bold text-left leading-[90px] max-lg:text-[82px] max-lg:max-w-[480px] max-lg:leading-[70px] md:max-w-[700px] small-screen:text-[50px] small-screen:leading-[50px]">
+              Hack For Tomorrow
             </div>
           </div>
           <div className="flex flex-col  gap-[42px]">
