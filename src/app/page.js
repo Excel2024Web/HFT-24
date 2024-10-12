@@ -7,6 +7,7 @@ import Highlights from './components/highlights/highlight';
 import CountdownTimer from "./components/Countdown/Countdown";
 import Navbar from "./components/Navbar";
 import AccordionImageGallery from "./components/ImageGallery";
+import WhyParticipate from "./components/WhyParticipate/WhyParticipate";
 
 export default function Home() {
   return (
@@ -20,7 +21,7 @@ export default function Home() {
       <About />
       <Highlights />
       <AccordionImageGallery/>
-
+      <WhyParticipate />
       <Footer />
     </>
   );
