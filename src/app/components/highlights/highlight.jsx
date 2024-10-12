@@ -9,7 +9,7 @@ function Highlights() {
       </div>
       <div className="highlights-grid">
         <div className="highlight-card">
-          <h2>36</h2>
+          <h2>24</h2>
           <p>Hours</p>
         </div>
         <div className="highlight-card">
@@ -23,15 +23,15 @@ function Highlights() {
       </div>
       <div className="highlights-grid">
         <div className="highlight-card">
-          <h2>4 iPads</h2>
+          <h2>25,000</h2>
           <p>First Prize</p>
         </div>
         <div className="highlight-card">
-          <h2>20,000</h2>
+          <h2>15,000</h2>
           <p>Second Prize</p>
         </div>
         <div className="highlight-card">
-          <h2>10,000</h2>
+          <h2>5,000</h2>
           <p>Third Prize</p>
         </div>
       </div>
