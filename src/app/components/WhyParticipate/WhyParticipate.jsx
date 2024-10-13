@@ -83,25 +83,28 @@ const WhyParticipate = () => {
               style={{ width: `${cardWidth}px` }}
             >
               <div className="px-2">
-                <InfoCard title={card.title} text={card.text} gradient={card.gradient} />
+                <InfoCard
+                  title={card.title}
+                  text={card.text}
+                  gradient={card.gradient}
+                />
               </div>
             </div>
           ))}
         </div>
         <button
           onClick={() => handleSlide(1)}
-          className="absolute left-0 top-1/2 -translate-y-1/2  p-2 rounded-full shadow-md z-10"
+          className="absolute left-0 top-1/2 -translate-y-1/2  p-2 rounded-full shadow-md z-10 scale-150"
         >
           <FaChevronLeft />
         </button>
         <button
           onClick={() => handleSlide(-1)}
-          className="absolute right-0 top-1/2 -translate-y-1/2  p-2 rounded-full shadow-md z-10"
+          className="absolute right-0 top-1/2 -translate-y-1/2  p-2 rounded-full shadow-md z-10 scale-150"
         >
           <FaChevronRight />
         </button>
       </div>
-     
     </div>
   );
 };
