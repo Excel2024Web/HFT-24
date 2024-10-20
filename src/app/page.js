@@ -3,11 +3,12 @@ import Image from "next/image";
 import BlobAnimation from "./components/BlobAnimation";
 import Footer from "./components/Footer";
 import About from "./components/About";
-import Highlights from './components/highlights/highlight';
+import Highlights from "./components/highlights/highlight";
 import CountdownTimer from "./components/Countdown/Countdown";
 import Navbar from "./components/Navbar";
 import AccordionImageGallery from "./components/ImageGallery";
 import WhyParticipate from "./components/WhyParticipate/WhyParticipate";
+import FAQ from "./components/FAQ/FAQ";
 
 export default function Home() {
   return (
@@ -22,7 +23,7 @@ export default function Home() {
       <WhyParticipate />
       <Highlights />
       <AccordionImageGallery />
-
+      <FAQ />
       <Footer />
     </>
   );
