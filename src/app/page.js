@@ -9,6 +9,7 @@ import Navbar from "./components/Navbar";
 import AccordionImageGallery from "./components/ImageGallery";
 import WhyParticipate from "./components/WhyParticipate/WhyParticipate";
 import FAQ from "./components/FAQ/FAQ";
+import Contact from "./components/Contact/ContactPage";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
       <Highlights />
       <AccordionImageGallery />
       <FAQ />
+      <Contact />
       <Footer />
     </>
   );
