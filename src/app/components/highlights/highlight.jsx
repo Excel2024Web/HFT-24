@@ -13,7 +13,7 @@ function Highlights() {
           <p>Hours</p>
         </div>
         <div className="highlight-card">
-          <h2>150,000</h2>
+          <h2>100,000</h2>
           <p>Prize Pool</p>
         </div>
         <div className="highlight-card">
