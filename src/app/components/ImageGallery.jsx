@@ -41,7 +41,7 @@ const AccordionImageGallery = () => {
 
   return (
     <div
-      className="container relative m-auto flex flex-col max-h-screen text-our_white pt-10 pb-14 gap-[20px] max-sm:scale-90 z-10"
+      className="container max-w-full md:max-w-[70%]  relative m-auto flex flex-col max-h-screen text-our_white pt-10 pb-14 gap-[20px] max-sm:scale-90 z-10"
       data-aos="fade-up"
       data-aos-duration="1100"
     >

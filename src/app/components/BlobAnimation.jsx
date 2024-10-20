@@ -270,7 +270,7 @@ const BlobAnimation = () => {
           ref={canvasRef}
         />
         <div
-          className="container relative m-auto flex flex-col min-h-screen text-our_white justify-center gap-[20px] max-sm:scale-90 z-10"
+          className="container max-w-full md:max-w-[70%] relative m-auto flex flex-col min-h-screen text-our_white justify-center gap-[20px] max-sm:scale-90 z-10"
           data-aos="fade-up"
           data-aos-duration="1100"
         >

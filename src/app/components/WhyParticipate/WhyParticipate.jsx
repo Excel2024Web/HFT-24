@@ -64,7 +64,7 @@ const WhyParticipate = () => {
   };
 
   return (
-    <div className="container mx-auto  py-8">
+    <div className="container max-w-full md:max-w-[70%] mx-auto  py-8">
       <h2 className="text-3xl text-left text-white py-5 tracking-wide">
         Why Participate ?
       </h2>

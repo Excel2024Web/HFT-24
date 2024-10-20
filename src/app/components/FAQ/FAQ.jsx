@@ -37,7 +37,7 @@ const FAQ = () => {
     },
   ];
   return (
-    <div className="container mx-auto py-8">
+    <div className="container max-w-full md:max-w-[70%] mx-auto py-8">
       <h2 className="text-4xl text-center text-white py-5 tracking-wide">
         Frequently Asked Questions
       </h2>
