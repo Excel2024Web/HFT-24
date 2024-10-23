@@ -14,8 +14,8 @@ const ContactCard = ({details}) => {
 
   const cardVariants = {
     hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0, transition: { duration: 1.2 } },
-    exit: { opacity: 0, y: -50, transition: { duration: 1.2 } },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.4 } },
+    exit: { opacity: 0, y: -50, transition: { duration: 0.4 } },
   };
 
  
@@ -78,7 +78,7 @@ const ContactCard = ({details}) => {
           <motion.a href={`https://mail.google.com/mail/?view=cm&fs=1&to=${details.email}`} variants={childVariants} target='blank'>
             <LuMails />
           </motion.a>
-          <motion.a href="#" variants={childVariants}>
+          <motion.a href={`tel:${details.phone}`} variants={childVariants}>
             <FaPhone />
           </motion.a>
         </motion.div>
