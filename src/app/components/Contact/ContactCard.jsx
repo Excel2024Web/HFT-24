@@ -68,8 +68,8 @@ const ContactCard = ({details}) => {
         <motion.div
           className="socials"
           variants={containerVariants}
-          initial="hidden"
-          animate={isHovered ? 'visible' : 'hidden'}
+          
+          animate={isHovered ? 'visible' : 'visible'}
         >
           <motion.a href={details.linkedin} variants={childVariants} target='blank'>
             <FaLinkedinIn />
