@@ -1,81 +1,78 @@
 .card-container {
-    height: 450px;
-    width: 350px;
-    background: rgba(30, 30, 58, 0.452);
-    box-shadow: 0 8px 32px 0 rgba(51, 56, 133, 0.459);
-    /* backdrop-filter: blur(10.5px); */
-    /* -webkit-backdrop-filter: blur(10.5px); */
-    border-radius: 30px;
-    border: 1.5px solid #fff;
-    display: flex;
-    justify-content: center;
-    gap: 60px;
-    flex-direction: column;
-    align-items: center;
-    transition: 0.3s ease-in-out;
+  height: 400px;
+  width: 350px;
+  background: rgba(26, 26, 43, 0.37);
+  /* box-shadow: 0 8px 32px 0 rgba(51, 56, 133, 0.459); */
+  /* backdrop-filter: blur(10.5px); */
+  /* -webkit-backdrop-filter: blur(10.5px); */
+backdrop-filter: blur(10.5px);
+  border: 1.5px solid #ffffffc7;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.3s ease-in-out;
 }
 
 .card-container:hover {
-    border-radius: 30px;
-    box-shadow: 5px 8px 10px 0 rgba(31, 38, 135, 0.37);
-    scale: 1.01;
+  scale: 1.01;
 }
 
 .logoimg {
-    height: 170px;
-    width: 170px;
-    overflow: visible;
-    background-size: cover;
-    clip-path: circle(50%);
-    image-rendering: crisp-edges;
+  height: 170px;
+  width: 170px;
+  overflow: visible;
+  background-size: cover;
+  clip-path: circle(50%);
+  image-rendering: crisp-edges;
 }
 
 .logowrapper {
-    margin-top: 20px;
-    box-shadow: 0px 0px 70px #ffffff73;
-    border-radius: 50%;
-    transition: 0.3s ease-in-out;
+  margin-top: 20px;
+
+  border-radius: 50%;
+  transition: 0.3s ease-in-out;
 }
 
 .text-field {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
 }
 
 .text-field h2 {
-    font-size: 27px;
+  font-size: 27px;
 }
 
 .text-field p {
-    opacity: 0.7;
+  opacity: 0.7;
 }
 
 .socials {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    width: 70%;
-    font-size: 25px;
-    opacity: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 70%;
+  font-size: 25px;
+  opacity: 0;
 }
 
 .socials a {
-    color: #ffffff;
-    opacity: 0.8;
+  color: #ffffff;
+  opacity: 0.8;
 }
 
 .socials a:hover {
-    color: #ffffff;
-    opacity: 1;
-    scale: 1.05;
-    text-decoration: none;
+  color: #ffffff;
+  opacity: 1;
+  scale: 1.05;
+  text-decoration: none;
 }
 
-.card-container:hover .logowrapper{
-    box-shadow: 0px 0px 90px #ffffff73;
+.card-container:hover .logowrapper {
+  box-shadow: 0px 0px 20px #ffffff3e;
 }
-

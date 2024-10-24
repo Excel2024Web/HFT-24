@@ -11,26 +11,31 @@ const WhyParticipate = () => {
       title: "Build and Learn",
       text: "Dive into intense coding sessions, tackle real-world problems, and enhance your skills. Hackathons provide a unique opportunity to learn new technologies and apply them in innovative projects.",
       gradient: "from-[#3b48f9] to-[#a73ffa]",
+      color: "text-white",
     },
     {
       title: "Network",
       text: "Connect with  industry professionals, and potential employers. Hackathons are a melting pot of talent, offering invaluable networking opportunities that can shape your career.",
       gradient: "from-[#5f72be] to-[#06e1ae]",
+      color: "text-white",
     },
     {
       title: "Mentor Support",
       text: "Gain insights and guidance from experienced mentors. They'll be there to help you overcome challenges, refine your ideas, and maximize your learning experience throughout the hackathon.",
       gradient: "from-[#5bd8fa] to-[#00f982]",
+      color: "text-black",
     },
     {
       title: "Goodies and Swag",
       text: "Take home cool branded merchandise and tech gadgets. Hackathons often provide participants with exclusive swag, giving you lasting mementos of your innovative journey.",
       gradient: "from-[#5f72be] to-[#06e1ae]",
+      color: "text-white",
     },
     {
       title: "Cash Prizes",
       text: "Compete for substantial cash rewards and other prizes. Hack for Tommorow offers significant prize pools, giving you the chance to fund your projects or kickstart your entrepreneurial dreams.",
       gradient: "from-[#3b48f9] to-[#a73ffa]",
+      color: "text-white",
     },
   ];
   const cardWidth = 350; // Adjust this value based on your desired card width
@@ -87,6 +92,7 @@ const WhyParticipate = () => {
                   title={card.title}
                   text={card.text}
                   gradient={card.gradient}
+                  color={card.color}
                 />
               </div>
             </div>

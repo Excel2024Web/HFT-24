@@ -46,9 +46,8 @@ const ContactCard = ({details}) => {
     <>
       <motion.div
         className="card-container"
-        variants={cardVariants}
-        initial="hidden"              
-        whileInView="visible"         
+        variants={cardVariants}            
+                
         exit="exit"           
         viewport={{ once: false }}    
         onMouseEnter={() => setIsHovered(true)}  
