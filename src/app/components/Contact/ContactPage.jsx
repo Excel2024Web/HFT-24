@@ -67,7 +67,7 @@ export default function Contact (){
     return (
         <>
         <div className="w-[100vw] flex justify-center items-center flex-col overflow-hidden h-full pb-10">
-            <h1 className="text-center mt-10 text-4xl">Contact <span className="text-blue-500">Us</span></h1>
+            <h1 className="text-center mt-10 text-4xl">Contact <span className="text-violet-500">Us</span></h1>
             <p className="text-center md:w-[30vw] w-[90vw] mt-5 mb-10 font-sans bg-gradient-to-r from-[#ffffff] to-[#00ffff] bg-clip-text text-transparent text-[18px]" >We’d love to hear from you! Whether you have questions, feedback, or just want to chat, feel free to reach out to us. Your thoughts and inquiries are valuable to us, and we’re here to help in any way we can.</p>
             <div className="flex flex-wrap justify-center flex-row items-center  h-fit w-[80vw] gap-[120px] align-middle">
 
