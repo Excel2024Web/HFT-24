@@ -23,7 +23,7 @@ const About = () => {
   //   </div>
   // );
   return (
-    <div className="about-page container relative flex flex-col max-h-screen h-[100vh] text-our_white pt-10 pb-14 gap-[20px] max-sm:scale-90 z-10">
+    <div className="about-page container relative flex flex-col min-h-screen h-[100vh] text-our_white pt-10 pb-14 gap-[20px] max-sm:scale-90 z-10">
       <div className="flex flex-col w-[100vw] h-full justify-center items-center gap-[42px]">
         <div className="about-container gap-5">
           <div className="about-title-container">
