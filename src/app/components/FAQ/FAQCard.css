@@ -1,9 +1,12 @@
 .faq-container {
   border: 2px solid #8a2be2af;
+  border-bottom: none;
+  border-right: none;
   margin-bottom: 20px;
-  border-radius: 20px;
+  background: #3433335a;
   cursor: pointer;
   transition: all 0.2s ease;
+  
 }
 
 .faq-container:hover {

@@ -40,7 +40,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="w-screen flex flex-row items-center justify-between px-6 lg:px-0 lg:justify-around py-5 fixed top-0 z-20 bg-black">
+    <div className="w-screen flex flex-row items-center justify-between px-6 lg:px-0 lg:justify-around py-5 fixed top-0 z-20 bg-[#0c0b0b72] backdrop-blur-md">
       <a href="/">
         {/* <Image src={logo} alt="true" className="h-[50px] -mr-[30px]" /> */}
         <p>HFT</p>
