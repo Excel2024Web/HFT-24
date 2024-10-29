@@ -11,6 +11,7 @@ import WhyParticipate from "./components/WhyParticipate/WhyParticipate";
 import FAQ from "./components/FAQ/FAQ";
 import Contact from "./components/Contact/ContactPage";
 import Intro from "./components/Intro";
+import TimelineSection from "./components/Timeline/Timeline";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
       <About />
       <WhyParticipate />
       <Highlights />
+      <TimelineSection />
       <AccordionImageGallery />
       <FAQ />
       <Contact />
