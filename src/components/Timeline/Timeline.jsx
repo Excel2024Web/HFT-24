@@ -1,7 +1,7 @@
 "use client";
 
 import TimelineCard from "./TimelineCard";
-import { TimelineData } from "@/app/constants";
+import { TimelineData } from "@/constants";
 import { timelineItemClasses } from "@mui/lab";
 import Timeline from "@mui/lab/Timeline";
 

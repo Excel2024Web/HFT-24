@@ -5,7 +5,7 @@
   /* box-shadow: 0 8px 32px 0 rgba(51, 56, 133, 0.459); */
   /* backdrop-filter: blur(10.5px); */
   /* -webkit-backdrop-filter: blur(10.5px); */
-backdrop-filter: blur(10.5px);
+  backdrop-filter: blur(10.5px);
   border: 1.5px solid #ffffffc7;
   display: flex;
   justify-content: center;

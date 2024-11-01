@@ -1,28 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @font-face {
   font-family: "Geist VF";
-  src: url("./fonts/GeistVF.woff") format("woff");
+  src: url("../assets/fonts/GeistVF.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
-
-
-
-  :root {
-    --background: #0a0a0a;
-    --foreground: #c4cdd2;
-  }
-
+:root {
+  --background: #0a0a0a;
+  --foreground: #c4cdd2;
+}
 
 body {
   color: var(--foreground);
   background: var(--background);
-  /* font-family: Helvetica, sans-serif; */
-  /* font-family: 'Inter', sans-serif; */
-  /* geist */
   font-family: "Geist VF", sans-serif;
   overflow-x: hidden;
 }
@@ -32,6 +26,7 @@ body {
     text-wrap: balance;
   }
 }
+
 .skeleton {
   background-image: linear-gradient(
     90deg,
@@ -43,7 +38,7 @@ body {
   background-repeat: no-repeat;
   background-position: left -40px top 0;
   animation: shine 2s ease infinite;
-  mask-image: url(./assets/Footer/excel.svg);
+  mask-image: url(../assets/Footer/excel.svg);
 }
 
 .heart {
@@ -61,6 +56,7 @@ body {
   transition: all 0.4s ease-in-out;
   background-size: 300% 100%;
 }
+
 .btn-hover:hover {
   background-position: 100% 0;
   moz-transition: all 0.4s ease-in-out;
@@ -68,6 +64,7 @@ body {
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
+
 .btn-hover.color-1 {
   background-image: linear-gradient(
     to right,
@@ -77,6 +74,7 @@ body {
     #b361f1
   );
 }
+
 @keyframes shine {
   to {
     background-position: right -40px top 0;
@@ -91,6 +89,7 @@ body {
     line-height: 30px;
   }
 }
+
 @media (max-width: 340px) {
   .small-screen\:text-\[50px\] {
     font-size: 3.2rem !important;
