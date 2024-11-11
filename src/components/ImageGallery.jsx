@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import hft1 from "@/app/assets/Gallery/hft1.jpg";
-import hft2 from "@/app/assets/Gallery/hft2.jpg";
-import hft3 from "@/app/assets/Gallery/hft3.jpg";
-import hft4 from "@/app/assets/Gallery/hft4.jpg";
-import hft5 from "@/app/assets/Gallery/hft6.jpg";
+import hft1 from "@/assets/Gallery/hft1.jpg";
+import hft2 from "@/assets/Gallery/hft2.jpg";
+import hft3 from "@/assets/Gallery/hft3.jpg";
+import hft4 from "@/assets/Gallery/hft4.jpg";
+import hft5 from "@/assets/Gallery/hft6.jpg";
 
 const images = [
   { src: hft1, alt: "D-Day HFT 2023", gradient: "from-blue-500 to-green-500" },

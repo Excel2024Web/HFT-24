@@ -2,10 +2,10 @@
 
 import Image from "next/image";
 
-import MECLogo from "@/app/assets/logos/mec@official.svg";
-import ExcelLogo from "@/app/assets/logos/excel@2024.svg";
+import MECLogo from "@/assets/logos/mec@official.svg";
+import ExcelLogo from "@/assets/logos/excel@2024.svg";
 
-import excel from "@/app/assets/Footer/excel.svg";
+import excel from "@/assets/Footer/excel.svg";
 import { FaInstagram, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
@@ -50,7 +50,7 @@ const Footer = () => {
             Are you ready to shape the future?
           </h3>
           <p
-            className="title__gradient-text-small text-lg font-regular"
+            className="text-lg title__gradient-text-small font-regular"
             data-aos="fade-up"
             data-aos-duration="1100"
           >
@@ -106,7 +106,7 @@ const Footer = () => {
           }}
         />
       </div>
-      <div className="max-md:flex hidden mt-10 gap-8 flex-row">
+      <div className="flex-row hidden gap-8 mt-10 max-md:flex">
         {FooterSocials.map((item, index) => (
           <a
             href={item.link}
