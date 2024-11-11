@@ -22,7 +22,7 @@ const TimelineSection = () => {
           className="mt-[140px] w-[900px] max-lg:w-[800px] max-md:w-[500px] max-sm:w-[350px] md:scale-110 max-sm:mt-[54px]"
           data-aos="zoom-in-up"
         >
-          <Timeline position="alternate-reverse" className="max-md:hidden">
+          <Timeline className="max-md:hidden">
             {TimelineData.map((item, index) => (
               <TimelineCard
                 item={item}
