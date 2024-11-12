@@ -1,17 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Syne:wght@400..800&display=swap");
-
-.syne-<uniquifier > {
-  font-family: "Syne", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
-
-.bebas-neue-regular {
-  font-family: "Bebas Neue", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap");
 
 .faq {
   width: 100%;
@@ -19,13 +6,13 @@
   height: 100%;
   /* background: url("https://w.wallhaven.cc/full/od/wallhaven-od1dp5.jpg"); */
   /* background: rgb(64, 0, 255); */
-  background: linear-gradient(
+  /* background: linear-gradient(
     135deg,
     rgba(64, 0, 255, 0.5) 0%,
     rgba(150, 59, 255, 0.5) 15%,
-    rgba(212, 102, 255, 0.5) 42%,
+    rgba(212, 102, 255, 0.5) 32%,
     rgba(183, 0, 255, 0) 74%
-  );
+  ); */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,20 +21,21 @@
 }
 
 .faq-heading {
-  font-family: "Base Neue Trial", sans-serif;
-  font-size: 2.5em;
+  font-family: "Base Neue Bold";
+  font-size: 3em;
+  font-weight: bold;
 }
 .faq-container {
   border-radius: 30px;
   /* background: rgba(0, 0, 0, 0.21); */
   background: rgba(255, 255, 255, 0.1);
-  /* background: linear-gradient(
+  background: linear-gradient(
     132deg,
     rgba(64, 0, 255, 0.5) 0%,
-    rgba(150, 59, 255, 0.5) 15%,
-    rgba(212, 102, 255, 0.5) 42%,
-    rgba(183, 0, 255, 0) 74%
-  ); */
+    rgba(150, 59, 255, 0.5) 10%,
+    rgba(212, 102, 255, 0.5) 32%,
+    rgba(120, 120, 120, 0.2) 64%
+  );
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10.5px);
@@ -81,12 +69,11 @@
 .faq-icon {
   font-size: 1em;
   cursor: pointer;
-  font-family: "Base Neue Trial", sans-serif;
   transition: all 0.2s ease-in-out;
 }
 
 .faq-icon-up {
-  transform: rotate(225deg);
+  transform: rotate(180deg);
 }
 
 .faq-icon-down {

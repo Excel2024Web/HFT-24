@@ -19,7 +19,7 @@ const FAQCard = ({ question, answer, index }) => {
             height == 0 ? "faq-icon faq-icon-down" : "faq-icon faq-icon-up"
           }
         >
-          +
+          <FaAngleDown />
         </div>
       </div>
       <p
