@@ -30,21 +30,31 @@ const FAQ = () => {
       answer:
         "Ofcourse! We have THE most amazing mentors to help you out at all times!",
     },
-    {
-      question: "I have more questions.",
-      answer:
-        "I have no more answers. JUST KIDDING! Feel free to contact us at support@excelmec.org.",
-    },
   ];
   return (
-    <div className="container max-w-full md:max-w-[70%] mx-auto py-8">
-      <h2 className="text-4xl text-center text-white py-5 tracking-wide">
-        Frequently Asked Questions
-      </h2>
-      <div className="container flex flex-col m-auto p-[20px] sm:p-[50px] justify-evenly items-center">
-        {QA.map((qa, index) => (
-          <FAQCard key={index} question={qa.question} answer={qa.answer} />
-        ))}
+    <div className="faq">
+      <div className="faq-container container mx-auto px-10 py-10 flex flex-col items-start">
+        <h1 className="font-bold text-white text-start faq-heading">
+          FREQUENTLY ASKED
+          <br />
+          QUESTIONS .
+        </h1>
+        <div className="flex flex-col w-full pt-10">
+          {QA.map((qa, index) => (
+            <FAQCard
+              key={index}
+              question={qa.question}
+              answer={qa.answer}
+              index={index}
+            />
+          ))}
+          <div className="pt-5 text-md m-auto">
+            Have more questions? Feel free to contact us at{" "}
+            <a className="text-purple-500" href="mailto:support@excelmec.org">
+              support@excelmec.org
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   );
