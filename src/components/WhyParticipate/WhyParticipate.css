@@ -1,3 +1,12 @@
+@font-face{
+    font-family: 'neue';
+    src: url(../../assets/fonts/BaseNeueTrial-Black.ttf) format('truetype');
+}
+
+.titleh2{
+    font-family: 'neue';
+}
+
 .swiper-button-next{
     position: absolute;
     color: #fff;
@@ -10,6 +19,14 @@
     top: 50%;
     right: 0;
 }
+
+.cardcontainer1{
+    border: 5px solid #fff;
+}
+
+/* .cardcontainer1:hover{
+    scale: 1.02
+} */
 
 .swiper-button-prev{
     position: absolute;
@@ -25,9 +42,50 @@
     left: 0;
 }
 
-.cardcontainer1{
-    box-shadow: 0px 0px 20px #ffffff4d;
+.cardbgdiv{
+    width: fit-content;
+    padding: 0;
+    margin: 0;
 }
+
+
+
+/* .cardcontainer1{
+    box-shadow: 0px 0px 20px #ffffff4d;
+} */
+
+.main-container{
+    /* background-image: url(../../assets/WhyParticipate/bg2.jpg); */
+    /* background-image: linear-gradient(130deg, #1515924d, #1109254d); */
+    background-image: url(../../assets/WhyParticipate/bgimg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+}
+
+.cardcontainer1{
+    box-shadow: 20px 0px 50px #0000002a,
+                -20px 0 50px #0000002a;
+    /* animation: bright-dim-border 5s infinite; */
+    backdrop-filter: blur(10px);
+}
+
+/* @keyframes bright-dim-border {
+    0% {
+      border: 0.1px solid rgba(255, 255, 255, 0.5);
+      box-shadow: 0 0 2px rgba(255, 255, 255, 0.3);
+    }
+    50% {
+      border: 0.2px solid rgba(255, 255, 255, 1);
+      box-shadow: 0 0 3px rgba(255, 255, 255, 1);
+    }
+    100% {
+      border: 0.1px solid rgba(255, 255, 255, 0.5);
+      box-shadow: 0 0 2px rgba(255, 255, 255, 0.3);
+    }
+} */
+
 
 @media (max-width: 768px) {
     .swiper-button-next,

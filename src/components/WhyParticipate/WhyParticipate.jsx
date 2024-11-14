@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
-import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
+import { EffectCoverflow, Pagination, Navigation, Autoplay } from 'swiper/modules';
 // import 'swiper/swiper-bundle.min.css';
 import './WhyParticipate.css'
 
@@ -124,9 +124,12 @@ const WhyParticipate = () => {
     // </div>
 
     <>
-      <div className="container max-w-full md:max-w-[70%] mx-auto  py-8">
-        <h2 className="text-3xl text-left text-white py-5 tracking-wide">
-          Why Participate ?
+    <div className="main-container">
+
+    
+      <div className="container h-[100vh] block place-content-center max-w-[95%] md:max-w-[70%] mx-auto  py-8">
+        <h2 className=" titleh2 text-5xl mb-[50px] text-center text-white py-5 tracking-wide ">
+          WHY PARTICIPATE ?
         </h2>
         
         <Swiper
@@ -141,22 +144,22 @@ const WhyParticipate = () => {
             stretch: 0,
             depth: 150,
             modifier: 2.5,
-            slideShadows: true,
+            slideShadows: false,
           }}
-          autoplay={{
-            delay: 0.5,
-            disableOnInteraction: false,
-          }}
+          // autoplay={{
+          //   delay: 5000,
+          //   disableOnInteraction: false,
+          // }}
           
-          modules={[EffectCoverflow, Pagination, Navigation]} // Include Navigation module
+          modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
           className="mySwiper"
           slidesPerView={1} 
     breakpoints={{
-      640: { // For small devices (e.g. mobile)
+      640: {
         slidesPerView: 1,
         spaceBetween: 10,
       },
-      768: { // For tablets
+      768: {
         slidesPerView: 1,
         // spaceBetween: 40,
       },
@@ -164,13 +167,13 @@ const WhyParticipate = () => {
         slidesPerView: 2,
         spaceBetween: 20,
       },
-      1024: { // For laptops/desktops
-        slidesPerView: 3,
+      1024: { 
+        slidesPerView: 2,
         spaceBetween: 30,
       },
-      1280: { // For larger screens
+      1280: { 
         slidesPerView: 3,
-        spaceBetween: 40,
+        spaceBetween: 30,
       },
     }}
 >
@@ -196,6 +199,7 @@ const WhyParticipate = () => {
           ))}
       </Swiper>
 
+      </div>
       </div>
     </>
   );
