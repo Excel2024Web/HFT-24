@@ -1,18 +1,23 @@
 .card-container {
-  height: 400px;
-  width: 350px;
+  height: 350px;
+  width: 300px;
   background: rgba(26, 26, 43, 0.37);
   /* box-shadow: 0 8px 32px 0 rgba(51, 56, 133, 0.459); */
   /* backdrop-filter: blur(10.5px); */
   /* -webkit-backdrop-filter: blur(10.5px); */
   backdrop-filter: blur(10.5px);
-  border: 1.5px solid #ffffffc7;
+  /* border: 1.5px solid #ffffffc7; */
   display: flex;
   justify-content: center;
   gap: 30px;
   flex-direction: column;
   align-items: center;
   transition: 0.3s ease-in-out;
+  border-radius: 30px;
+}
+
+.card-container img {
+  border-radius: 30px;
 }
 
 .card-container:hover {
@@ -36,11 +41,39 @@
 }
 
 .text-field {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   margin: 0;
+  border-radius: 30px;
+  background: rgb(64, 0, 255);
+  background: linear-gradient(
+      40deg,
+      rgba(64, 0, 255, 1) 0%,
+      rgba(150, 59, 255, 1) 0%,
+      rgba(212, 102, 255, 1) 20%,
+      rgba(183, 0, 255, 0) 73%
+    ),
+    linear-gradient(
+      320deg,
+      rgba(64, 0, 255, 1) 0%,
+      rgba(174, 102, 255, 1) 0%,
+      rgba(138, 59, 255, 1) 7%,
+      rgba(145, 0, 255, 0) 34%
+    );
+  -webkit-mask: linear-gradient(
+      40deg,
+      rgba(64, 0, 255, 1) 0%,
+      rgba(150, 59, 255, 1) 0%,
+      rgba(212, 102, 255, 1) 20%,
+      rgba(183, 0, 255, 0) 63%
+    ),
+    linear-gradient(
+      320deg,
+      rgba(64, 0, 255, 1) 0%,
+      rgba(174, 102, 255, 1) 0%,
+      rgba(138, 59, 255, 1) 7%,
+      rgba(145, 0, 255, 0) 34%
+    );
+  backdrop-filter: blur(10.5px);
+  color: #ffffff;
 }
 
 .text-field h2 {
