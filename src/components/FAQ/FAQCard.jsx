@@ -4,14 +4,14 @@ import { FaAngleDown } from "react-icons/fa";
 import "./FAQCard.css";
 import { useState } from "react";
 
-const FAQCard = ({ question, answer }) => {
+const FAQCard = ({ question, answer, index }) => {
   const [height, setHeight] = useState(0);
   const handleExpand = () => {
     height == 0 ? setHeight(999) : setHeight(0);
   };
 
   return (
-    <div className="container m-auto p-5 faq-container" onClick={handleExpand}>
+    <div className="container p-5 faq-card-container" onClick={handleExpand}>
       <div className="faq-question">
         <h1>{question}</h1>
         <div
@@ -32,6 +32,16 @@ const FAQCard = ({ question, answer }) => {
       >
         {answer}
       </p>
+      <div
+        className="faq-line"
+        style={{
+          "max-height": height,
+          "margin-top": "10px",
+          opacity: "0.4",
+        }}
+      >
+        <hr />
+      </div>
     </div>
   );
 };

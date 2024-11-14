@@ -1,6 +1,6 @@
 @font-face{
     font-family: 'neue';
-    src: url(../../assets/fonts/BaseNeueTrial-Black.ttf) format('truetype');
+    src: url(../../assets/fonts/BaseNeue/BaseNeue-Black.woff);
 }
 
 .titleh2{
@@ -17,7 +17,13 @@
     z-index: 10;
     display: flex;
     top: 50%;
-    right: 0;
+    right: -10px;
+    transition: 0.4s ease-in-out;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover{
+    scale: 1.1;
 }
 
 .cardcontainer1{
@@ -26,20 +32,21 @@
 
 /* .cardcontainer1:hover{
     scale: 1.02
-} */
-
+    } */
+    
 .swiper-button-prev{
-    position: absolute;
-    color: #fff;
-    height: 50px;
-    width: 50px;
-    background-image: url(../../assets/WhyParticipate/arrow.png);
-    transform: rotate(180deg);
-    cursor: pointer;
-    z-index: 10;
-    display: flex;
-    top: 50%;
-    left: 0;
+        position: absolute;
+        color: #fff;
+        height: 50px;
+        width: 50px;
+        background-image: url(../../assets/WhyParticipate/arrow.png);
+        transform: rotate(180deg);
+        cursor: pointer;
+        z-index: 10;
+        display: flex;
+        top: 50%;
+        left: -10px;
+        transition: 0.4s ease-in-out;
 }
 
 .cardbgdiv{
@@ -57,7 +64,7 @@
 .main-container{
     /* background-image: url(../../assets/WhyParticipate/bg2.jpg); */
     /* background-image: linear-gradient(130deg, #1515924d, #1109254d); */
-    background-image: url(../../assets/WhyParticipate/bgimg.png);
+    background-image: url(../../assets/WhyParticipate/bgimg2.png);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
@@ -93,5 +100,10 @@
         height: 30px;
         width: 30px;
         background-size: contain;
+    }
+
+    .cardcontainer1{
+        width: 90%;
+        height: 500px;
     }
 }
