@@ -1,20 +1,59 @@
-.faq-container {
-  border: 2px solid #8a2be2af;
-  border-bottom: none;
-  border-right: none;
-  margin-bottom: 20px;
-  background: #3433335a;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap");
+
+.faq {
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  /* background: url("https://w.wallhaven.cc/full/od/wallhaven-od1dp5.jpg"); */
+  /* background: rgb(64, 0, 255); */
+  /* background: linear-gradient(
+    135deg,
+    rgba(64, 0, 255, 0.5) 0%,
+    rgba(150, 59, 255, 0.5) 15%,
+    rgba(212, 102, 255, 0.5) 32%,
+    rgba(183, 0, 255, 0) 74%
+  ); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Syne", sans-serif;
+  font-weight: 400;
 }
 
-.faq-container:hover {
-  border-color: #7b68ee;
+.faq-heading {
+  font-family: "Base Neue Bold";
+  font-size: 3em;
+  font-weight: bold;
 }
+.faq-container {
+  border-radius: 30px;
+  /* background: rgba(0, 0, 0, 0.21); */
+  background: rgba(255, 255, 255, 0.1);
+  background: linear-gradient(
+    132deg,
+    rgba(64, 0, 255, 0.5) 0%,
+    rgba(150, 59, 255, 0.5) 10%,
+    rgba(212, 102, 255, 0.5) 32%,
+    rgba(120, 120, 120, 0.2) 64%
+  );
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.5px);
+  -webkit-backdrop-filter: blur(10.5px);
+}
+.faq-card-container {
+  padding: 0;
+  margin: 0;
+  border-radius: 30px;
+  background-size: 0;
+}
+
+/* .faq-card-container:hover {
+  background-color: #000;
+} */
 
 .faq-question {
-  font-size: 1.3em;
+  font-size: 1.5em;
   font-weight: bold;
   display: flex;
   flex-direction: row;
@@ -22,13 +61,13 @@
   align-items: center;
 }
 .faq-answer {
-  font-size: 1.2em;
+  font-size: 1.3em;
   overflow: hidden;
   transition: all 0.2s ease;
 }
 
 .faq-icon {
-  font-size: 1.5em;
+  font-size: 1em;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
@@ -39,4 +78,14 @@
 
 .faq-icon-down {
   transform: rotate(0deg);
+}
+
+@media (max-width: 768px) {
+  .faq-container {
+    border-radius: 0;
+  }
+
+  .faq-card-container {
+    width: 100%;
+  }
 }
