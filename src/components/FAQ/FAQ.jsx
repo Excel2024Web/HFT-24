@@ -34,7 +34,7 @@ const FAQ = () => {
   return (
     <div className="faq">
       <div className="faq-container container mx-auto px-10 py-10 flex flex-col items-start">
-        <h1 className="font-bold text-white text-start faq-heading">
+        <h1 className="font-bold text-start faq-heading">
           FREQUENTLY ASKED
           <br />
           QUESTIONS .
