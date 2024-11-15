@@ -21,7 +21,7 @@
 }
 
 .card-container:hover {
-  scale: 1.01;
+  /* scale: 1.01; */ /*Scaling blurs the image a little*/
 }
 
 .logoimg {
@@ -45,39 +45,38 @@
   border-radius: 30px;
   background: rgb(64, 0, 255);
   background: linear-gradient(
-      40deg,
-      rgba(64, 0, 255, 1) 0%,
-      rgba(150, 59, 255, 1) 0%,
-      rgba(212, 102, 255, 1) 20%,
-      rgba(183, 0, 255, 0) 73%
+      320deg,
+      rgba(223, 130, 255, 1) 0%,
+      rgba(249, 208, 191, 1) 0%,
+      rgba(255, 255, 255, 0) 52%
     ),
     linear-gradient(
-      320deg,
-      rgba(64, 0, 255, 1) 0%,
-      rgba(174, 102, 255, 1) 0%,
-      rgba(138, 59, 255, 1) 7%,
-      rgba(145, 0, 255, 0) 34%
+      40deg,
+      rgba(249, 208, 191, 1) 0%,
+      rgba(223, 130, 255, 1) 0%,
+      rgba(255, 255, 255, 0) 50%
     );
   -webkit-mask: linear-gradient(
-      40deg,
-      rgba(64, 0, 255, 1) 0%,
-      rgba(150, 59, 255, 1) 0%,
-      rgba(212, 102, 255, 1) 20%,
-      rgba(183, 0, 255, 0) 63%
+      320deg,
+      rgba(223, 130, 255, 1) 0%,
+      rgba(249, 208, 191, 1) 0%,
+      rgba(255, 255, 255, 0) 52%
     ),
     linear-gradient(
-      320deg,
-      rgba(64, 0, 255, 1) 0%,
-      rgba(174, 102, 255, 1) 0%,
-      rgba(138, 59, 255, 1) 7%,
-      rgba(145, 0, 255, 0) 34%
+      40deg,
+      rgba(249, 208, 191, 1) 0%,
+      rgba(223, 130, 255, 1) 0%,
+      rgba(255, 255, 255, 0) 50%
     );
-  backdrop-filter: blur(10.5px);
-  color: #ffffff;
+  /* backdrop-filter: blur(10.5px); */
+  color: #1e1e1e;
 }
 
 .text-field h2 {
   font-size: 27px;
+}
+.text-field-inner {
+  position: absolute;
 }
 
 .text-field p {
@@ -86,21 +85,22 @@
 
 .socials {
   display: flex;
+  position: absolute;
   flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
+  align-items: start;
+  justify-content: start;
   width: 70%;
   font-size: 25px;
   opacity: 0;
 }
 
 .socials a {
-  color: #ffffff;
-  opacity: 0.8;
+  color: #1e1e1e;
+  padding-right: 20px;
 }
 
 .socials a:hover {
-  color: #ffffff;
+  color: #000;
   opacity: 1;
   scale: 1.05;
   text-decoration: none;

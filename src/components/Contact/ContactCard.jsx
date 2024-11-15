@@ -3,8 +3,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { FaLinkedinIn } from "react-icons/fa";
-import { LuMails } from "react-icons/lu";
-import { FaPhone } from "react-icons/fa6";
+import { FaEnvelope, FaPhone } from "react-icons/fa6";
 import { motion } from "framer-motion";
 import "./ContactCard.css";
 
@@ -30,7 +29,7 @@ const ContactCard = ({ details }) => {
   const childVariants = {
     visible: {
       opacity: 1,
-      y: -15,
+      y: -5,
       transition: { duration: 0.5 },
     },
     hidden: {
@@ -94,12 +93,18 @@ const ContactCard = ({ details }) => {
           />
         </div>
         <div className="text-field z-10 flex flex-col justify-end items-start w-full h-full p-5">
-          <h2>{details.name}</h2>
-          <p>{details.title}</p>
-          {/* <motion.div
-            className="socials p-5"
+          <motion.div
+            className="text-field-inner p-0"
             variants={containerVariants}
-            animate={isHovered ? "visible" : "visible"}
+            animate={isHovered ? "hidden" : "visible"}
+          >
+            <h2>{details.name}</h2>
+            <p>{details.title}</p>
+          </motion.div>
+          <motion.div
+            className="socials"
+            variants={containerVariants}
+            animate={isHovered ? "visible" : "hidden"}
           >
             <motion.a
               href={details.linkedin}
@@ -113,12 +118,12 @@ const ContactCard = ({ details }) => {
               variants={childVariants}
               target="blank"
             >
-              <LuMails />
+              <FaEnvelope />
             </motion.a>
             <motion.a href={`tel:${details.phone}`} variants={childVariants}>
               <FaPhone />
             </motion.a>
-          </motion.div> */}
+          </motion.div>
         </div>
       </div>
     </>
