@@ -18,6 +18,8 @@
   align-items: center;
   font-family: "Syne", sans-serif;
   font-weight: 400;
+  /* Set color to be inverted based on background*/
+  color: #fff;
 }
 
 .faq-heading {
@@ -28,13 +30,14 @@
 .faq-container {
   border-radius: 30px;
   /* background: rgba(0, 0, 0, 0.21); */
-  background: rgba(255, 255, 255, 0.1);
+
+  background: rgb(249, 208, 191);
   background: linear-gradient(
-    132deg,
-    rgba(64, 0, 255, 0.5) 0%,
-    rgba(150, 59, 255, 0.5) 10%,
-    rgba(212, 102, 255, 0.5) 32%,
-    rgba(120, 120, 120, 0.2) 64%
+    135deg,
+    rgba(249, 208, 191, 0.8183474073223039) 0%,
+    rgba(236, 169, 223, 0.7007003484987745) 18%,
+    rgba(223, 130, 255, 0.7091037098433124) 32%,
+    rgba(255, 255, 255, 0) 65%
   );
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -80,12 +83,25 @@
   transform: rotate(0deg);
 }
 
+@media (max-width: 1300px) {
+  .faq-container {
+    border-radius: 30px;
+    backdrop-filter: none;
+  }
+
+  .faq-container {
+    width: 80%;
+  }
+}
+
 @media (max-width: 768px) {
   .faq-container {
     border-radius: 0;
   }
-
-  .faq-card-container {
+  .faq-heading {
+    font-size: 2em;
+  }
+  .faq-container {
     width: 100%;
   }
 }
