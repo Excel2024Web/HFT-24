@@ -1,5 +1,13 @@
 import Spline from "@splinetool/react-spline";
-import React, { useEffect, useRef } from "react";
+import React, {useEffect, useRef} from "react";
+import astro from "@/assets/Landing/astro.svg";
+import astro2 from "@/assets/Landing/astro2.svg";
+import astro3 from "@/assets/Landing/astro3.svg";
+import right from "@/assets/Landing/right.svg";
+import topleft from "@/assets/Landing/topleft.svg";
+import constel from "@/assets/Landing/constellation.svg";
+import arrow from "@/assets/Landing/arrow.svg";
+import Image from "next/image";
 
 const BlobAnimation = () => {
   const canvasRef = useRef(null);
@@ -266,39 +274,60 @@ const BlobAnimation = () => {
   return (
     <>
       <div className="relative h-screen w-screen">
-      <Spline
-        scene="https://prod.spline.design/J5JJcxvG606wBoTf/scene.splinecode"
-        className="absolute scale-150 max-md:scale-100 mt-[80px] blur-[2px] max-sm:w-[200px]"
-      />
+        <Image
+          className="absolute top-0 left-0 z-0"
+          src={topleft}
+          alt="topleft"
+        />
+        <Image
+          className="hidden lg:block absolute overflow-clip mt-[-4rem] mr-[-4rem] sm:mt-[-2rem] sm:mr-[-2rem] right-0 z-0"
+          src={constel}
+          alt="constellation"
+        />
+        <Image
+          className="hidden lg:block absolute bg-cover right-0 bottom-0 z-0"
+          src={right}
+          alt="bot-right"
+        />
         <div
           className="container max-w-full md:max-w-[70%] relative m-auto flex flex-col min-h-screen text-our_white justify-center gap-[20px] max-sm:scale-90 z-10"
           data-aos="fade-up"
           data-aos-duration="1100"
         >
-          <div className="flex gap-[30px] flex-col items-left">
-            <h3 className="text-[17px] font-generalSans px-[2px] p-[10px] text-center rounded-full font-[500]">
-              {/* <span className="bg-clip-padding backdrop-filter backdrop-blur-xl rounded-[110px] p-[10px] bg-our_black/[0.95]">
-            <span>Shaping the Future of Innovation </span>
-            🔥
-          </span> */}
-            </h3>
-            {/* <Image src={TopItem} alt="topitem"/> */}
-            <div className="uppercase max-w-[100vw] md:text-[6rem] font-bold text-left leading-[90px] max-lg:text-[82px] max-lg:max-w-[480px] max-lg:leading-[70px] md:max-w-[700px] small-screen:text-[50px] small-screen:leading-[50px]">
-              Hack For Tomorrow
-            </div>
-          </div>
-          <div className="flex flex-col  gap-[42px]">
-            <p
-              data-aos="fade-up"
-              data-aos-duration="1100"
-              className="text-[21px] font-[500] max-lg:text-[20px] max-md:text-[18px] w-full text-left"
-            >
-              Innovate Today, Impact Tomorrow
-            </p>
+          <Image
+            className="hidden sm:block absolute bottom-0 sm:bottom-0 sm:right-[-8rem] z-0"
+            src={astro2}
+            alt="astro"
+          />
+          <Image
+            className="sm:hidden absolute bottom-0 sm:bottom-0 right-0 sm:right-[-4rem] z-0"
+            src={astro3}
+            alt="astro-mob"
+          />
 
-            <button className="btn-hover color-1 uppercase text-[1rem]   text-black px-2 py-3 rounded-sm font-normal  max-w-[200px]">
-              Coming Soon
-            </button>
+          <div className="flex z-10 flex-col gap-24 sm:gap-12 items-center sm:items-start">
+            <div className="flex flex-col gap-1 mt-[-8rem] sm:mt-0">
+              <div className="uppercase  text-center sm:text-left text-white font-base-neue-black max-w-[100vw] text-5xl md:text-[6rem] font-bold leading-[90px] max-lg:text-[61px] max-lg:max-w-[480px] max-lg:leading-[70px] md:max-w-[700px] small-screen:text-[50px] small-screen:leading-[50px]">
+                Hack For Tomorrow
+              </div>
+              <p
+                data-aos="fade-up"
+                data-aos-duration="1100"
+                className="text-[21px] font-[500] font-syne-medium max-lg:text-[20px] max-md:text-[18px] text-center sm:text-left"
+                // className="text-[21px] font-[500] font-syne-medium max-lg:text-[20px] max-md:text-[18px] text-center sm:text-left"
+              >
+                Innovate Today, Impact Tomorrow
+              </p>
+            </div>
+            {/* <button className="btn-hover mt-10 rounded-full mx-auto sm:mx-0 font-syne-semibold bg-white font-bold uppercase text-[1rem] text-black px-3 py-3 max-w-[200px]"> */}
+            <div className="bg-white px-2 my-auto flex rounded-full font-syne-semibold font-bold">
+              <p className="text-center pl-2 flex items-center btn-hover uppercase text-[1rem] text-black">
+                Register Now
+              </p>
+              <span className=" rounded-full">
+                <Image src={arrow} className="scale-75"></Image>
+              </span>
+            </div>
           </div>
         </div>
       </div>
