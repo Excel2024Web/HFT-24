@@ -95,15 +95,21 @@
 
 
 @media (max-width: 768px) {
-    .swiper-button-next,
+    .swiper-button-next{
+        height: 30px;
+        width: 30px;
+        background-size: contain;
+        right: 5px;
+    }
+
     .swiper-button-prev{
         height: 30px;
         width: 30px;
         background-size: contain;
+        left: 5px;
     }
 
     .cardcontainer1{
-        width: 90%;
-        height: 500px;
+        scale: 0.9;
     }
 }

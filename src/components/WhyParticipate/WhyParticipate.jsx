@@ -18,32 +18,32 @@ const WhyParticipate = () => {
 
   const cards = [
     {
-      title: "Build and Learn",
-      text: "Dive into intense coding sessions, tackle real-world problems, and enhance your skills. Hackathons provide a unique opportunity to learn new technologies and apply them in innovative projects.",
+      title: "Win Big",
+      text: "Compete for a massive prize pool of up to ₹70K and reward your efforts with some well-deserved recognition.",
       gradient: "from-[#3b48f9] to-[#a73ffa]",
       color: "text-white",
     },
     {
-      title: "Network",
-      text: "Connect with  industry professionals, and potential employers. Hackathons are a melting pot of talent, offering invaluable networking opportunities that can shape your career.",
+      title: " Super Swags",
+      text: "Stock up on cool swags from stickers to Red Bull and more! Swank 'em, fuel your creativity and stay energized throughout the hackathon.",
       gradient: "from-[#5f72be] to-[#06e1ae]",
       color: "text-white",
     },
     {
-      title: "Mentor Support",
-      text: "Gain insights and guidance from experienced mentors. They'll be there to help you overcome challenges, refine your ideas, and maximize your learning experience throughout the hackathon.",
+      title: "Connect and Conquer",
+      text: "Expand your network with the brightest tech minds. Meet up with fellow innovators, share ideas and forge new long-lasting friendships.",
       gradient: "from-[#5bd8fa] to-[#00f982]",
       color: "text-white",
     },
     {
-      title: "Goodies and Swag",
-      text: "Take home cool branded merchandise and tech gadgets. Hackathons often provide participants with exclusive swag, giving you lasting mementos of your innovative journey.",
+      title: "Expert Guidance",
+      text: "Benefit from the guidance of our experienced mentors who will provide valuable insights, troubleshooting tips, and support throughout the event to supercharge your project.",
       gradient: "from-[#5f72be] to-[#06e1ae]",
       color: "text-white",
     },
     {
-      title: "Cash Prizes",
-      text: "Compete for substantial cash rewards and other prizes. Hack for Tommorow offers significant prize pools, giving you the chance to fund your projects or kickstart your entrepreneurial dreams.",
+      title: "Build the Future",
+      text: "Push your coding limits. Use brand new technologies to create innovative solutions to solve real-world problems and make a difference.",
       gradient: "from-[#3b48f9] to-[#a73ffa]",
       color: "text-white",
     },
