@@ -1,4 +1,4 @@
-
+/*
 import './highlight.css';
 
 function Highlights() {
@@ -39,4 +39,4 @@ function Highlights() {
   );
 }
 
-export default Highlights;
+export default Highlights;*/

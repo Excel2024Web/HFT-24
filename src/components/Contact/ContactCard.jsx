@@ -83,6 +83,7 @@ const ContactCard = ({ details }) => {
         className="card-container"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
+        onClick={() => setIsHovered(!isHovered)}
       >
         <div className="background-image">
           <Image

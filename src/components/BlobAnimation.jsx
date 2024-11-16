@@ -3,7 +3,7 @@ import React, {useEffect, useRef} from "react";
 import astro from "@/assets/Landing/astro.svg";
 import astro2 from "@/assets/Landing/astro2.svg";
 import astro3 from "@/assets/Landing/astro3.svg";
-import right from "@/assets/Landing/right.svg";
+import right from "@/assets/Landing/right2.svg";
 import topleft from "@/assets/Landing/topleft.svg";
 import constel from "@/assets/Landing/constellation.svg";
 import arrow from "@/assets/Landing/arrow.svg";
