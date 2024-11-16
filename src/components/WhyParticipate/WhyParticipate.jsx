@@ -124,10 +124,10 @@ const WhyParticipate = () => {
     // </div>
 
     <>
-    <div className="main-container">
+    <div id = "why" className="main-container">
 
     
-      <div className="container h-[100vh] block place-content-center max-w-[95%] md:max-w-[70%] mx-auto  py-8">
+      <div className="container h-[100%] block place-content-center  md:max-w-[85%] mx-auto  py-8">
         <h2 className=" titleh2 text-5xl mb-[50px] text-center text-white py-5 tracking-wide ">
           WHY PARTICIPATE ?
         </h2>
