@@ -1,0 +1,64 @@
+.partners-section {
+  text-align: center;
+  
+  backdrop-filter: blur(10px); /* Glass effect */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  border-radius: 20px;
+  color: white;
+  padding: 50px;
+  position: relative;
+}
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600&family=Base+Neue:wght@400;500&display=swap');
+
+.partners-title {
+  font-family: 'Syne', sans-serif; /* Updated Typography */
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 50px;
+  color: #FFFFFF;/* Primary Color */
+  text-shadow: 0 4px 10px rgba(223, 130, 255, 0.5);
+}
+
+.partners-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.partners-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 20px 0;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.partners-row.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.partner {
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: white;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.partner-logo {
+  width: auto;
+  max-width: 300px;
+}
+
+.partner-label {
+  font-family: 'Base Neue', sans-serif; /* Updated Typography */
+  margin-top: 10px;
+  font-size: 18px;
+  color: #F9D0BF; /* Secondary Color */
+}
