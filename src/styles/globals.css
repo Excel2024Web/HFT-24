@@ -13,8 +13,7 @@
   font-family: "Base Neue Black";
   font-style: normal;
   font-weight: normal;
-  src:
-    local("Base Neue Black"),
+  src: local("Base Neue Black"),
     url("../assets/fonts/BaseNeue/BaseNeue-Black.woff") format("woff");
 }
 
@@ -22,8 +21,7 @@
   font-family: "Base Neue Bold";
   font-style: normal;
   font-weight: normal;
-  src:
-    local("Base Neue Bold"),
+  src: local("Base Neue Bold"),
     url("../assets/fonts/BaseNeue/BaseNeue-Bold.woff") format("woff");
 }
 
@@ -31,8 +29,7 @@
   font-family: "Base Neue Expanded Black";
   font-style: normal;
   font-weight: normal;
-  src:
-    local("Base Neue Expanded Black"),
+  src: local("Base Neue Expanded Black"),
     url("../assets/fonts/BaseNeue/BaseNeue-ExpandedBlack.woff") format("woff");
 }
 
@@ -40,10 +37,23 @@
   font-family: "Base Neue Super Expanded Black";
   font-style: normal;
   font-weight: normal;
-  src:
-    local("Base Neue Super Expanded Black"),
+  src: local("Base Neue Super Expanded Black"),
     url("../assets/fonts/BaseNeue/BaseNeue-SuperExpandedBlack.woff")
       format("woff");
+}
+
+@font-face {
+  font-family: "Syne Medium";
+  src: url("../assets/fonts/Syne-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Syne SemiBold";
+  src: url("../assets/fonts/Syne-SemiBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 :root {

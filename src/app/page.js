@@ -23,8 +23,8 @@ export default function Home() {
       {/* <CountdownTimer
         targetDate={new Date("December 21, 2024 09:30:00").getTime()}
       /> */}
-      
-      <Intro />
+
+      {/* <Intro /> */}
       <About />
       <WhyParticipate />
       <Highlights />
