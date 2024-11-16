@@ -1,22 +1,27 @@
 .card-container {
-  height: 400px;
-  width: 350px;
+  height: 350px;
+  width: 300px;
   background: rgba(26, 26, 43, 0.37);
   /* box-shadow: 0 8px 32px 0 rgba(51, 56, 133, 0.459); */
   /* backdrop-filter: blur(10.5px); */
   /* -webkit-backdrop-filter: blur(10.5px); */
   backdrop-filter: blur(10.5px);
-  border: 1.5px solid #ffffffc7;
+  /* border: 1.5px solid #ffffffc7; */
   display: flex;
   justify-content: center;
   gap: 30px;
   flex-direction: column;
   align-items: center;
   transition: 0.3s ease-in-out;
+  border-radius: 30px;
+}
+
+.card-container img {
+  border-radius: 30px;
 }
 
 .card-container:hover {
-  scale: 1.01;
+  /* scale: 1.01; */ /*Scaling blurs the image a little*/
 }
 
 .logoimg {
@@ -36,15 +41,42 @@
 }
 
 .text-field {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   margin: 0;
+  border-radius: 30px;
+  background: rgb(64, 0, 255);
+  background: linear-gradient(
+      320deg,
+      rgba(223, 130, 255, 1) 0%,
+      rgba(249, 208, 191, 1) 0%,
+      rgba(255, 255, 255, 0) 52%
+    ),
+    linear-gradient(
+      40deg,
+      rgba(249, 208, 191, 1) 0%,
+      rgba(223, 130, 255, 1) 0%,
+      rgba(255, 255, 255, 0) 50%
+    );
+  -webkit-mask: linear-gradient(
+      320deg,
+      rgba(223, 130, 255, 1) 0%,
+      rgba(249, 208, 191, 1) 0%,
+      rgba(255, 255, 255, 0) 52%
+    ),
+    linear-gradient(
+      40deg,
+      rgba(249, 208, 191, 1) 0%,
+      rgba(223, 130, 255, 1) 0%,
+      rgba(255, 255, 255, 0) 50%
+    );
+  /* backdrop-filter: blur(10.5px); */
+  color: #000;
 }
 
 .text-field h2 {
   font-size: 27px;
+}
+.text-field-inner {
+  position: absolute;
 }
 
 .text-field p {
@@ -53,21 +85,22 @@
 
 .socials {
   display: flex;
+  position: absolute;
   flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
+  align-items: start;
+  justify-content: start;
   width: 70%;
   font-size: 25px;
   opacity: 0;
 }
 
 .socials a {
-  color: #ffffff;
-  opacity: 0.8;
+  color: #1e1e1e;
+  padding-right: 20px;
 }
 
 .socials a:hover {
-  color: #ffffff;
+  color: #000;
   opacity: 1;
   scale: 1.05;
   text-decoration: none;
