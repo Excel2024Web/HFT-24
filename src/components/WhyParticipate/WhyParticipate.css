@@ -368,7 +368,7 @@ html{
 
 @media (min-width: 200px) and (max-width: 450px) {
   .cardcontainer1 {
-    scale: 0.7;
+    scale: 0.8;
   }
 }
 /* @media (min-width: 1280px) {

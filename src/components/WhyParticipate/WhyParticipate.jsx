@@ -148,11 +148,15 @@ const WhyParticipate = () => {
             }}
             breakpoints={{
               480: {slidesPerView: 1, spaceBetween: 10},
-              768: {slidesPerView: 1.3, spaceBetween: 20},
+              768: {slidesPerView: 1.7, spaceBetween: 20},
               1024: {slidesPerView: 2, spaceBetween: 30},
               1280: {slidesPerView: 2, spaceBetween: 40},
-              1536: {slidesPerView: 3, spaceBetween: 50},
+              1536: {slidesPerView: 3, spaceBetween: 60},
             }}
+            // autoplay={{
+            //   delay: 3000,
+            //   disableOnInteraction: false,
+            // }}
             modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
             className="mySwiper"
           >
