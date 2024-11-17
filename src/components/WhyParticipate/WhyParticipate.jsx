@@ -168,6 +168,14 @@ const WhyParticipate = () => {
 </Swiper>
 
       </div>
+      <span className="star"></span>
+      <span className="star"></span>
+      <span className="star"></span>
+      <span className="star"></span>
+      <span className="star"></span>
+      <span className="star"></span>
+      <span className="star"></span>
+
       </div>
     </>
   );
