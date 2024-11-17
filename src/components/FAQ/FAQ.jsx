@@ -34,12 +34,12 @@ const FAQ = () => {
   return (
     <div className="faq">
       <div className="faq-container container mx-auto px-10 py-10 flex flex-col items-start">
-        <h1 className="font-bold text-start faq-heading">
+        <h1 className="font-base-neue-bold text-4xl sm:text-6xl text-start faq-heading">
           FREQUENTLY ASKED
           <br />
           QUESTIONS .
         </h1>
-        <div className="flex flex-col w-full pt-10">
+        <div className="font-syne-medium flex flex-col w-full pt-10">
           {QA.map((qa, index) => (
             <FAQCard
               key={index}
