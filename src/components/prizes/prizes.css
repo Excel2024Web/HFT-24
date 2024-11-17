@@ -1,4 +1,7 @@
-/* General Section Styling */
+@font-face{
+  font-family: 'neue';
+  src: url(../../assets/fonts/BaseNeue/BaseNeue-Black.woff);
+}
 .pricing-section {
   background: linear-gradient(
     to top right,
@@ -7,7 +10,7 @@
     rgba(82, 42, 76, 0.7),
     transparent 30%
   );
-  background-color: #160c15; /* Solid fallback background */
+  background-color: #160c15; 
   min-height: 100vh;
   padding: 50px 20px;
   display: flex;
@@ -15,9 +18,10 @@
   align-items: center;
   position: relative;
   color: white;
+  margin-top: 100px; 
+  text-align: center;
 }
 
-/* Subtle Glow Behind Cards */
 .pricing-cards::before {
   content: "";
   position: absolute;
@@ -31,60 +35,77 @@
   z-index: 1;
 }
 
-/* Typography */
+
 @import url("https://fonts.googleapis.com/css2?family=Syne:wght@700&family=Presta:wght@500&display=swap");
 
 .pricing-header {
-  font-family: "Syne", sans-serif;
+  font-family: 'neue';
   font-size: 3rem;
   color: #ffffff;
   margin-bottom: 10px;
 }
 
 .pricing-subheader {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin-bottom: 40px;
   color: #b8a0c9;
-  font-family: "Syne", sans-serif;
+  font-family: 'Syne-Medium';
+  font-weight: 100; 
+  letter-spacing: 0.05rem; 
   text-align: center;
+  padding-bottom: 30px;
 }
 
-/* Card Layout */
+
 .pricing-cards {
   display: flex;
-  gap: 20px;
+  gap: 0px;
   justify-content: center;
   flex-wrap: wrap;
   position: relative;
   z-index: 2;
+ 
 }
 
-/* Glassmorphism Effect for Cards */
+
 .glass-card {
-  /*background: rgba(255, 255, 255, 0.1);  Transparent background */
-  backdrop-filter: blur(10px); /* Frosted effect */
+ /*background: rgba(255, 255, 255, 0.1); 
+  border: 1px solid rgba(255, 255, 255, 0.063);
+  backdrop-filter: blur(10px); 
   border-radius: 15px;
-  border-color: #ffffff; /* Smooth edges */
+  /*border-color: #ffffff;   */
+  border: 1px solid rgba(255, 255, 255, 0.2); 
+  backdrop-filter: blur(20px);
+  border-radius: 15px;
+  border-color: rgba(255, 255, 255, 0.2);
   padding: 40px;
   width: 320px;
   text-align: center;
   color: #ffffff;
-  transition: transform 0.3s ease-in-out;
-  /*box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  Subtle shadow for depth */
+  font-family: 'Syne-Medium';
+  position: relative;
+  z-index: 1;
+  margin: 0 -20px; 
+  transform: scale(0.95); 
+  transition: transform 0.3s ease-in-out, z-index 0.3s ease-in-out;
+  /*box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  */
 }
 
-/* Elevated Card Styling */
+
 .first-prize {
-  transform: translateY(-20px);
-  /* No border applied */
+  /*transform: translateY(-20px);
+  */
+  transform: translateY(-30px) scale(1.05);
+  z-index: 3;
 }
 
-/* Hover Effect */
+
 .glass-card:hover {
-  transform: translateY(-10px);
+  transform: scale(1.05); 
+  z-index: 4;
 }
 
-/* Icon Styling */
+
 .icon {
   height: 200px;
   width: 250px;
@@ -94,41 +115,42 @@
   margin-bottom: 20px;
 }
 
+
 .second-prize .icon {
-  background: url("../../assets/Gallery/hftsn.jpg") no-repeat center center;
+  background: url("../../assets/Gallery/hftsrb.png") no-repeat center center;
+  background-size: cover;
   height: 200px;
   width: 250px;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
+  position: relative;
   margin-bottom: 20px;
+  backdrop-filter: blur(8px); 
 }
 
 .first-prize .icon {
-  background: url("../../assets/Gallery/hftgn.jpg") no-repeat center center;
+  background: url("../../assets/Gallery/hftgrb.png") no-repeat center center;
+  background-size: cover;
   height: 200px;
   width: 250px;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
+  position: relative;
   margin-bottom: 20px;
+  backdrop-filter: blur(8px); 
 }
 
 .third-prize .icon {
-  background: url("../../assets/Gallery/hftbn.jpeg") no-repeat center center;
+  background: url("../../assets/Gallery/hftbrb.png") no-repeat center center;
+  background-size: cover;
   height: 200px;
   width: 250px;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
+  position: relative;
   margin-bottom: 20px;
+  backdrop-filter: blur(8px);
 }
 
-/* Prize Title */
+
 .prize-title {
   font-size: 1.8rem;
   font-weight: bolder;
-  font-family: "Presta medium";
+  font-family: 'neue';
   color: #ffffff;
   margin-bottom: 15px;
   text-transform: uppercase;
@@ -138,8 +160,8 @@
   -webkit-text-fill-color: transparent;
 }
 
-/* Prize Amount */
 .price {
+  font-family: 'neue';
   font-size: 2.5rem;
   font-weight: bold;
   background: linear-gradient(180deg, #ff7dff, #ffffff);
@@ -148,14 +170,72 @@
   margin: 20px 0;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .pricing-cards {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column; 
+    gap: 30px; 
   }
+
   .glass-card {
     width: 100%;
     max-width: 320px;
+    margin: 0 auto;
+  }
+
+  
+  .first-prize {
+    order: 1;
+  }
+
+  .second-prize {
+    order: 2; 
+  }
+
+  .third-prize {
+    order: 3; 
+  }
+
+  .icon {
+    height: 120px; 
+    width: 120px;
+  }
+
+  .pricing-header {
+    font-size: 1.8rem;
+  }
+
+  .prize-title {
+    font-size: 1.3rem;
+  }
+
+  .price {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .pricing-header {
+    font-size: 1.3rem;
+  }
+
+  .pricing-subheader {
+    font-size: 0.8rem;
+  }
+
+  .glass-card {
+    padding: 15px;
+  }
+
+  .icon {
+    height: 100px;
+    width: 100px;
+  }
+
+  .prize-title {
+    font-size: 1rem;
+  }
+
+  .price {
+    font-size: 1.4rem;
   }
 }
