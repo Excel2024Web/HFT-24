@@ -1,19 +1,19 @@
 "use client";
 
-import React, { useState } from "react";
+import React, {useState} from "react";
 import Image from "next/image";
-import { FaLinkedinIn } from "react-icons/fa";
-import { FaEnvelope, FaPhone } from "react-icons/fa6";
-import { motion } from "framer-motion";
+import {FaLinkedinIn} from "react-icons/fa";
+import {FaEnvelope, FaPhone} from "react-icons/fa6";
+import {motion} from "framer-motion";
 import "./ContactCard.css";
 
-const ContactCard = ({ details }) => {
+const ContactCard = ({details}) => {
   const [isHovered, setIsHovered] = useState(false);
 
   const cardVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.4 } },
-    exit: { opacity: 0, y: -50, transition: { duration: 0.4 } },
+    hidden: {opacity: 0, y: 50},
+    visible: {opacity: 1, y: 0, transition: {duration: 0.4}},
+    exit: {opacity: 0, y: -50, transition: {duration: 0.4}},
   };
 
   const containerVariants = {
@@ -23,19 +23,19 @@ const ContactCard = ({ details }) => {
         staggerChildren: 0.3,
       },
     },
-    hidden: { opacity: 0 },
+    hidden: {opacity: 0},
   };
 
   const childVariants = {
     visible: {
       opacity: 1,
       y: -5,
-      transition: { duration: 0.5 },
+      transition: {duration: 0.5},
     },
     hidden: {
       opacity: 0,
       y: 20,
-      transition: { duration: 0.5 },
+      transition: {duration: 0.5},
     },
   };
 
@@ -90,7 +90,7 @@ const ContactCard = ({ details }) => {
             src={details.img}
             alt="background"
             fill={true}
-            style={{ objectFit: "cover" }}
+            style={{objectFit: "cover"}}
           />
         </div>
         <div className="text-field z-10 flex flex-col justify-end items-start w-full h-full p-5">
