@@ -295,7 +295,7 @@ const BlobAnimation = () => {
           data-aos-duration="1100"
         >
           <Image
-            className="hidden sm:block absolute bottom-0 sm:bottom-0 sm:right-[-8rem] z-0"
+            className="hidden sm:block absolute bottom-0 md:bottom-0 md:right-[-8rem] z-0"
             src={astro2}
             alt="astro"
           />

@@ -1,15 +1,18 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, {useState, useRef, useEffect} from "react";
 import InfoCard from "./InfoCard";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/effect-coverflow';
-import 'swiper/css/pagination';
-import { EffectCoverflow, Pagination, Navigation, Autoplay } from 'swiper/modules';
+import {FaChevronLeft, FaChevronRight} from "react-icons/fa";
+import {Swiper, SwiperSlide} from "swiper/react";
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
+import {
+  EffectCoverflow,
+  Pagination,
+  Navigation,
+  Autoplay,
+} from "swiper/modules";
 // import 'swiper/swiper-bundle.min.css';
-import './WhyParticipate.css'
-
-
+import "./WhyParticipate.css";
 
 const WhyParticipate = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -30,7 +33,7 @@ const WhyParticipate = () => {
       color: "text-white",
     },
     {
-      title: "Connect and Conquer",
+      title: "Network",
       text: "Expand your network with the brightest tech minds. Meet up with fellow innovators, share ideas and forge new long-lasting friendships.",
       gradient: "from-[#5bd8fa] to-[#00f982]",
       color: "text-white",
@@ -124,58 +127,54 @@ const WhyParticipate = () => {
     // </div>
 
     <>
-    <div id = "why" className="main-container">
+      <div id="why" className="main-container">
+        <div className="container h-[100%] block place-content-center  md:max-w-[80%] mx-auto  py-8">
+          <h2 className=" titleh2 text-4xl sm:text-6xl font-base-neue-bold mb-[50px] text-center text-white py-5 tracking-wide ">
+            WHY PARTICIPATE
+          </h2>
 
-    
-      <div className="container h-[100%] block place-content-center  md:max-w-[80%] mx-auto  py-8">
-        <h2 className=" titleh2 text-5xl mb-[50px] text-center text-white py-5 tracking-wide ">
-          WHY PARTICIPATE
-        </h2>
-        
-        <Swiper
-    effect={'coverflow'}
-    grabCursor={true}
-    navigation={true}
-    centeredSlides={true}
-    loop={true}
-    coverflowEffect={{
-        rotate: 0,
-        stretch: 0,
-        depth: 150,
-        modifier: 2.5,
-        slideShadows: false,
-    }}
-    breakpoints={{
-        480: { slidesPerView: 1, spaceBetween: 10 },
-        768: { slidesPerView: 1.3, spaceBetween: 20 },
-        1024: { slidesPerView: 2, spaceBetween: 30 },
-        1280: { slidesPerView: 2, spaceBetween: 40 },
-        1536: { slidesPerView: 3, spaceBetween: 50 },
-    }}
-    modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
-    className="mySwiper"
->
-    {cards.map((card, index) => (
-        <SwiperSlide key={index}>
-            <InfoCard
-                title={card.title}
-                text={card.text}
-                gradient={card.gradient}
-                color={card.color}
-            />
-        </SwiperSlide>
-    ))}
-</Swiper>
-
-      </div>
-      <span className="star"></span>
-      <span className="star"></span>
-      <span className="star"></span>
-      <span className="star"></span>
-      <span className="star"></span>
-      <span className="star"></span>
-      <span className="star"></span>
-
+          <Swiper
+            effect={"coverflow"}
+            grabCursor={true}
+            navigation={true}
+            centeredSlides={true}
+            loop={true}
+            coverflowEffect={{
+              rotate: 0,
+              stretch: 0,
+              depth: 150,
+              modifier: 2.5,
+              slideShadows: false,
+            }}
+            breakpoints={{
+              480: {slidesPerView: 1, spaceBetween: 10},
+              768: {slidesPerView: 1.3, spaceBetween: 20},
+              1024: {slidesPerView: 2, spaceBetween: 30},
+              1280: {slidesPerView: 2, spaceBetween: 40},
+              1536: {slidesPerView: 3, spaceBetween: 50},
+            }}
+            modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
+            className="mySwiper"
+          >
+            {cards.map((card, index) => (
+              <SwiperSlide key={index}>
+                <InfoCard
+                  title={card.title}
+                  text={card.text}
+                  gradient={card.gradient}
+                  color={card.color}
+                />
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+        <span className="star"></span>
+        <span className="star"></span>
+        <span className="star"></span>
+        <span className="star"></span>
+        <span className="star"></span>
+        <span className="star"></span>
+        <span className="star"></span>
       </div>
     </>
   );

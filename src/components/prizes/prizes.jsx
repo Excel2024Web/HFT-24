@@ -1,40 +1,39 @@
-import React, { useEffect, useState } from 'react';
-import './prizes.css';
+import React, {useEffect, useState} from "react";
+import "./prizes.css";
 
 function Pricing() {
   const [startCount, setStartCount] = useState(false);
-  const prizeAmounts = [5000, 20000, 3000];
+  const prizeAmounts = [20000, 50000, 30000];
 
   useEffect(() => {
     const handleScroll = () => {
-      const pricingSection = document.querySelector('.pricing-section');
+      const pricingSection = document.querySelector(".pricing-section");
       const rect = pricingSection.getBoundingClientRect();
       if (rect.top < window.innerHeight && rect.bottom >= 0) {
         // Start counting prizes
         setTimeout(() => {
           setStartCount(true);
         }, 3000);
-        window.removeEventListener('scroll', handleScroll);
+        window.removeEventListener("scroll", handleScroll);
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <div className="pricing-section">
-      <h1 className="pricing-header">PRIZES</h1>
-      <p className="pricing-subheader">Win exciting prizes in our hackathon!</p>
-      <div className="pricing-cards">
+      <h1 className="pricing-header font-base-neue-bold text-4xl sm:text-6xl tracking-wider">
+        PRIZES
+      </h1>
+      <p className="pricing-subheader font-syne-medium">
+        Win exciting prizes in our hackathon!
+      </p>
+      <div className="pricing-cards font-base-neue-black tracking-wider">
         <div className="pricing-card second-prize glass-card">
           <div className="icon icon-website"></div>
           <h2 className="prize-title">Second Prize</h2>
-          <ul>
-            <li>Exclusive merchandise</li>
-            <li>Gift cards</li>
-            <li>Mentorship sessions</li>
-          </ul>
           <div className="price">
             ₹{startCount ? <CyclingCount end={prizeAmounts[0]} /> : 0}
           </div>
@@ -43,11 +42,6 @@ function Pricing() {
         <div className="pricing-card first-prize glass-card">
           <div className="icon icon-app"></div>
           <h2 className="prize-title">First Prize</h2>
-          <ul>
-            <li>₹20,000 cash prize</li>
-            <li>Startup funding opportunity</li>
-            <li>Free software credits</li>
-          </ul>
           <div className="price">
             ₹{startCount ? <CyclingCount end={prizeAmounts[1]} /> : 0}
           </div>
@@ -56,11 +50,6 @@ function Pricing() {
         <div className="pricing-card third-prize glass-card">
           <div className="icon icon-branding"></div>
           <h2 className="prize-title">Third Prize</h2>
-          <ul>
-            <li>Branded T-shirts</li>
-            <li>Free subscriptions</li>
-            <li>Networking opportunities</li>
-          </ul>
           <div className="price">
             ₹{startCount ? <CyclingCount end={prizeAmounts[2]} /> : 0}
           </div>
@@ -70,7 +59,7 @@ function Pricing() {
   );
 }
 
-function CyclingCount({ end }) {
+function CyclingCount({end}) {
   const [displayedCount, setDisplayedCount] = useState("0000");
   const endString = end.toString().padStart(4, "0");
 

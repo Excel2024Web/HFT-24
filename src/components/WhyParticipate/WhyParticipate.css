@@ -1,10 +1,10 @@
-@font-face{
-    font-family: 'neue';
-    src: url(../../assets/fonts/BaseNeue/BaseNeue-Black.woff);
+@font-face {
+  font-family: "neue";
+  src: url(../../assets/fonts/BaseNeue/BaseNeue-Black.woff);
 }
 
-.titleh2{
-    font-family: 'neue';
+.titleh2 {
+  font-family: "neue";
 }
 
 /* .swiper-button-next{
@@ -129,258 +129,247 @@ html{
     }
 } */
 
-.main-container{
-    background-image: url(../../assets/WhyParticipate/bgimg2.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 800px;
-    height: 100vh;
-    width: 100vw;
-    position: relative;
-    overflow: hidden;
+.main-container {
+  background-image: url(../../assets/WhyParticipate/bgimg2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 800px;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
 }
 
 .swiper {
-    height: 80%;
-    display: flex;
-    align-items: center;
-    width: 90%;
-    margin: auto;
-    padding-top: 50px;
-    padding-bottom: 30px;
-    max-height: 700px;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  max-height: 700px;
 }
 
 .swiper-wrapper {
-    width: 100%;
-
+  width: 100%;
 }
 
 .cardcontainer1 {
-    box-shadow: 20px 0px 50px #0000002a,
-                -20px 0 50px #0000002a;
-    backdrop-filter: blur(10px);
-    transition: transform 0.3s ease-in-out;
-    max-height: 600px;
+  box-shadow: 20px 0px 50px #0000002a, -20px 0 50px #0000002a;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease-in-out;
+  max-height: 600px;
 }
 
-.swiper-button-prev{
-    position: absolute;
-    color: #fff;
-    height: 50px;
-    width: 50px;
-    background-image: url(../../assets/WhyParticipate/arrow.png);
-    transform: rotate(180deg);
-    cursor: pointer;
-    z-index: 10;
-    display: flex;
-    top: 50%;
-    left: -10px;
-    transition: 0.4s ease-in-out;
+.swiper-button-prev {
+  position: absolute;
+  color: #fff;
+  height: 50px;
+  width: 50px;
+  background-image: url(../../assets/WhyParticipate/arrow.png);
+  transform: rotate(180deg);
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  top: 50%;
+  left: -10px;
+  transition: 0.4s ease-in-out;
 }
 
-.swiper-button-next{
-    position: absolute;
-    color: #fff;
-    height: 50px;
-    width: 50px;
-    background-image: url(../../assets/WhyParticipate/arrow.png);
-    cursor: pointer;
-    z-index: 10;
-    display: flex;
-    top: 50%;
-    right: -10px;
-    transition: 0.4s ease-in-out;
+.swiper-button-next {
+  position: absolute;
+  color: #fff;
+  height: 50px;
+  width: 50px;
+  background-image: url(../../assets/WhyParticipate/arrow.png);
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  top: 50%;
+  right: -10px;
+  transition: 0.4s ease-in-out;
 }
 
 .cardtitle {
-    font-size: 2.3rem;
-    margin-top: 20px;
-    text-align: center;
-}   
+  font-size: 2.3rem;
+  margin-top: 20px;
+  text-align: center;
+}
 
-.cardp{
-    font-size: 1.3rem;
-    margin-bottom: 10px;
+.cardp {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
 }
 .cardcontainer1:hover {
-    transform: scale(1.02);
+  transform: scale(1.02);
 }
 
 .swiper-slide-active {
-    height: 90%;
+  height: 90%;
 }
 
-.cardcontainer1{
-    height: 100%;
-
+.cardcontainer1 {
+  height: 100%;
 }
-
-
-
-
-
 
 @media (max-width: 768px) {
-    .swiper {
-        height: 80%;
-    }
+  .swiper {
+    height: 80%;
+  }
 
-    .swiper-button-next, .swiper-button-prev {
-        height: 30px;
-        width: 30px;
-        background-size: contain;
-    }
+  .swiper-button-next,
+  .swiper-button-prev {
+    height: 30px;
+    width: 30px;
+    background-size: contain;
+  }
 
-    .cardcontainer1 {
-        scale: 0.9;
-        
-    }
+  .cardcontainer1 {
+    scale: 0.9;
+  }
 
-    .cardtitle {
-        font-size: 3rem;
-        margin-top: 15px;
-    }
+  .cardtitle {
+    font-size: 3rem;
+    margin-top: 15px;
+  }
 
-    .main-container{
-        background-image: url(../../assets/WhyParticipate/bgimg3.png);
-    }
+  .main-container {
+    background-image: url(../../assets/WhyParticipate/bgimg3.png);
+  }
 
-    .swiper-button-next{
-        right: 5px;
-    }
+  .swiper-button-next {
+    right: 5px;
+  }
 
-    .swiper-button-prev{
-        left: 5px;
-    }
+  .swiper-button-prev {
+    left: 5px;
+  }
 }
 
-.star{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 4px;
-    height: 4px;
-    background: #fff;
-    border-radius: 50%;
-    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1),
-                0 0 0 8px rgba(255, 255, 255, 255, 0.1),
-                0 0 20px rgba(255, 255, 255, 255, 1);
-    animation: animate 3s linear infinite;
+.star {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 4px;
+  height: 4px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1),
+    0 0 0 8px rgba(255, 255, 255, 255, 0.1),
+    0 0 20px rgba(255, 255, 255, 255, 1);
+  animation: animate 3s linear infinite;
 }
 
-.star::before{
-    content: '';
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 300px;
-    height: 1px;
-    background: linear-gradient(90deg, #fff, transparent);
+.star::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 300px;
+  height: 1px;
+  background: linear-gradient(90deg, #fff, transparent);
 }
 
 @keyframes animate {
-    0%{
-        transform: rotate(330deg) translateX(0);
-        opacity: 1;
-    }
+  0% {
+    transform: rotate(330deg) translateX(0);
+    opacity: 1;
+  }
 
-    70%{
-        opacity: 1;
-    }
+  70% {
+    opacity: 1;
+  }
 
-    100%{
-        transform: rotate(330deg) translateX(-1000px);
-        opacity: 0;
-    }
+  100% {
+    transform: rotate(330deg) translateX(-1000px);
+    opacity: 0;
+  }
 }
 
-.star:nth-child(1){
-    top: 0;
-    right: 0;
-    left: initial;
-    animation-delay: 0;
-    animation-duration: 1s;
+.star:nth-child(1) {
+  top: 0;
+  right: 0;
+  left: initial;
+  animation-delay: 0;
+  animation-duration: 1s;
 }
 
-.star:nth-child(2){
-    top: 0;
-    right: -580px;
-    left: initial;
-    animation-delay: 0.2s;
-    animation-duration: 3s;
+.star:nth-child(2) {
+  top: 0;
+  right: -580px;
+  left: initial;
+  animation-delay: 0.2s;
+  animation-duration: 3s;
 }
 
-.star:nth-child(3){
-    top: 80px;
-    right: 0;
-    left: initial;
-    animation-delay: 0.4;
-    animation-duration: 2s;
+.star:nth-child(3) {
+  top: 80px;
+  right: 0;
+  left: initial;
+  animation-delay: 0.4;
+  animation-duration: 2s;
 }
 
-
-
-.star:nth-child(5){
-    top: 0;
-    right: 800px;
-    left: initial;
-    animation-delay: 0.8s;
-    animation-duration: 2.5s;
+.star:nth-child(5) {
+  top: 0;
+  right: 800px;
+  left: initial;
+  animation-delay: 0.8s;
+  animation-duration: 2.5s;
 }
 
-.star:nth-child(6){
-    top: 0;
-    right: 1300px;
-    left: initial;
-    animation-delay: 0.1s;
-    animation-duration: 2.5s;
+.star:nth-child(6) {
+  top: 0;
+  right: 1300px;
+  left: initial;
+  animation-delay: 0.1s;
+  animation-duration: 2.5s;
 }
 
-.star:nth-child(7){
-    top: 0;
-    right: -700px;
-    left: initial;
-    animation-delay: 1s;
-    animation-duration: 5s;
+.star:nth-child(7) {
+  top: 0;
+  right: -700px;
+  left: initial;
+  animation-delay: 1s;
+  animation-duration: 5s;
 }
-
-
 
 @media (max-width: 480px) {
-    .swiper {
-        height: 85%;
-    }
+  .swiper {
+    height: 85%;
+  }
 
-    .swiper-button-next, .swiper-button-prev {
-        height: 25px;
-        width: 25px;
-    }
+  .swiper-button-next,
+  .swiper-button-prev {
+    height: 25px;
+    width: 25px;
+  }
 
-    .cardcontainer1 {
-        scale: 0.8;
-        padding: 0;
-    }
+  .cardcontainer1 {
+    scale: 0.8;
+    padding: 0;
+  }
 
-    .cardtitle {
-        font-size: 2rem;
-    }
+  .cardtitle {
+    font-size: 2rem;
+  }
 }
 
-@media (max-height: 700px){
-    .cardcontainer1{
-        scale: 0.9;
-    }
+@media (max-width: 700px) {
+  .cardcontainer1 {
+    scale: 0.9;
+  }
 
-    .cardp{
-        font-size: 1rem;
-    }
+  .cardp {
+    font-size: 1rem;
+  }
 }
 
-@media (min-height: 200px) and (max-height: 450px){
-    .cardcontainer1{
-        scale: 0.7;
-    }
+@media (min-width: 200px) and (max-width: 450px) {
+  .cardcontainer1 {
+    scale: 0.7;
+  }
 }
 /* @media (min-width: 1280px) {
     .swiper {

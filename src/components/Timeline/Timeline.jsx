@@ -11,7 +11,7 @@ const TimelineSection = () => {
       id="timeline"
       className="relative flex flex-col font-syne-medium items-center justify-center min-h-screen p-2 text-white"
     >
-      <div className="m-auto container font-generalSans min-h-screen flex justify-center flex-col items-center pt-[100px] text-our_white">
+      <div className="m-auto container font-generalSans min-h-screen flex justify-center flex-col items-center text-our_white">
         <h2
           className="font-base-neue-bold text-4xl sm:text-6xl tracking-widest mirror-vertical text-center text-white xl:scale-100 lg:scale-90 md:scale-75 scale-[.65] text-[#FFFFFF]/[0.8] "
           data-text="TIMELINE"

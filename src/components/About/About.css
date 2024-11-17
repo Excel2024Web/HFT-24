@@ -175,8 +175,7 @@
   }
 } */
 
-
-.about-container{
+.about-container {
   background-color: #000;
   height: 100vh;
   width: 100vw;
@@ -189,27 +188,27 @@
   min-height: fit-content;
 }
 
-.abouth1{
-  font-family: 'neue';
+.abouth1 {
+  font-family: "neue";
   font-size: 3.5rem;
   margin-bottom: -60px;
   z-index: 30;
 }
 
-.top-left{
+.top-left {
   position: absolute;
   top: 0;
   left: 0;
 }
 
-.bottom-right{
+.bottom-right {
   position: absolute;
   bottom: 0;
   right: 0;
   width: 100vw;
 }
 
-.circle1{
+.circle1 {
   position: absolute;
   bottom: -500px;
   height: 1000px;
@@ -219,7 +218,7 @@
   animation: rotate 15s linear infinite;
 }
 
-.circle2{
+.circle2 {
   position: absolute;
   bottom: -400px;
   height: 800px;
@@ -229,7 +228,7 @@
   animation: rotate 20s linear infinite;
 }
 
-.circle3{
+.circle3 {
   position: absolute;
   bottom: -200px;
   height: 400px;
@@ -239,13 +238,13 @@
   animation: rotate 25s linear infinite;
 }
 
-svg{
+svg {
   backdrop-filter: blur(10px);
   width: 90%;
   height: 90%;
 }
 
-.details-container{
+.details-container {
   width: 80%;
   height: 80%;
   display: flex;
@@ -253,7 +252,7 @@ svg{
   align-items: center;
 }
 
-.abtp{
+.abtp {
   position: absolute;
   width: 60%;
   font-size: 1.5rem;
@@ -271,87 +270,84 @@ svg{
 }
 
 @media (max-width: 1390px) {
-  .abtp{
+  .abtp {
     font-size: 1.2rem;
   }
 }
 
 @media (max-width: 1300px) {
+  .details-container {
+    width: 100%;
+    height: 85%;
+  }
 
- .details-container{
-   width: 100%;
-   height: 85%;
- }
-
- .abtp{
-   font-size: 1.3rem;
-   width: 80%;
- }
-
+  .abtp {
+    font-size: 1.3rem;
+    width: 80%;
+  }
 }
 
 @media (max-width: 900px) {
-  .circle1{
+  .circle1 {
     height: 800px;
     width: auto;
     bottom: -400px;
     left: -400px;
   }
 
-  .circle2{
+  .circle2 {
     height: 600px;
     width: auto;
     bottom: -300px;
     left: -300px;
   }
 
-  .abtp{
+  .abtp {
     font-size: 1.1rem;
     width: 80%;
   }
 
-  .abouth1{
+  .abouth1 {
     font-size: 2.5rem;
   }
 }
 
 @media (max-width: 768px) {
-  svg{
+  svg {
     display: none;
   }
 
-  .circle1{
+  .circle1 {
     height: 600px;
     width: auto;
     bottom: -300px;
     left: -300px;
   }
 
-  .circle2{
+  .circle2 {
     height: 500px;
     width: auto;
     bottom: -250px;
     left: -250px;
   }
-  
 }
 
 @media (max-width: 530px) {
-  .circle1{
+  .circle1 {
     height: 450px;
     width: auto;
     bottom: -225px;
     left: -225px;
   }
 
-  .circle2{
+  .circle2 {
     height: 300px;
     width: auto;
     bottom: -150px;
     left: -150px;
   }
 
-  .circle3{
+  .circle3 {
     height: 100px;
     width: auto;
     bottom: -50px;
@@ -360,18 +356,18 @@ svg{
 }
 
 @media (max-width: 420px) {
-  .circle1{
+  .circle1 {
     display: none;
   }
 
-  .abtp{
+  .abtp {
     font-size: 0.9rem;
     width: 80%;
   }
 }
 
 @media (max-height: 550px) {
-  .abtp{
+  .abtp {
     font-size: 1rem;
   }
 }
