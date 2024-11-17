@@ -99,8 +99,8 @@ const ContactCard = ({details}) => {
             variants={containerVariants}
             animate={isHovered ? "hidden" : "visible"}
           >
-            <h2>{details.name}</h2>
-            <p>{details.title}</p>
+            <h2 className="font-syne-medium">{details.name}</h2>
+            <p className="font-syne-medium">{details.title}</p>
           </motion.div>
           <motion.div
             className="socials"
@@ -108,6 +108,7 @@ const ContactCard = ({details}) => {
             animate={isHovered ? "visible" : "hidden"}
           >
             <motion.a
+              className="social-linkedin"
               href={details.linkedin}
               variants={childVariants}
               target="blank"
@@ -115,13 +116,18 @@ const ContactCard = ({details}) => {
               <FaLinkedinIn />
             </motion.a>
             <motion.a
+              className="social-mail"
               href={`https://mail.google.com/mail/?view=cm&fs=1&to=${details.email}`}
               variants={childVariants}
               target="blank"
             >
               <FaEnvelope />
             </motion.a>
-            <motion.a href={`tel:${details.phone}`} variants={childVariants}>
+            <motion.a
+              className="social-phone"
+              href={`tel:${details.phone}`}
+              variants={childVariants}
+            >
               <FaPhone />
             </motion.a>
           </motion.div>

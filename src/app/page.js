@@ -32,7 +32,7 @@ export default function Home() {
       <Partners />
       {/* <Highlights /> */}
       <TimelineSection />
-      <AccordionImageGallery />
+      {/* <AccordionImageGallery /> */}
       <FAQ />
       <Contact />
       <Footer />

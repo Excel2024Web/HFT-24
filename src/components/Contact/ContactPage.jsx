@@ -4,7 +4,7 @@ import gensec from "../../assets/contacts/arif.jpg";
 import jointsec from "../../assets/contacts/akash.jpg";
 import eventhead from "../../assets/contacts/Harin.jpg";
 import eventhead2 from "../../assets/contacts/Rohit.jpg";
-import cstech from "@/assets/contacts/cstech.png";
+import cstech from "@/assets/contacts/vaid.jpg";
 
 export default function Contact() {
   const contactDetails = [
@@ -65,12 +65,12 @@ export default function Contact() {
   return (
     <>
       <div className="w-[100vw] flex justify-center items-center flex-col overflow-hidden h-full pb-10">
-        <h1 className="mt-10 text-4xl text-center">Contact Us</h1>
-        <p className="text-center md:w-[30vw] w-[90vw] mt-5 mb-10 font-sans bg-gradient-to-r  bg-clip-text text-white text-[18px]">
-          We’d love to hear from you! Whether you have questions, feedback, or
-          just want to chat, feel free to reach out to us. Your thoughts and
-          inquiries are valuable to us, and we’re here to help in any way we
-          can.
+        <h1 className="mt-10 text-4xl sm:text-6xl text-center font-base-neue-bold text-white tracking-wider">
+          Contact Us
+        </h1>
+        <p className="text-center font-syne-medium md:w-[30vw] w-[90vw] mt-5 mb-10 bg-gradient-to-r  bg-clip-text text-white text-[18px]">
+          If you have questions, feedback, or just want to chat, feel free to
+          reach out to us.
         </p>
         <div className="grid grid-cols-3 max-sm:grid-cols-1 max-md:grid-cols-2 gap-[50px]">
           {contactDetails.map((cd, index) => (
