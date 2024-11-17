@@ -4,7 +4,8 @@ import Image from "next/image";
 import BlobAnimation from "../components/BlobAnimation";
 import Footer from "../components/Footer";
 import About from "../components/About/About";
-import Highlights from "../components/highlights/highlight";
+import Prizes from "../components/prizes/prizes";
+import Partners from "../components/Partners/partners";
 import CountdownTimer from "../components/Countdown/Countdown";
 import Navbar from "../components/Navbar";
 import AccordionImageGallery from "../components/ImageGallery";
@@ -27,7 +28,9 @@ export default function Home() {
       {/* <Intro /> */}
       <About />
       <WhyParticipate />
-      <Highlights />
+      <Prizes />
+      <Partners />
+      {/* <Highlights /> */}
       <TimelineSection />
       <AccordionImageGallery />
       <FAQ />
