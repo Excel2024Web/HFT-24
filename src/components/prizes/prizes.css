@@ -117,7 +117,7 @@
 
 
 .second-prize .icon {
-  background: url("../../assets/Gallery/hftsrb.png") no-repeat center center;
+  background: url("../../assets/Gallery/silver.png") no-repeat center center;
   background-size: cover;
   height: 200px;
   width: 250px;
@@ -127,7 +127,7 @@
 }
 
 .first-prize .icon {
-  background: url("../../assets/Gallery/hftgrb.png") no-repeat center center;
+  background: url("../../assets/Gallery/gold.png") no-repeat center center;
   background-size: cover;
   height: 200px;
   width: 250px;
@@ -137,7 +137,7 @@
 }
 
 .third-prize .icon {
-  background: url("../../assets/Gallery/hftbrb.png") no-repeat center center;
+  background: url("../../assets/Gallery/bronze.png") no-repeat center center;
   background-size: cover;
   height: 200px;
   width: 250px;
