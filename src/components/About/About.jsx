@@ -11,7 +11,8 @@ import circle3 from "../../assets/backgrounds/about/circle3.png";
 const About = () => {
   return (
     <>
-      <div className="about-container">
+      <div
+      id = "about" className="about-container">
         <Image className="top-left" src={top_left} />
         <Image className="bottom-right" src={bottom_right} />
         <Image className="circle1" src={circle1} />
@@ -28,6 +29,7 @@ const About = () => {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
             preserveAspectRatio="none"
+            className="aboutsvg"
           >
             <g filter="url(#filter0_bd_22_35)">
               <path
@@ -91,7 +93,7 @@ const About = () => {
             <br />
             Join us for a 24-hour coding marathon filled with caffeine, food,
             and endless possibilities. So, gather your squad and let's code a
-            better tomorrow at Hack for Tomorrow!
+            better tomorrow at Hack for Tomorrow!
           </p>
         </div>
       </div>

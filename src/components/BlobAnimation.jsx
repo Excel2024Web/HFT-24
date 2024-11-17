@@ -273,7 +273,7 @@ const BlobAnimation = () => {
 
   return (
     <>
-      <div className="relative h-screen w-screen">
+      <div className="relative h-screen w-screen overflow-hidden">
         <Image
           className="absolute top-0 left-0 z-0"
           src={topleft}

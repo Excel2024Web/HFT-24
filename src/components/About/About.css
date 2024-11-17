@@ -287,6 +287,10 @@ svg {
   }
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 @media (max-width: 900px) {
   .circle1 {
     height: 800px;
@@ -313,7 +317,7 @@ svg {
 }
 
 @media (max-width: 768px) {
-  svg {
+  .aboutsvg {
     display: none;
   }
 
