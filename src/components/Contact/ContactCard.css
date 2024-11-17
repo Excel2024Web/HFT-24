@@ -98,7 +98,6 @@
 }
 
 .socials a:hover {
-  color: #e8d4d4;
   text-decoration: none;
 }
 .social-linkedin {
@@ -111,7 +110,7 @@
   scale: 0.9;
 }
 .social-linkedin:hover {
-  scale: 1.1;
+  scale: 1.15;
 }
 .social-phone:hover {
   scale: 0.9;

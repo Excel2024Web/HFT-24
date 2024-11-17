@@ -50,7 +50,7 @@ const FAQ = () => {
           ))}
           <div className="pt-5 text-md m-auto">
             Have more questions? Feel free to contact us at{" "}
-            <a className="text-purple-500" href="mailto:support@excelmec.org">
+            <a className="text-red-700" href="mailto:support@excelmec.org">
               support@excelmec.org
             </a>
           </div>

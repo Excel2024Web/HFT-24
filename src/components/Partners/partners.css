@@ -1,6 +1,5 @@
 .partners-section {
   text-align: center;
-  
   backdrop-filter: blur(10px); /* Glass effect */
   -webkit-backdrop-filter: blur(10px); /* For Safari */
   border-radius: 20px;
@@ -8,15 +7,13 @@
   padding: 50px;
   position: relative;
 }
-@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600&family=Base+Neue:wght@400;500&display=swap');
 
 .partners-title {
-  font-family: 'Syne', sans-serif; /* Updated Typography */
   font-size: 60px;
   font-weight: bold;
   margin-bottom: 50px;
-  color: #FFFFFF;/* Primary Color */
-  text-shadow: 0 4px 10px rgba(223, 130, 255, 0.5);
+  color: #ffffff; /* Primary Color */
+  /* text-shadow: 0 4px 10px rgba(223, 130, 255, 0.5); */
 }
 
 .partners-container {
@@ -57,8 +54,6 @@
 }
 
 .partner-label {
-  font-family: 'Base Neue', sans-serif; /* Updated Typography */
   margin-top: 10px;
   font-size: 18px;
-  color: #F9D0BF; /* Secondary Color */
 }

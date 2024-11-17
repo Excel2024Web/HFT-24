@@ -30,26 +30,26 @@ function Pricing() {
       <p className="pricing-subheader font-syne-medium">
         Win exciting prizes in our hackathon!
       </p>
-      <div className="pricing-cards font-base-neue-black tracking-wider">
+      <div className="pricing-cards font-syne-semibold tracking-wider">
         <div className="pricing-card second-prize glass-card">
           <div className="icon icon-website"></div>
-          <h2 className="prize-title">Second Prize</h2>
+          <h2 className="prize-title font-syne-medium">Second Prize</h2>
           <div className="price">
             ₹{startCount ? <CyclingCount end={prizeAmounts[0]} /> : 0}
           </div>
         </div>
 
-        <div className="pricing-card first-prize glass-card">
+        <div className="pricing-cards first-prize glass-card">
           <div className="icon icon-app"></div>
-          <h2 className="prize-title">First Prize</h2>
+          <h2 className="prize-title font-syne-medium">First Prize</h2>
           <div className="price">
             ₹{startCount ? <CyclingCount end={prizeAmounts[1]} /> : 0}
           </div>
         </div>
 
-        <div className="pricing-card third-prize glass-card">
+        <div className="pricing-cards third-prize glass-card">
           <div className="icon icon-branding"></div>
-          <h2 className="prize-title">Third Prize</h2>
+          <h2 className="prize-title font-syne-medium">Third Prize</h2>
           <div className="price">
             ₹{startCount ? <CyclingCount end={prizeAmounts[2]} /> : 0}
           </div>
