@@ -2,9 +2,9 @@ import ContactCard from "./ContactCard";
 import chairperson from "../../assets/contacts/sreeparvathy_crop.jpg";
 import gensec from "../../assets/contacts/arif.jpg";
 import jointsec from "../../assets/contacts/akash.jpg";
-import sim from "../../assets/contacts/laya.jpg";
-import eventhead from "../../assets/contacts/Athul.png";
-import eventhead2 from "../../assets/contacts/aleena.jpg";
+import eventhead from "../../assets/contacts/Harin.jpg";
+import eventhead2 from "../../assets/contacts/Rohit.jpg";
+import cstech from "@/assets/contacts/cstech.png";
 
 export default function Contact() {
   const contactDetails = [
@@ -12,7 +12,7 @@ export default function Contact() {
       name: "Sreeparvathy S Nair",
       title: "Chairperson",
       email: "sreeparvathynair.mec@gmail.com",
-      phone: "",
+      phone: "+918590827371",
       linkedin: "https://www.linkedin.com/in/sreeparvathy-nair-b29a6326b/",
       img: chairperson,
     },
@@ -21,7 +21,7 @@ export default function Contact() {
       name: "Arif Basheer",
       title: "General Secretary",
       email: "arifbasheer.mec@gmail.com",
-      phone: "",
+      phone: "+919037473024",
       linkedin: "https://www.linkedin.com/in/arif-basheer-b20491258/",
       img: gensec,
     },
@@ -30,35 +30,35 @@ export default function Contact() {
       name: "Akash V P",
       title: "Joint Secretary",
       email: "akashvp.mec@gmail.com",
-      phone: "",
+      phone: "+919633776062",
       linkedin: "https://www.linkedin.com/in/akashvp/",
       img: jointsec,
     },
 
     {
-      name: "Laya Sara Joy",
-      title: "Social Initiatives Manager",
-      email: "layasarajoy.mec@gmail.com",
-      phone: "",
-      linkedin: "https://www.linkedin.com/in/laya-sara-joy/",
-      img: sim,
+      name: "Vaidyanath B",
+      title: "CS-Tech Manager",
+      email: "vaidyanathb.mec@gmail.com",
+      phone: "+918289986700",
+      linkedin: "https://www.linkedin.com/in/vaidyanath-b-b169a5258/",
+      img: cstech,
     },
 
     {
-      name: "Athul Babu",
+      name: "Harin V",
       title: "Event Head",
-      email: "athulbabu5088@gmail.com",
-      phone: "",
-      linkedin: "https://www.linkedin.com/in/athul-babu-9b55362a5/",
+      email: "harinvchirappanath@gmail.com",
+      phone: "+916282668713",
+      linkedin: "https://www.linkedin.com/in/harin-v-chirappanath-755669242",
       img: eventhead,
     },
 
     {
-      name: "Aleena Prince",
+      name: "Rohit Anish",
       title: "Event Head",
-      email: "aleenaprince.mec@gmail.com",
-      phone: "",
-      linkedin: "https://www.linkedin.com/in/aleena-prince-b85244230/",
+      email: "",
+      phone: "+918301037205",
+      linkedin: "https://www.linkedin.com/in/rohit-anish-b6b587140",
       img: eventhead2,
     },
   ];
