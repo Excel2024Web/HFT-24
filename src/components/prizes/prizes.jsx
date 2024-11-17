@@ -3,7 +3,7 @@ import "./prizes.css";
 
 function Pricing() {
   const [startCount, setStartCount] = useState(false);
-  const prizeAmounts = [5000, 25000, 10000];
+  const prizeAmounts = [10000, 25000, 5000];
 
   useEffect(() => {
     const handleScroll = () => {
