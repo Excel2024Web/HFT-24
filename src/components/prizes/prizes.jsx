@@ -24,7 +24,7 @@ function Pricing() {
 
   return (
     <div className="pricing-section">
-      <h1 className="pricing-header">Prizes</h1>
+      <h1 className="pricing-header">PRIZES</h1>
       <p className="pricing-subheader">Win exciting prizes in our hackathon!</p>
       <div className="pricing-cards">
         <div className="pricing-card second-prize glass-card">
