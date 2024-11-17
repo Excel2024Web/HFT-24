@@ -127,77 +127,45 @@ const WhyParticipate = () => {
     <div id = "why" className="main-container">
 
     
-      <div className="container h-[100%] block place-content-center  md:max-w-[85%] mx-auto  py-8">
+      <div className="container h-[100%] block place-content-center  md:max-w-[80%] mx-auto  py-8">
         <h2 className=" titleh2 text-5xl mb-[50px] text-center text-white py-5 tracking-wide ">
-          WHY PARTICIPATE ?
+          WHY PARTICIPATE
         </h2>
         
         <Swiper
-          effect={'coverflow'}
-          grabCursor={true}
-          navigation={true}
-          centeredSlides={true}
-          // slidesPerView={3}
-          loop={true}
-          coverflowEffect={{
-            rotate: 0,
-            stretch: 0,
-            depth: 150,
-            modifier: 2.5,
-            slideShadows: false,
-          }}
-          // autoplay={{
-          //   delay: 5000,
-          //   disableOnInteraction: false,
-          // }}
-          
-          modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
-          className="mySwiper"
-          slidesPerView={1} 
-    breakpoints={{
-      640: {
-        slidesPerView: 1,
-        spaceBetween: 10,
-      },
-      768: {
-        slidesPerView: 1,
-        // spaceBetween: 40,
-      },
-      800: {
-        slidesPerView: 2,
-        spaceBetween: 20,
-      },
-      1024: { 
-        slidesPerView: 2,
-        spaceBetween: 30,
-      },
-      1280: { 
-        slidesPerView: 3,
-        spaceBetween: 30,
-      },
+    effect={'coverflow'}
+    grabCursor={true}
+    navigation={true}
+    centeredSlides={true}
+    loop={true}
+    coverflowEffect={{
+        rotate: 0,
+        stretch: 0,
+        depth: 150,
+        modifier: 2.5,
+        slideShadows: false,
     }}
+    breakpoints={{
+        480: { slidesPerView: 1, spaceBetween: 10 },
+        768: { slidesPerView: 1.3, spaceBetween: 20 },
+        1024: { slidesPerView: 2, spaceBetween: 30 },
+        1280: { slidesPerView: 2, spaceBetween: 40 },
+        1536: { slidesPerView: 3, spaceBetween: 50 },
+    }}
+    modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
+    className="mySwiper"
 >
-        
-        {cards.map((card, index) => (
-            <div
-              key={index}
-              className="flex-shrink-0 h-full "
-              style={{ width: `${cardWidth}px` }}
-            >
-              <div className="px-2">
-              <SwiperSlide>
-          
-                <InfoCard
-                  title={card.title}
-                  text={card.text}
-                  gradient={card.gradient}
-                  color={card.color}
-                  />
-              </SwiperSlide>
-              </div>
-            </div>
-          ))}
-      </Swiper>
+    {cards.map((card, index) => (
+        <SwiperSlide key={index}>
+            <InfoCard
+                title={card.title}
+                text={card.text}
+                gradient={card.gradient}
+                color={card.color}
+            />
+        </SwiperSlide>
+    ))}
+</Swiper>
 
       </div>
       </div>

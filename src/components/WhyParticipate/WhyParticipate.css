@@ -7,7 +7,7 @@
     font-family: 'neue';
 }
 
-.swiper-button-next{
+/* .swiper-button-next{
     position: absolute;
     color: #fff;
     height: 50px;
@@ -30,9 +30,6 @@
     border: 5px solid #fff;
 }
 
-/* .cardcontainer1:hover{
-    scale: 1.02
-    } */
     
 .swiper-button-prev{
         position: absolute;
@@ -66,13 +63,8 @@ html{
 }
 
 
-/* .cardcontainer1{
-    box-shadow: 0px 0px 20px #ffffff4d;
-} */
 
 .main-container{
-    /* background-image: url(../../assets/WhyParticipate/bg2.jpg); */
-    /* background-image: linear-gradient(130deg, #1515924d, #1109254d); */
     background-image: url(../../assets/WhyParticipate/bgimg2.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -98,24 +90,14 @@ html{
 .cardcontainer1{
     box-shadow: 20px 0px 50px #0000002a,
                 -20px 0 50px #0000002a;
-    /* animation: bright-dim-border 5s infinite; */
     backdrop-filter: blur(10px);
 }
 
-/* @keyframes bright-dim-border {
-    0% {
-      border: 0.1px solid rgba(255, 255, 255, 0.5);
-      box-shadow: 0 0 2px rgba(255, 255, 255, 0.3);
-    }
-    50% {
-      border: 0.2px solid rgba(255, 255, 255, 1);
-      box-shadow: 0 0 3px rgba(255, 255, 255, 1);
-    }
-    100% {
-      border: 0.1px solid rgba(255, 255, 255, 0.5);
-      box-shadow: 0 0 2px rgba(255, 255, 255, 0.3);
-    }
-} */
+.swiper-slide-active{
+    height: 90%;
+}
+
+
 
 
 @media (max-width: 768px) {
@@ -140,4 +122,155 @@ html{
     .cardcontainer1{
         scale: 0.9;
     }
+
+    .cardtitle{
+        font-size: 2rem;
+        margin-top: 20px;
+    }
+} */
+
+.main-container{
+    background-image: url(../../assets/WhyParticipate/bgimg2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
 }
+
+.swiper {
+    height: 80%;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.swiper-wrapper {
+    width: 100%;
+
+}
+
+.cardcontainer1 {
+    box-shadow: 20px 0px 50px #0000002a,
+                -20px 0 50px #0000002a;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease-in-out;
+}
+
+.swiper-button-prev{
+    position: absolute;
+    color: #fff;
+    height: 50px;
+    width: 50px;
+    background-image: url(../../assets/WhyParticipate/arrow.png);
+    transform: rotate(180deg);
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    top: 50%;
+    left: -10px;
+    transition: 0.4s ease-in-out;
+}
+
+.swiper-button-next{
+    position: absolute;
+    color: #fff;
+    height: 50px;
+    width: 50px;
+    background-image: url(../../assets/WhyParticipate/arrow.png);
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    top: 50%;
+    right: -10px;
+    transition: 0.4s ease-in-out;
+}
+
+.cardtitle {
+    font-size: 2.3rem;
+    margin-top: 20px;
+    text-align: center;
+}   
+
+.cardp{
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+.cardcontainer1:hover {
+    transform: scale(1.02);
+}
+
+.swiper-slide-active {
+    height: 90%;
+}
+
+.cardcontainer1{
+    height: 100%;
+
+}
+
+
+
+
+
+
+/* For small devices */
+@media (max-width: 768px) {
+    .swiper {
+        height: 80%;
+    }
+
+    .swiper-button-next, .swiper-button-prev {
+        height: 30px;
+        width: 30px;
+        background-size: contain;
+    }
+
+    .cardcontainer1 {
+        scale: 0.9;
+        
+    }
+
+    .cardtitle {
+        font-size: 3rem;
+        margin-top: 15px;
+    }
+
+    .main-container{
+        background-image: url(../../assets/WhyParticipate/bgimg3.png);
+    }
+}
+
+/* For very small devices */
+@media (max-width: 480px) {
+    .swiper {
+        height: 85%;
+    }
+
+    .swiper-button-next, .swiper-button-prev {
+        height: 25px;
+        width: 25px;
+    }
+
+    .cardcontainer1 {
+        scale: 0.8;
+        padding: 0;
+    }
+
+    .cardtitle {
+        font-size: 2rem;
+    }
+}
+
+/* For larger screens */
+/* @media (min-width: 1280px) {
+    .swiper {
+        height: 60%;
+    }
+
+    .cardcontainer1 {
+        scale: 1.1;
+    }
+} */

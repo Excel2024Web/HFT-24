@@ -1,4 +1,4 @@
-import Image from 'next/image'
+
 const InfoCard = ({
   title,
   text,
@@ -15,12 +15,12 @@ const InfoCard = ({
             width={150} 
             height={150} 
     /> */}
-          <h3 className={`text-4xl font-[500] mt-[20px] tracking-wide ${color}`}>
+          <h3 className={` cardtitle  font-[500] mt-[30px] tracking-wide ${color}`}>
             {title} 
           </h3>
         <div className="flex rounded-b-[10px]   relative py-10 px-8 gap-10 min-h-[80%] rounded-[12px] ">
           <span className={`absolute w-[80%] h-[1px] mt-[10px] bg-white`} />
-          <p className="mt-[50px] text-xl font-[400] text-justify ">{text}</p>
+          <p className="mt-[50px] cardp font-[400] text-justify ">{text}</p>
         </div>
         </div>
       // </div>
