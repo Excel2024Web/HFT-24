@@ -1,5 +1,5 @@
 import Spline from "@splinetool/react-spline";
-import { useEffect, useRef } from "react";
+import {useEffect, useRef} from "react";
 import astro from "@/assets/Landing/astro.svg";
 import astro2 from "@/assets/Landing/astro2.svg";
 import astro3 from "@/assets/Landing/astro3.svg";
@@ -10,14 +10,11 @@ import arrow from "@/assets/Landing/arrow.svg";
 import Image from "next/image";
 import dynamic from "next/dynamic";
 
-
-
 const BlobAnimation = () => {
   const canvasRef = useRef(null);
   useEffect(() => {
-    
-    const script = document.createElement('script');
-    script.src = 'https://apply.devfolio.co/v2/sdk.js';
+    const script = document.createElement("script");
+    script.src = "https://apply.devfolio.co/v2/sdk.js";
     script.async = true;
     script.defer = true;
     document.body.appendChild(script);
@@ -332,6 +329,22 @@ const BlobAnimation = () => {
               >
                 Innovate Today, Impact Tomorrow
               </p>
+              <p
+                data-aos="fade-up"
+                data-aos-duration="1100"
+                className="text-[20px] font-[500] font-syne-medium max-lg:text-[19px] max-md:text-[17px] text-center sm:text-left"
+                // className="text-[21px] font-[500] font-syne-medium max-lg:text-[20px] max-md:text-[18px] text-center sm:text-left"
+              >
+                KSUM, Kalamassery, Kochi
+              </p>
+              <p
+                data-aos="fade-up"
+                data-aos-duration="1100"
+                className="text-[20px] font-[500] font-syne-medium max-lg:text-[19px] max-md:text-[17px] text-center sm:text-left"
+                // className="text-[21px] font-[500] font-syne-medium max-lg:text-[20px] max-md:text-[18px] text-center sm:text-left"
+              >
+                Dec 21, 22
+              </p>
             </div>
             {/* <button className="btn-hover mt-10 rounded-full mx-auto sm:mx-0 font-syne-semibold bg-white font-bold uppercase text-[1rem] text-black px-3 py-3 max-w-[200px]"> */}
             {/* <div className="bg-white px-2 my-auto flex rounded-full font-syne-semibold font-bold">
@@ -346,14 +359,11 @@ const BlobAnimation = () => {
               className="apply-button"
               data-hackathon-slug="hackfortomorrow2024"
               data-button-theme="dark-inverted"
-              style={{ height: '44px', width: '312px' }}
+              style={{height: "44px", width: "312px"}}
             ></div>
-
-
           </div>
         </div>
       </div>
-      
     </>
   );
 };
