@@ -1,5 +1,5 @@
 import Spline from "@splinetool/react-spline";
-import React, {useEffect, useRef} from "react";
+import { useEffect, useRef } from "react";
 import astro from "@/assets/Landing/astro.svg";
 import astro2 from "@/assets/Landing/astro2.svg";
 import astro3 from "@/assets/Landing/astro3.svg";
@@ -8,10 +8,24 @@ import topleft from "@/assets/Landing/topleft.svg";
 import constel from "@/assets/Landing/constellation.svg";
 import arrow from "@/assets/Landing/arrow.svg";
 import Image from "next/image";
-import applyImage from "../assets/Gallery/apply.png";
+import dynamic from "next/dynamic";
+
+
+
 const BlobAnimation = () => {
   const canvasRef = useRef(null);
+  useEffect(() => {
+    
+    const script = document.createElement('script');
+    script.src = 'https://apply.devfolio.co/v2/sdk.js';
+    script.async = true;
+    script.defer = true;
+    document.body.appendChild(script);
 
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
   // useEffect(() => {
   //   var canvas = canvasRef.current;
   //   var ctx = canvas.getContext("2d");
@@ -328,17 +342,18 @@ const BlobAnimation = () => {
                 <Image src={arrow} className="scale-75"></Image>
               </span>
             </div> */}
-            <a 
-              href="https://devfolio.co/"
-              className="mt-1"
-              target="_blank" 
-              rel="noopener noreferrer"
-            >
-              <Image src={applyImage} alt="Apply with Devfolio" className="cursor-pointer" /> {/* Just the image as a button */}
-            </a>
+            <div
+              className="apply-button"
+              data-hackathon-slug="hackfortomorrow2024"
+              data-button-theme="dark-inverted"
+              style={{ height: '44px', width: '312px' }}
+            ></div>
+
+
           </div>
         </div>
       </div>
+      
     </>
   );
 };
