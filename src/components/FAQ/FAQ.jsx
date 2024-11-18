@@ -32,7 +32,7 @@ const FAQ = () => {
     },
   ];
   return (
-    <div className="faq">
+    <div id = "faq" className="faq">
       <div className="faq-container container mx-auto px-10 py-10 flex flex-col items-start">
         <h1 className="font-base-neue-bold text-4xl sm:text-6xl text-start faq-heading">
           FREQUENTLY ASKED

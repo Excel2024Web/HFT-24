@@ -180,7 +180,7 @@
   height: 100vh;
   width: 100vw;
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -210,38 +210,49 @@
 
 .circle1 {
   position: absolute;
-  bottom: -500px;
-  height: 1000px;
+  bottom: -450px;
+  height: 900px;
   width: auto;
-  left: -500px;
+  z-index: 2;
+  left: -450px;
   transform: rotate(-200deg);
   animation: rotate 15s linear infinite;
+  opacity: 0.5;
 }
 
 .circle2 {
   position: absolute;
-  bottom: -400px;
-  height: 800px;
+  bottom: -350px;
+  height: 700px;
   width: auto;
-  left: -400px;
+  left: -350px;
   transform: rotate(-180deg);
   animation: rotate 20s linear infinite;
+  z-index: 2;
+  opacity: 0.5;
+}
+
+.aboutsvg1{
+  display: none;
 }
 
 .circle3 {
   position: absolute;
-  bottom: -200px;
-  height: 400px;
+  bottom: -150px;
+  height: 300px;
   width: auto;
-  left: -200px;
+  left: -150px;
   width: auto;
   animation: rotate 25s linear infinite;
+  z-index: 2;
+  opacity: 0.5;
 }
 
-svg {
+.aboutsvg {
   backdrop-filter: blur(10px);
   width: 90%;
   height: 90%;
+  z-index: 3;
 }
 
 .details-container {
@@ -319,6 +330,14 @@ html{
 @media (max-width: 768px) {
   .aboutsvg {
     display: none;
+  }
+
+  .aboutsvg1{
+    height: 90%;
+    display: flex;
+    width: 95%;
+    backdrop-filter: blur(10px);
+    z-index: 3;
   }
 
   .circle1 {
