@@ -9,7 +9,7 @@ const TimelineSection = () => {
   return (
     <div
       id="timeline"
-      className="relative flex flex-col font-syne-medium items-center justify-center min-h-screen p-2 text-white"
+      className="relative flex flex-col font-syne-medium items-center justify-center min-h-screen p-2 text-white pb-12 "
     >
       <div className="m-auto container font-generalSans min-h-screen flex justify-center flex-col items-center text-our_white">
         <h2
@@ -19,7 +19,7 @@ const TimelineSection = () => {
           TIMELINE
         </h2>
         <div
-          className="font-syne-medium mt-[140px] w-[900px] max-lg:w-[800px] max-md:w-[500px] max-sm:w-[350px] md:scale-110 max-sm:mt-[54px]"
+          className="font-syne-medium mt-[120px] w-[900px] max-lg:w-[800px] max-md:w-[500px] max-sm:w-[350px] md:scale-110 max-sm:mt-[54px]"
           data-aos="zoom-in-up"
         >
           <Timeline className="font-syne-medium max-md:hidden">
