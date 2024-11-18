@@ -47,8 +47,8 @@ const Partners = () => {
               src={KeyValue} 
               alt="KEYVALUE LOGO" 
               className="partner-logo" 
-              /*width={380}
-              height={150}*/
+              width={240}
+              height={70}
             />
             <p className="partner-label font-syne-medium">Platinum Partner</p>
           </div>
@@ -56,6 +56,17 @@ const Partners = () => {
 
         {/* Second Row Partners */}
         <div className="partners-row" ref={(el) => (rowRefs.current[1] = el)}>
+          
+          <div className="partner wide-partner">
+            <Image 
+              src={Polygon} 
+              alt="POLYGON LOGO" 
+              className="partner-logo" 
+              width={240}
+              height={70}
+            />
+            <p className="partner-label font-syne-medium">Gold Partner</p>
+          </div>
           <div className="partner wide-partner">
             <Image 
               src={Devfolio} 
@@ -64,7 +75,7 @@ const Partners = () => {
               width={240}
               height={70}
             />
-            <p className="partner-label font-syne-medium">Gold Partner</p>
+            <p className="partner-label font-syne-medium">Platinum Partner</p>
           </div>
           <div className="partner wide-partner">
             <Image 
@@ -76,16 +87,7 @@ const Partners = () => {
             />
             <p className="partner-label font-syne-medium">Gold Partner</p>
           </div>
-          <div className="partner wide-partner">
-            <Image 
-              src={Polygon} 
-              alt="POLYGON LOGO" 
-              className="partner-logo" 
-              width={240}
-              height={70}
-            />
-            <p className="partner-label font-syne-medium">Gold Partner</p>
-          </div>
+          
         </div>
       </div>
     </section>
