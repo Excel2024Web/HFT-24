@@ -17,7 +17,7 @@ import TimelineSection from "../components/Timeline/Timeline";
 
 export default function Home() {
   return (
-    <>
+    <div className="text-white">
       <Navbar />
       <BlobAnimation />
 
@@ -32,10 +32,10 @@ export default function Home() {
       <Partners />
       {/* <Highlights /> */}
       <TimelineSection />
-      <AccordionImageGallery />
+      {/* <AccordionImageGallery /> */}
       <FAQ />
       <Contact />
       <Footer />
-    </>
+    </div>
   );
 }

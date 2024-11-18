@@ -1,6 +1,6 @@
-import React, { useEffect, useRef } from 'react';
-import './partners.css';
-import Image from 'next/image';
+import React, {useEffect, useRef} from "react";
+import "./partners.css";
+import Image from "next/image";
 
 import Devfolio from '../../assets/Gallery/devfolio.png';
 import EthIndia from '../../assets/Gallery/Ethindia.png';
@@ -18,9 +18,9 @@ const Partners = () => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
+          entry.target.classList.add("visible");
         } else {
-          entry.target.classList.remove('visible');
+          entry.target.classList.remove("visible");
         }
       });
     }, observerOptions);
@@ -41,27 +41,21 @@ const Partners = () => {
       <h1 className="partners-title">OUR PARTNERS</h1>
       <div className="partners-container">
         {/* Title Partner */}
-        <div
-          className="partners-row"
-          ref={(el) => (rowRefs.current[0] = el)}
-        >
+        <div className="partners-row" ref={(el) => (rowRefs.current[0] = el)}>
           <div className="partner title-partner">
             <Image 
               src={KeyValue} 
               alt="KEYVALUE LOGO" 
               className="partner-logo" 
-              width={400}
-              height={200}
+              /*width={380}
+              height={150}*/
             />
-            <p className="partner-label">Platinum Partner</p>
+            <p className="partner-label font-syne-medium">Platinum Partner</p>
           </div>
         </div>
 
         {/* Second Row Partners */}
-        <div
-          className="partners-row"
-          ref={(el) => (rowRefs.current[1] = el)}
-        >
+        <div className="partners-row" ref={(el) => (rowRefs.current[1] = el)}>
           <div className="partner wide-partner">
             <Image 
               src={Devfolio} 
@@ -70,7 +64,7 @@ const Partners = () => {
               width={240}
               height={70}
             />
-            <p className="partner-label">Gold Partner</p>
+            <p className="partner-label font-syne-medium">Gold Partner</p>
           </div>
           <div className="partner wide-partner">
             <Image 
@@ -80,7 +74,7 @@ const Partners = () => {
               width={240}
               height={70}
             />
-            <p className="partner-label">Gold Partner</p>
+            <p className="partner-label font-syne-medium">Gold Partner</p>
           </div>
           <div className="partner wide-partner">
             <Image 
@@ -90,7 +84,7 @@ const Partners = () => {
               width={240}
               height={70}
             />
-            <p className="partner-label">Gold Partner</p>
+            <p className="partner-label font-syne-medium">Gold Partner</p>
           </div>
         </div>
       </div>

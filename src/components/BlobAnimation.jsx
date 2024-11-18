@@ -8,7 +8,7 @@ import topleft from "@/assets/Landing/topleft.svg";
 import constel from "@/assets/Landing/constellation.svg";
 import arrow from "@/assets/Landing/arrow.svg";
 import Image from "next/image";
-
+import applyImage from "../assets/Gallery/apply.png";
 const BlobAnimation = () => {
   const canvasRef = useRef(null);
 
@@ -273,7 +273,7 @@ const BlobAnimation = () => {
 
   return (
     <>
-      <div className="relative h-screen w-screen">
+      <div className="relative h-screen w-screen overflow-hidden">
         <Image
           className="absolute top-0 left-0 z-0"
           src={topleft}
@@ -295,7 +295,7 @@ const BlobAnimation = () => {
           data-aos-duration="1100"
         >
           <Image
-            className="hidden sm:block absolute bottom-0 sm:bottom-0 sm:right-[-8rem] z-0"
+            className="hidden sm:block absolute bottom-0 md:bottom-0 md:right-[-8rem] z-0"
             src={astro2}
             alt="astro"
           />
@@ -320,14 +320,22 @@ const BlobAnimation = () => {
               </p>
             </div>
             {/* <button className="btn-hover mt-10 rounded-full mx-auto sm:mx-0 font-syne-semibold bg-white font-bold uppercase text-[1rem] text-black px-3 py-3 max-w-[200px]"> */}
-            <div className="bg-white px-2 my-auto flex rounded-full font-syne-semibold font-bold">
+            {/* <div className="bg-white px-2 my-auto flex rounded-full font-syne-semibold font-bold">
               <p className="text-center pl-2 flex items-center btn-hover uppercase text-[1rem] text-black">
                 Register Now
               </p>
               <span className=" rounded-full">
                 <Image src={arrow} className="scale-75"></Image>
               </span>
-            </div>
+            </div> */}
+            <a 
+              href="https://devfolio.co/"
+              className="mt-1"
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              <Image src={applyImage} alt="Apply with Devfolio" className="cursor-pointer" /> {/* Just the image as a button */}
+            </a>
           </div>
         </div>
       </div>

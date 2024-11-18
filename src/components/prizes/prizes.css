@@ -1,16 +1,12 @@
-@font-face{
-  font-family: 'neue';
-  src: url(../../assets/fonts/BaseNeue/BaseNeue-Black.woff);
-}
 .pricing-section {
   background: linear-gradient(
     to top right,
-    rgba(93, 43, 55, 1),
-    rgba(89, 42, 74, 0.9),
-    rgba(82, 42, 76, 0.7),
+    rgb(50, 21, 28),
+    rgb(45, 12, 20),
+    rgb(44, 0, 10),
     transparent 30%
   );
-  background-color: #160c15; 
+  background-color: black;
   min-height: 100vh;
   padding: 50px 20px;
   display: flex;
@@ -18,7 +14,7 @@
   align-items: center;
   position: relative;
   color: white;
-  margin-top: 100px; 
+  margin-top: 100px;
   text-align: center;
 }
 
@@ -30,16 +26,16 @@
   transform: translateX(-50%);
   width: 80%;
   height: 100%;
-  background: radial-gradient(circle at center, rgba(130, 70, 180, 0.3), transparent 70%);
+  background: radial-gradient(
+    circle at center,
+    rgb(255, 255, 255, 0.3),
+    transparent 70%
+  );
   filter: blur(100px);
   z-index: 1;
 }
 
-
-@import url("https://fonts.googleapis.com/css2?family=Syne:wght@700&family=Presta:wght@500&display=swap");
-
 .pricing-header {
-  font-family: 'neue';
   font-size: 3rem;
   color: #ffffff;
   margin-bottom: 10px;
@@ -48,14 +44,11 @@
 .pricing-subheader {
   font-size: 1.3rem;
   margin-bottom: 40px;
-  color: #b8a0c9;
-  font-family: 'Syne-Medium';
-  font-weight: 100; 
-  letter-spacing: 0.05rem; 
+  font-weight: 100;
+  letter-spacing: 0.05rem;
   text-align: center;
   padding-bottom: 30px;
 }
-
 
 .pricing-cards {
   display: flex;
@@ -64,33 +57,23 @@
   flex-wrap: wrap;
   position: relative;
   z-index: 2;
- 
 }
 
-
 .glass-card {
- /*background: rgba(255, 255, 255, 0.1); 
-  border: 1px solid rgba(255, 255, 255, 0.063);
-  backdrop-filter: blur(10px); 
-  border-radius: 15px;
-  /*border-color: #ffffff;   */
-  border: 1px solid rgba(255, 255, 255, 0.2); 
+  border: 1px solid rgba(255, 255, 255, 0.4);
   backdrop-filter: blur(20px);
   border-radius: 15px;
-  border-color: rgba(255, 255, 255, 0.2);
   padding: 40px;
   width: 320px;
   text-align: center;
   color: #ffffff;
-  font-family: 'Syne-Medium';
   position: relative;
   z-index: 1;
-  margin: 0 -20px; 
-  transform: scale(0.95); 
+  margin: 0 -20px;
+  transform: scale(0.95);
   transition: transform 0.3s ease-in-out, z-index 0.3s ease-in-out;
-  /*box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
 
 .first-prize {
   /*transform: translateY(-20px);
@@ -99,12 +82,13 @@
   z-index: 3;
 }
 
-
 .glass-card:hover {
-  transform: scale(1.05); 
+  transform: scale(1.05);
   z-index: 4;
 }
-
+.first-prize:hover {
+  transform: translateY(-30px) scale(1.1);
+}
 
 .icon {
   height: 200px;
@@ -115,7 +99,6 @@
   margin-bottom: 20px;
 }
 
-
 .second-prize .icon {
   background: url("../../assets/Gallery/silver.png") no-repeat center center;
   background-size: cover;
@@ -123,7 +106,7 @@
   width: 250px;
   position: relative;
   margin-bottom: 20px;
-  backdrop-filter: blur(8px); 
+  backdrop-filter: blur(8px);
 }
 
 .first-prize .icon {
@@ -133,7 +116,7 @@
   width: 250px;
   position: relative;
   margin-bottom: 20px;
-  backdrop-filter: blur(8px); 
+  backdrop-filter: blur(8px);
 }
 
 .third-prize .icon {
@@ -146,34 +129,25 @@
   backdrop-filter: blur(8px);
 }
 
-
 .prize-title {
   font-size: 1.8rem;
   font-weight: bolder;
-  font-family: 'neue';
   color: #ffffff;
   margin-bottom: 15px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  background: linear-gradient(135deg, #ff7dff, #ffffff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .price {
-  font-family: 'neue';
   font-size: 2.5rem;
   font-weight: bold;
-  background: linear-gradient(180deg, #ff7dff, #ffffff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   margin: 20px 0;
 }
 
 @media (max-width: 768px) {
   .pricing-cards {
-    flex-direction: column; 
-    gap: 30px; 
+    flex-direction: column;
+    gap: 30px;
   }
 
   .glass-card {
@@ -182,21 +156,20 @@
     margin: 0 auto;
   }
 
-  
   .first-prize {
     order: 1;
   }
 
   .second-prize {
-    order: 2; 
+    order: 2;
   }
 
   .third-prize {
-    order: 3; 
+    order: 3;
   }
 
   .icon {
-    height: 120px; 
+    height: 120px;
     width: 120px;
   }
 

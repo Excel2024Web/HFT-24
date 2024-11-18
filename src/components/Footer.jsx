@@ -6,8 +6,8 @@ import MECLogo from "@/assets/logos/mec@official.svg";
 import ExcelLogo from "@/assets/logos/excel@2024.svg";
 
 import excel from "@/assets/Footer/excel.svg";
-import { FaInstagram, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+import {FaInstagram, FaFacebookF, FaLinkedinIn} from "react-icons/fa";
+import {FaXTwitter} from "react-icons/fa6";
 
 const Footer = () => {
   const FooterSocials = [
@@ -33,8 +33,8 @@ const Footer = () => {
     },
   ];
   return (
-    <footer className="z-10 pb-2 flex relative justify-center flex-col items-center  container p-[2rem] md:p-0  m-auto pb-[34px]">
-      <div className="flex flex-col items-center gap-[20px] mb-[52px] sm:my-[128px] z-10">
+    <footer className="z-10 flex relative justify-between flex-col items-center container m-auto p-6 sm:p-10">
+      <div className="flex flex-col items-center gap-2rem mb-[52px] sm:my-[128px] z-10">
         <Image
           src={excel}
           alt="excellogo"
@@ -43,19 +43,18 @@ const Footer = () => {
         ></Image>
         <div className="text-center">
           <h3
-            className="text-4xl title__gradient-text font-[700] font-satoshi leading-[53px] mb-[12px] h-fit overflow-auto"
+            className="text-4xl font-base-neue-bold title__gradient-text leading-[53px] mb-[12px] h-fit overflow-auto"
             data-aos="fade-up"
             data-aos-duration="1000"
           >
             Are you ready to shape the future?
           </h3>
           <p
-            className="text-lg title__gradient-text-small font-regular"
+            className="text-lg font-syne-medium title__gradient-text-small font-regular"
             data-aos="fade-up"
             data-aos-duration="1100"
           >
-            Turn your ideas into impact with HFT. Join us in driving
-            innovation.
+            Turn your ideas into impact with HFT. Join us in driving innovation.
           </p>
         </div>
         <div className="flex mt-8 max-sm:flex-col-reverse max-md:items-center max-sm:gap-[6px]">
@@ -76,7 +75,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="flex w-full h-[36px] md:container justify-between text-white items-center z-10 max-md:p-2">
+      <div className="flex w-full h-[36px] md:container flex justify-between text-white items-center z-10 p-4">
         <Image
           src={ExcelLogo}
           alt="ExcelLogo"
