@@ -16,11 +16,11 @@ const InfoCard = ({
             width={150} 
             height={150} 
     /> */}
-      <h3 className="cardtitle font-syne-semibold font-[500] mt-[30px] tracking-wide text-white">
+      <h3 className="cardtitle font-syne-semibold font-[500] mt-[30px] lg:mt-[50px] tracking-wide text-white">
         {title}
       </h3>
-      <div className="flex rounded-b-[10px] font-xl font-syne-medium relative py-10 px-8 gap-10 min-h-[80%] rounded-[12px]">
-        <span className={`absolute w-[80%] h-[1px] mt-[10px] bg-white`} />
+      <div className="flex rounded-b-[10px] font-xl font-syne-medium relative py-10 lg:px-8 px-5 gap-10 min-h-[80%] rounded-[12px]">
+        <span className={`absolute w-[90%] h-[1px] mt-[10px] bg-white`} />
         <p className="mt-[50px] cardp font-[400] text-justify ">{text}</p>
       </div>
     </div>

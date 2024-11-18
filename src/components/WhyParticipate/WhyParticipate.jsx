@@ -1,10 +1,16 @@
 import React, {useState, useRef, useEffect} from "react";
 import InfoCard from "./InfoCard";
+import Image from "next/image";
 import {FaChevronLeft, FaChevronRight} from "react-icons/fa";
 import {Swiper, SwiperSlide} from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
+import top_left from "../../assets/backgrounds/about/topleft.png";
+import bottom_right from "../../assets/backgrounds/about/bottomright.png";
+import circle1 from "../../assets/backgrounds/about/circle1.png";
+import circle2 from "../../assets/backgrounds/about/circle2.png";
+import circle3 from "../../assets/backgrounds/about/circle3.png";
 import {
   EffectCoverflow,
   Pagination,
@@ -128,6 +134,11 @@ const WhyParticipate = () => {
 
     <>
       <div id="why" className="main-container">
+        <Image className="top-left1" src={top_left} />
+        <Image className="bottom-right1" src={bottom_right} />
+        {/* <Image className="circle11" src={circle1} /> */}
+        <Image className="circle21" src={circle2} />
+        <Image className="circle31" src={circle3} />
         <div className="container h-[100%] block place-content-center  md:max-w-[80%] mx-auto  py-8">
           <h2 className=" titleh2 text-4xl sm:text-6xl font-base-neue-bold mb-[50px] text-center text-white py-5 tracking-wide ">
             WHY PARTICIPATE
@@ -148,8 +159,8 @@ const WhyParticipate = () => {
             }}
             breakpoints={{
               480: {slidesPerView: 1, spaceBetween: 10},
-              768: {slidesPerView: 1.7, spaceBetween: 20},
-              1024: {slidesPerView: 2, spaceBetween: 30},
+              768: {slidesPerView: 1.4, spaceBetween: 20},
+              1024: {slidesPerView: 2, spaceBetween: 20},
               1280: {slidesPerView: 2, spaceBetween: 40},
               1536: {slidesPerView: 3, spaceBetween: 60},
             }}

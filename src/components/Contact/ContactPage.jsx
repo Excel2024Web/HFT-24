@@ -64,7 +64,7 @@ export default function Contact() {
   ];
   return (
     <>
-      <div className="w-[100vw] flex justify-center items-center flex-col overflow-hidden h-full pb-10">
+      <div id = "contacts" className="w-[100vw] flex justify-center items-center flex-col overflow-hidden h-full pb-10">
         <h1 className="mt-10 text-4xl sm:text-6xl text-center font-base-neue-bold text-white tracking-wider">
           Contact Us
         </h1>
