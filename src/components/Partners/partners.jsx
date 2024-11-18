@@ -2,7 +2,10 @@ import React, { useEffect, useRef } from 'react';
 import './partners.css';
 import Image from 'next/image';
 
-import zilmoneyLogo from '../../assets/Gallery/zilmoney.png';
+import Devfolio from '../../assets/Gallery/devfolio.png';
+import EthIndia from '../../assets/Gallery/Ethindia.png';
+import Polygon from '../../assets/Gallery/polygon.png';
+import KeyValue from '../../assets/Gallery/keyvalue.png';
 
 const Partners = () => {
   const rowRefs = useRef([]);
@@ -35,8 +38,7 @@ const Partners = () => {
 
   return (
     <section className="partners-section">
-      <h1 className="partners-title">Our Partners</h1>
-
+      <h1 className="partners-title">OUR PARTNERS</h1>
       <div className="partners-container">
         {/* Title Partner */}
         <div
@@ -45,13 +47,13 @@ const Partners = () => {
         >
           <div className="partner title-partner">
             <Image 
-              src={zilmoneyLogo} 
-              alt="Zil Money" 
+              src={KeyValue} 
+              alt="KEYVALUE LOGO" 
               className="partner-logo" 
-              width={300}
-              height={100}
+              width={400}
+              height={200}
             />
-            <p className="partner-label">Title Partner</p>
+            <p className="partner-label">Platinum Partner</p>
           </div>
         </div>
 
@@ -62,18 +64,8 @@ const Partners = () => {
         >
           <div className="partner wide-partner">
             <Image 
-              src={zilmoneyLogo} 
-              alt="Kerala Startup Mission" 
-              className="partner-logo" 
-              width={240}
-              height={70}
-            />
-            <p className="partner-label">Association Partner</p>
-          </div>
-          <div className="partner wide-partner">
-            <Image 
-              src={zilmoneyLogo} 
-              alt="Devfolio" 
+              src={Devfolio} 
+              alt="DEVFOLIO LOGO" 
               className="partner-logo" 
               width={240}
               height={70}
@@ -82,8 +74,8 @@ const Partners = () => {
           </div>
           <div className="partner wide-partner">
             <Image 
-              src={zilmoneyLogo} 
-              alt="Polygon" 
+              src={EthIndia} 
+              alt="ETHINDIA LOGO" 
               className="partner-logo" 
               width={240}
               height={70}
@@ -92,40 +84,13 @@ const Partners = () => {
           </div>
           <div className="partner wide-partner">
             <Image 
-              src={zilmoneyLogo} 
-              alt="Replit" 
+              src={Polygon} 
+              alt="POLYGON LOGO" 
               className="partner-logo" 
               width={240}
               height={70}
             />
             <p className="partner-label">Gold Partner</p>
-          </div>
-          <div className="partner wide-partner">
-            <Image 
-              src={zilmoneyLogo} 
-              alt="Wolfram" 
-              className="partner-logo" 
-              width={240}
-              height={70}
-            />
-            <p className="partner-label">Gold Partner</p>
-          </div>
-        </div>
-
-        {/* Community Partner */}
-        <div
-          className="partners-row"
-          ref={(el) => (rowRefs.current[2] = el)}
-        >
-          <div className="partner">
-            <Image 
-              src={zilmoneyLogo} 
-              alt="GitHub" 
-              className="partner-logo" 
-              width={350}
-              height={100}
-            />
-            <p className="partner-label">Community Partner</p>
           </div>
         </div>
       </div>
