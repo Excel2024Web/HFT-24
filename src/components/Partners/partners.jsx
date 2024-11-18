@@ -2,7 +2,10 @@ import React, {useEffect, useRef} from "react";
 import "./partners.css";
 import Image from "next/image";
 
-import zilmoneyLogo from "../../assets/Gallery/zilmoney.png";
+import Devfolio from '../../assets/Gallery/devfolio.png';
+import EthIndia from '../../assets/Gallery/Ethindia.png';
+import Polygon from '../../assets/Gallery/polygon.png';
+import KeyValue from '../../assets/Gallery/keyvalue.png';
 
 const Partners = () => {
   const rowRefs = useRef([]);
@@ -35,90 +38,53 @@ const Partners = () => {
 
   return (
     <section className="partners-section">
-      <h1 className="partners-title font-base-neue-bold text-4xl sm:text-6xl">
-        Our Partners
-      </h1>
-
-      <div className="partners-container font-syne-medium">
+      <h1 className="partners-title">OUR PARTNERS</h1>
+      <div className="partners-container">
         {/* Title Partner */}
         <div className="partners-row" ref={(el) => (rowRefs.current[0] = el)}>
           <div className="partner title-partner">
-            <Image
-              src={zilmoneyLogo}
-              alt="Zil Money"
-              className="partner-logo"
-              width={300}
-              height={100}
+            <Image 
+              src={KeyValue} 
+              alt="KEYVALUE LOGO" 
+              className="partner-logo" 
+              /*width={380}
+              height={150}*/
             />
-            <p className="partner-label">Title Partner</p>
+            <p className="partner-label font-syne-medium">Platinum Partner</p>
           </div>
         </div>
 
         {/* Second Row Partners */}
         <div className="partners-row" ref={(el) => (rowRefs.current[1] = el)}>
           <div className="partner wide-partner">
-            <Image
-              src={zilmoneyLogo}
-              alt="Kerala Startup Mission"
-              className="partner-logo"
+            <Image 
+              src={Devfolio} 
+              alt="DEVFOLIO LOGO" 
+              className="partner-logo" 
               width={240}
               height={70}
             />
-            <p className="partner-label">Association Partner</p>
+            <p className="partner-label font-syne-medium">Gold Partner</p>
           </div>
           <div className="partner wide-partner">
-            <Image
-              src={zilmoneyLogo}
-              alt="Devfolio"
-              className="partner-logo"
+            <Image 
+              src={EthIndia} 
+              alt="ETHINDIA LOGO" 
+              className="partner-logo" 
               width={240}
               height={70}
             />
-            <p className="partner-label">Gold Partner</p>
+            <p className="partner-label font-syne-medium">Gold Partner</p>
           </div>
           <div className="partner wide-partner">
-            <Image
-              src={zilmoneyLogo}
-              alt="Polygon"
-              className="partner-logo"
+            <Image 
+              src={Polygon} 
+              alt="POLYGON LOGO" 
+              className="partner-logo" 
               width={240}
               height={70}
             />
-            <p className="partner-label">Gold Partner</p>
-          </div>
-          <div className="partner wide-partner">
-            <Image
-              src={zilmoneyLogo}
-              alt="Replit"
-              className="partner-logo"
-              width={240}
-              height={70}
-            />
-            <p className="partner-label">Gold Partner</p>
-          </div>
-          <div className="partner wide-partner">
-            <Image
-              src={zilmoneyLogo}
-              alt="Wolfram"
-              className="partner-logo"
-              width={240}
-              height={70}
-            />
-            <p className="partner-label">Gold Partner</p>
-          </div>
-        </div>
-
-        {/* Community Partner */}
-        <div className="partners-row" ref={(el) => (rowRefs.current[2] = el)}>
-          <div className="partner">
-            <Image
-              src={zilmoneyLogo}
-              alt="GitHub"
-              className="partner-logo"
-              width={350}
-              height={100}
-            />
-            <p className="partner-label">Community Partner</p>
+            <p className="partner-label font-syne-medium">Gold Partner</p>
           </div>
         </div>
       </div>
