@@ -18,9 +18,17 @@ const Navbar = () => {
       title: "About",
       link: "/#about",
     },
+    // {
+    //   title: "Why Participate",
+    //   link: "/#why",
+    // },
     {
-      title: "Why Participate",
-      link: "/#why",
+      title: "Prizes",
+      link: "/#prizes",
+    },
+    {
+      title: "Partners",
+      link: "/#partners",
     },
     {
       title: "Timeline",

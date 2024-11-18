@@ -23,7 +23,7 @@ function Pricing() {
   }, []);
 
   return (
-    <div className="pricing-section">
+    <div className="pricing-section" id="prizes">
       <h1 className="pricing-header font-base-neue-bold text-4xl sm:text-6xl tracking-wider">
         PRIZES
       </h1>
