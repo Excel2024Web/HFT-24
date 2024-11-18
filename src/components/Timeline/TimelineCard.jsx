@@ -27,7 +27,7 @@ const TimelineCard = ({item, mobile, index}) => {
       <TimelineSeparator>
         {index !== 0 && (
           <div className="absolute w-full flex">
-            <div className="w-6/12 border" />
+            <div className="w-6/12 border max-md:border-none max-md" />
             <div className="w-1/12" />
             <div className="w-6/12 border" />
           </div>
@@ -40,7 +40,7 @@ const TimelineCard = ({item, mobile, index}) => {
           />
         )}
         <TimelineDot />
-        {index === 1 ? (
+        {index === 4 ? (
           <TimelineConnector style={{backgroundColor: "transparent"}} />
         ) : (
           <TimelineConnector
