@@ -7,7 +7,7 @@ const InfoCard = ({
   return (
     <div className= "cardcontainer1">
       <div className="cardcontainer2">
-        <h3 className=" font-Armata font-[100] text-4xl text-center text-[2rem] tracking-widest mt-14 text-white h-[20%] px-3">
+        <h3 className=" font-syne-semibold font-[100] text-4xl text-center text-[2rem] tracking-widest mt-14 text-white h-[20%] px-3">
           {title.toUpperCase()}
         </h3>
         <div className="separation mt-[10%] w-full relative flex justify-center items-center">
@@ -18,7 +18,7 @@ const InfoCard = ({
             <rect y="7.07108" width="10" height="10" transform="rotate(-45 0 7.07108)" fill="#ffffff90"/>
           </svg>
         </div>
-        <div className="h-full text-2xl w-[80%] font-Cantarell opacity-80 text-center flex justify-center items-center">
+        <div className="h-full md:text-2xl lg:text-4xl w-[80%] font-syne-medium opacity-80 text-center flex justify-center items-center">
           <p className="cardp">{text}</p>
         </div>
       </div>

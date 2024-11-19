@@ -26,9 +26,6 @@ module.exports = {
         ],
         "syne-medium": ['"Syne Medium"', "sans-serif"],
         "syne-semibold": ['"Syne SemiBold"', "sans-serif"],
-
-        "Armata": ['"Armata"', "sans-serif"],
-        "Cantarell": ['"Cantarell"', "sans-serif"],
       },
     },
   },
