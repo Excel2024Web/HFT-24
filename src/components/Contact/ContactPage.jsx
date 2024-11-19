@@ -64,9 +64,9 @@ export default function Contact() {
   ];
   return (
     <>
-      <div id = "contacts" className="w-[100vw] flex justify-center items-center flex-col overflow-hidden h-full pb-10">
-        <h1 className="mt-10 text-4xl sm:text-6xl text-center font-base-neue-bold text-white tracking-wider">
-          Contact Us
+      <div id = "contacts" className="w-[100vw] flex justify-center items-center flex-col overflow-hidden h-full py-10">
+        <h1 className="mt-10 text-4xl sm:text-5xl text-center font-base-neue-bold text-white tracking-wider">
+          CONTACT US
         </h1>
         <p className="text-center font-syne-medium md:w-[30vw] w-[90vw] mt-5 mb-10 bg-gradient-to-r  bg-clip-text text-white text-[18px]">
           If you have questions, feedback, or just want to chat, feel free to

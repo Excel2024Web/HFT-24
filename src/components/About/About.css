@@ -192,7 +192,7 @@
   font-family: "neue";
   font-size: 3.5rem;
   margin-bottom: -60px;
-  z-index: 30;
+  z-index: 5;
 }
 
 .top-left {
@@ -234,6 +234,7 @@
 
 .aboutsvg1{
   display: none;
+  border-radius: 30px;
 }
 
 .circle3 {
@@ -252,6 +253,7 @@
   backdrop-filter: blur(10px);
   width: 90%;
   height: 90%;
+  border-radius: 30px;
   z-index: 3;
 }
 

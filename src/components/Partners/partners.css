@@ -24,8 +24,8 @@
 
 .partners-title {
   font-family: 'neue'; /* Updated Typography */
-  font-size: 60px;
-  font-weight: bold;
+  font-size: 3.5rem;
+  letter-spacing: 0.1rem;
   margin-bottom: 50px;
   color: #FFFFFF;/* Primary Color */
 }
@@ -70,4 +70,15 @@
 .partner-label {
   margin-top: 15px;
   font-size: 21px;
+}
+
+@media screen and (max-width: 900px) {
+  .partners-title {
+    font-size: 2.5rem;
+    margin-bottom: 0;
+  }
+
+  .partner-label {
+    font-size: 1.5rem;
+  }
 }
