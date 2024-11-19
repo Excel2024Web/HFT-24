@@ -1,8 +1,8 @@
 "use client";
 
 import TimelineCard from "./TimelineCard";
-import {TimelineData} from "@/constants";
-import {timelineItemClasses} from "@mui/lab";
+import { TimelineData } from "@/constants";
+import { timelineItemClasses } from "@mui/lab";
 import Timeline from "@mui/lab/Timeline";
 
 const TimelineSection = () => {
@@ -13,13 +13,13 @@ const TimelineSection = () => {
     >
       <div className="m-auto container font-generalSans min-h-screen flex justify-center flex-col items-center text-our_white">
         <h2
-          className="font-base-neue-bold text-4xl sm:text-6xl tracking-widest mirror-vertical text-center text-white xl:scale-100 lg:scale-90 md:scale-75 scale-[.65] text-[#FFFFFF]/[0.8] "
+          className="font-base-neue-bold text-6xl tracking-widest mirror-vertical text-center text-white mt-[60px] xl:scale-100 lg:scale-90 md:scale-75 scale-[.65] text-[#FFFFFF]/[0.8] "
           data-text="TIMELINE"
         >
           TIMELINE
         </h2>
         <div
-          className="font-syne-medium mt-[120px] w-[900px] max-lg:w-[800px] max-md:w-[500px] max-sm:w-[350px] md:scale-110 max-sm:mt-[54px]"
+          className="font-syne-medium mt-[60px] w-[900px] max-lg:w-[800px] max-md:w-[500px] max-sm:w-[350px] md:scale-110 max-sm:mt-[54px]"
           data-aos="zoom-in-up"
         >
           <Timeline className="font-syne-medium max-md:hidden">
