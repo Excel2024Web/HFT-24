@@ -28,7 +28,7 @@ const WhyParticipate = () => {
   const cards = [
     {
       title: "Win Big",
-      text: "Compete for a massive prize pool of up to ₹70K and reward your efforts with some well-deserved recognition.",
+      text: "Compete for a massive prize pool of up to ₹40K and reward your efforts with some well-deserved recognition.",
       gradient: "from-[#3b48f9] to-[#a73ffa]",
       color: "text-white",
     },

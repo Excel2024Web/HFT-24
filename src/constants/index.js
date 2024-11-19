@@ -1,6 +1,6 @@
 export const TimelineData = [
   {
-    date: "18th November",
+    date: "21st November",
     title: "Registration Opens",
     para: "Join us! Registration starts. Secure your spot now.",
   },
