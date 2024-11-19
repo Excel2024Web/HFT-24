@@ -155,7 +155,7 @@ html{
   height: 100vh;
   width: 100vw;
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .swiper {
@@ -192,7 +192,7 @@ html{
     /* transform: rotate(360deg); */
     /* animation: rotate 20s linear infinite; */
     z-index: 2;
-    opacity: 0.5;
+    opacity: 0.8;
 }
 
 .circle31 {
@@ -213,10 +213,26 @@ html{
 }
 
 .cardcontainer1 {
-  box-shadow: 20px 0px 50px #0000002a, -20px 0 50px #0000002a;
+  box-shadow: 20px 0px 30px #00000065, -20px 0 30px #00000065;
   backdrop-filter: blur(10px);
   transition: transform 0.3s ease-in-out;
   max-height: 600px;
+  background: linear-gradient(120deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.02));
+  border-radius: 15px;
+  border: 0.2px solid #ffffff2a;
+  display: grid;
+  place-items: center;
+}
+
+.cardcontainer2{
+  height: 95%;
+  width: 95%;
+  background: linear-gradient(120deg, rgba(255, 255, 255, 0.08), rgba(115, 115, 115, 0.07) 70%);
+  border-radius: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
 }
 
 .swiper-button-prev {
@@ -248,11 +264,11 @@ html{
     transition: 0.4s ease-in-out;
 }
 
-.cardtitle {
+/* .cardtitle {
   font-size: 2.3rem;
   margin-top: 20px;
   text-align: center;
-}
+} */
 
 .cardp {
   font-size: 1.2rem;
@@ -413,7 +429,7 @@ html{
 }
 
 .star:nth-child(1) {
-  top: 100px;
+  top: 200px;
   right: 0;
   left: initial;
   animation-delay: 0;
@@ -422,30 +438,30 @@ html{
 
 .star:nth-child(2) {
   top: 200px;
-  right: 580px;
+  right: 500px;
   left: initial;
   animation-delay: 0.2s;
   animation-duration: 3s;
 }
 
 .star:nth-child(3) {
-  top: 200px;
-  right: 0;
+  top: 400px;
+  right: 100;
   left: initial;
   animation-delay: 0.4;
   animation-duration: 2s;
 }
 
 .star:nth-child(5) {
-  top: 400px;
-  right: 800px;
+  top: 200px;
+  right: 100px;
   left: initial;
   animation-delay: 0.8s;
   animation-duration: 2.5s;
 }
 
 .star:nth-child(6) {
-  top: 100px;
+  top: 200px;
   right: 1000px;
   left: initial;
   animation-delay: 0.1s;
@@ -453,8 +469,8 @@ html{
 }
 
 .star:nth-child(7) {
-  top: 0;
-  right: 700px;
+  top: 60%;
+  right: 200px;
   left: initial;
   animation-delay: 1s;
   animation-duration: 5s;
@@ -489,6 +505,10 @@ html{
   .cardp {
     font-size: 1.2rem;
   }
+
+  .cardp{
+    font-size: 1.2rem;
+  }
 }
 
 @media(max-height:790px){
@@ -501,6 +521,8 @@ html{
         font-size: 1.03rem;
     }
 }
+
+
 
 @media (min-width: 200px) and (max-width: 450px) {
   .cardcontainer1 {
