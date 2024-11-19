@@ -54,7 +54,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="w-screen text-white flex flex-row items-center justify-between px-6 lg:px-0 lg:justify-around py-3 fixed top-0 z-20">
+    <div className="w-screen text-white flex flex-row items-center justify-between px-6 lg:px-0 lg:justify-around py-3 fixed top-0 z-20 backdrop-blur bg-[#00000070]">
       <div className="tracking-[0.1rem] font-base-neue-black text-3xl">
         <a href="/">
           <p className="pt-1">HFT</p>
