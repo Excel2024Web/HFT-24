@@ -7,20 +7,20 @@
   font-family: "neue";
 }
 
-.bottom-right1{
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: scaleY(-1);
-    width: 100vw;
+.bottom-right1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scaleY(-1);
+  width: 100vw;
 }
 
-.top-left1{
-    position: absolute;
-    bottom: 0;
-    left: -100px;
-    transform: rotate(180deg);
-    transform: scaleY(-1);
+.top-left1 {
+  position: absolute;
+  bottom: 0;
+  left: -100px;
+  transform: rotate(180deg);
+  transform: scaleY(-1);
 }
 
 /* .swiper-button-next{
@@ -155,7 +155,7 @@ html{
   height: 100vh;
   width: 100vw;
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .swiper {
@@ -173,39 +173,39 @@ html{
 }
 
 .circle11 {
-    position: absolute;
-    bottom: -500px;
-    height: 1000px;
-    width: auto;
-    z-index: 2;
-    right: -500px;
-    transform: rotate(-200deg);
-    /* animation: rotate 15s linear infinite; */
+  position: absolute;
+  bottom: -500px;
+  height: 1000px;
+  width: auto;
+  z-index: 2;
+  right: -500px;
+  transform: rotate(-200deg);
+  /* animation: rotate 15s linear infinite; */
 }
-  
-  .circle21 {
-    position: absolute;
-    bottom: -400px;
-    height: 800px;
-    width: auto;
-    right: 0;
-    /* transform: rotate(360deg); */
-    /* animation: rotate 20s linear infinite; */
-    z-index: 2;
-    opacity: 0.5;
+
+.circle21 {
+  position: absolute;
+  bottom: -400px;
+  height: 800px;
+  width: auto;
+  right: 0;
+  /* transform: rotate(360deg); */
+  /* animation: rotate 20s linear infinite; */
+  z-index: 2;
+  opacity: 0.8;
 }
 
 .circle31 {
-    position: absolute;
-    bottom: -200px;
-    height: 400px;
-    width: auto;
-    right: -200px;
-    width: auto;
-    /* animation: rotate 25s linear infinite; */
-    transform: rotate(130deg);
-    z-index: 2;
-    opacity: 0.5;
+  position: absolute;
+  bottom: -200px;
+  height: 400px;
+  width: auto;
+  right: -200px;
+  width: auto;
+  /* animation: rotate 25s linear infinite; */
+  transform: rotate(130deg);
+  z-index: 2;
+  opacity: 0.5;
 }
 
 .swiper-wrapper {
@@ -213,10 +213,34 @@ html{
 }
 
 .cardcontainer1 {
-  box-shadow: 20px 0px 50px #0000002a, -20px 0 50px #0000002a;
+  box-shadow: 20px 0px 30px #00000065, -20px 0 30px #00000065;
   backdrop-filter: blur(10px);
   transition: transform 0.3s ease-in-out;
   max-height: 600px;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.02)
+  );
+  border-radius: 15px;
+  border: 0.2px solid #ffffff2a;
+  display: grid;
+  place-items: center;
+}
+
+.cardcontainer2 {
+  height: 95%;
+  width: 95%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.08),
+    rgba(115, 115, 115, 0.07) 70%
+  );
+  border-radius: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
 }
 
 .swiper-button-prev {
@@ -235,24 +259,24 @@ html{
 }
 
 .swiper-button-next {
-    position: absolute;
-    color: #fff;
-    height: 50px;
-    width: 50px;
-    background-image: url(../../assets/WhyParticipate/arrow.png);
-    cursor: pointer;
-    z-index: 10;
-    display: flex;
-    top: 50%;
-    right: -10px;
-    transition: 0.4s ease-in-out;
+  position: absolute;
+  color: #fff;
+  height: 50px;
+  width: 50px;
+  background-image: url(../../assets/WhyParticipate/arrow.png);
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  top: 50%;
+  right: -10px;
+  transition: 0.4s ease-in-out;
 }
 
-.cardtitle {
+/* .cardtitle {
   font-size: 2.3rem;
   margin-top: 20px;
   text-align: center;
-}
+} */
 
 .cardp {
   font-size: 1.2rem;
@@ -301,7 +325,7 @@ html{
     right: 5px;
   }
 
-  .swiper{
+  .swiper {
     padding-left: 0;
     padding-right: 0;
   }
@@ -310,7 +334,8 @@ html{
     left: 5px;
   }
 
-  .circle21, .circle31 {
+  .circle21,
+  .circle31 {
     display: none;
   }
 
@@ -321,7 +346,7 @@ html{
     animation-delay: 0;
     animation-duration: 1s;
   }
-  
+
   .star:nth-child(2) {
     top: 100px;
     right: 400px;
@@ -329,7 +354,7 @@ html{
     animation-delay: 0.2s;
     animation-duration: 3s;
   }
-  
+
   .star:nth-child(3) {
     top: 90%;
     right: 200px;
@@ -345,7 +370,7 @@ html{
     animation-delay: 0.4;
     animation-duration: 2s;
   }
-  
+
   .star:nth-child(5) {
     top: 300px;
     right: 100px;
@@ -353,7 +378,7 @@ html{
     animation-delay: 0.8s;
     animation-duration: 2.5s;
   }
-  
+
   .star:nth-child(6) {
     top: 100px;
     right: -500px;
@@ -361,7 +386,7 @@ html{
     animation-delay: 0.1s;
     animation-duration: 2.5s;
   }
-  
+
   .star:nth-child(7) {
     top: 500px;
     right: 50px;
@@ -369,7 +394,6 @@ html{
     animation-delay: 1s;
     animation-duration: 5s;
   }
-
 }
 
 .star {
@@ -413,7 +437,7 @@ html{
 }
 
 .star:nth-child(1) {
-  top: 100px;
+  top: 200px;
   right: 0;
   left: initial;
   animation-delay: 0;
@@ -422,30 +446,30 @@ html{
 
 .star:nth-child(2) {
   top: 200px;
-  right: 580px;
+  right: 500px;
   left: initial;
   animation-delay: 0.2s;
   animation-duration: 3s;
 }
 
 .star:nth-child(3) {
-  top: 200px;
-  right: 0;
+  top: 400px;
+  right: 100;
   left: initial;
   animation-delay: 0.4;
   animation-duration: 2s;
 }
 
 .star:nth-child(5) {
-  top: 400px;
-  right: 800px;
+  top: 200px;
+  right: 100px;
   left: initial;
   animation-delay: 0.8s;
   animation-duration: 2.5s;
 }
 
 .star:nth-child(6) {
-  top: 100px;
+  top: 200px;
   right: 1000px;
   left: initial;
   animation-delay: 0.1s;
@@ -453,8 +477,8 @@ html{
 }
 
 .star:nth-child(7) {
-  top: 0;
-  right: 700px;
+  top: 60%;
+  right: 200px;
   left: initial;
   animation-delay: 1s;
   animation-duration: 5s;
@@ -489,17 +513,21 @@ html{
   .cardp {
     font-size: 1.2rem;
   }
+
+  .cardp {
+    font-size: 1.2rem;
+  }
 }
 
-@media(max-height:790px){
-    .cardp{
-        font-size: 1rem;
-    }
+@media (max-height: 790px) {
+  .cardp {
+    font-size: 1rem;
+  }
 }
-@media(min-height: 790px) and (max-height:850px){
-    .cardp{
-        font-size: 1.03rem;
-    }
+@media (min-height: 790px) and (max-height: 850px) {
+  .cardp {
+    font-size: 1.03rem;
+  }
 }
 
 @media (min-width: 200px) and (max-width: 450px) {

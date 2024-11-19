@@ -5,27 +5,24 @@ const InfoCard = ({
   color = "text-white",
 }) => {
   return (
-    // <div className=" cardbgdiv flex justify-center items-center flex-shrink-0 ">
-    // <div className="flex flex-col gap-2 w-[83%] ">
-    <div
-      className={` cardcontainer1 rounded-[20px] flex flex-col h-[100%] items-center justify-center  px-8 border-[0.2px] border-solid border-[#9291918f] backdrop-blur-[10px] bg-opacity-50 backdrop-saturate-[80%] bg-[rgba(255,255,255,0.1)]  `}
-    >
-      {/* <Image className='elementimg'
-            src="/element.png" 
-            alt="Description of the element" 
-            width={150} 
-            height={150} 
-    /> */}
-      <h3 className="cardtitle font-syne-semibold font-[500] mt-[30px] lg:mt-[50px] tracking-wide text-white">
-        {title}
-      </h3>
-      <div className="flex rounded-b-[10px] font-xl font-syne-medium relative py-10 lg:px-8 px-5 gap-10 min-h-[80%] rounded-[12px]">
-        <span className={`absolute w-[90%] h-[1px] mt-[10px] bg-white`} />
-        <p className="mt-[50px] cardp font-[400] text-justify ">{text}</p>
+    <div className= "cardcontainer1">
+      <div className="cardcontainer2">
+        <h3 className=" font-Armata font-[100] text-4xl text-center text-[2rem] tracking-widest mt-14 text-white h-[20%] px-3">
+          {title.toUpperCase()}
+        </h3>
+        <div className="separation mt-[10%] w-full relative flex justify-center items-center">
+          <svg className="w-[85%] absolute" width="205" height="1" viewBox="0 0 205 1" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+            <line y1="0.9" x2="205" y2="0.9" stroke="white" stroke-opacity="0.8" stroke-width="0.2"/>
+          </svg>
+          <svg className = "absolute" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+            <rect y="7.07108" width="10" height="10" transform="rotate(-45 0 7.07108)" fill="#ffffff90"/>
+          </svg>
+        </div>
+        <div className="h-full text-2xl w-[80%] font-Cantarell opacity-80 text-center flex justify-center items-center">
+          <p className="cardp">{text}</p>
+        </div>
       </div>
     </div>
-    // </div>
-    // </div>
   );
 };
 
