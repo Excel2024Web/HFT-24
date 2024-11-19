@@ -11,7 +11,7 @@ const FAQCard = ({ question, answer, index }) => {
   };
 
   return (
-    <div className="container p-5 faq-card-container" onClick={handleExpand}>
+    <div className="container py-5 sm:px-5 faq-card-container" onClick={handleExpand}>
       <div className="faq-question">
         <h1>{question}</h1>
         <div

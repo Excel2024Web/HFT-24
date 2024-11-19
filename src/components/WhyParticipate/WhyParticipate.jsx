@@ -138,7 +138,7 @@ const WhyParticipate = () => {
         <Image className="circle21" src={circle2} />
         {/* <Image className="circle31" src={circle3} /> */}
         <div className="container h-[100%] block place-content-center  md:max-w-[80%] mx-auto  py-8">
-          <h2 className=" titleh2 text-4xl sm:text-6xl font-base-neue-bold mb-[50px] text-center text-white py-5 tracking-wide ">
+          <h2 className=" titleh2 text-4xl sm:text-6xl font-base-neue-bold sm:mb-[50px] text-center text-white py-5 tracking-wide ">
             WHY PARTICIPATE
           </h2>
 
