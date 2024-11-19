@@ -188,8 +188,8 @@ html{
     bottom: -400px;
     height: 800px;
     width: auto;
-    right: -400px;
-    transform: rotate(130deg);
+    right: 0;
+    /* transform: rotate(360deg); */
     /* animation: rotate 20s linear infinite; */
     z-index: 2;
     opacity: 0.5;
@@ -314,6 +314,62 @@ html{
     display: none;
   }
 
+  .star:nth-child(1) {
+    top: 600px;
+    right: 0;
+    left: initial;
+    animation-delay: 0;
+    animation-duration: 1s;
+  }
+  
+  .star:nth-child(2) {
+    top: 100px;
+    right: 400px;
+    left: initial;
+    animation-delay: 0.2s;
+    animation-duration: 3s;
+  }
+  
+  .star:nth-child(3) {
+    top: 90%;
+    right: 200px;
+    left: initial;
+    animation-delay: 0.4;
+    animation-duration: 2s;
+  }
+
+  .star:nth-child(4) {
+    top: 80px;
+    right: 150px;
+    left: initial;
+    animation-delay: 0.4;
+    animation-duration: 2s;
+  }
+  
+  .star:nth-child(5) {
+    top: 300px;
+    right: 100px;
+    left: initial;
+    animation-delay: 0.8s;
+    animation-duration: 2.5s;
+  }
+  
+  .star:nth-child(6) {
+    top: 100px;
+    right: -500px;
+    left: initial;
+    animation-delay: 0.1s;
+    animation-duration: 2.5s;
+  }
+  
+  .star:nth-child(7) {
+    top: 500px;
+    right: 50px;
+    left: initial;
+    animation-delay: 1s;
+    animation-duration: 5s;
+  }
+
 }
 
 .star {
@@ -357,7 +413,7 @@ html{
 }
 
 .star:nth-child(1) {
-  top: 0;
+  top: 100px;
   right: 0;
   left: initial;
   animation-delay: 0;
@@ -365,15 +421,15 @@ html{
 }
 
 .star:nth-child(2) {
-  top: 0;
-  right: -580px;
+  top: 200px;
+  right: 580px;
   left: initial;
   animation-delay: 0.2s;
   animation-duration: 3s;
 }
 
 .star:nth-child(3) {
-  top: 80px;
+  top: 200px;
   right: 0;
   left: initial;
   animation-delay: 0.4;
@@ -381,7 +437,7 @@ html{
 }
 
 .star:nth-child(5) {
-  top: 0;
+  top: 400px;
   right: 800px;
   left: initial;
   animation-delay: 0.8s;
@@ -389,8 +445,8 @@ html{
 }
 
 .star:nth-child(6) {
-  top: 0;
-  right: 1300px;
+  top: 100px;
+  right: 1000px;
   left: initial;
   animation-delay: 0.1s;
   animation-duration: 2.5s;
@@ -398,7 +454,7 @@ html{
 
 .star:nth-child(7) {
   top: 0;
-  right: -700px;
+  right: 700px;
   left: initial;
   animation-delay: 1s;
   animation-duration: 5s;
