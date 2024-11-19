@@ -1,8 +1,8 @@
-import React, {useState, useRef, useEffect} from "react";
+import React, { useState, useRef, useEffect } from "react";
 import InfoCard from "./InfoCard";
 import Image from "next/image";
-import {FaChevronLeft, FaChevronRight} from "react-icons/fa";
-import {Swiper, SwiperSlide} from "swiper/react";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
@@ -156,11 +156,11 @@ const WhyParticipate = () => {
               slideShadows: false,
             }}
             breakpoints={{
-              480: {slidesPerView: 1, spaceBetween: 10},
-              768: {slidesPerView: 1.4, spaceBetween: 20},
-              1024: {slidesPerView: 2, spaceBetween: 20},
-              1280: {slidesPerView: 2, spaceBetween: 40},
-              1536: {slidesPerView: 3, spaceBetween: 30},
+              480: { slidesPerView: 1, spaceBetween: 10 },
+              768: { slidesPerView: 1.4, spaceBetween: 20 },
+              1024: { slidesPerView: 2, spaceBetween: 20 },
+              1280: { slidesPerView: 2, spaceBetween: 40 },
+              1536: { slidesPerView: 3, spaceBetween: 30 },
             }}
             // autoplay={{
             //   delay: 3000,

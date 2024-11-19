@@ -69,10 +69,10 @@ const Navbar = () => {
 
   useEffect(() => {
     if (typeof window !== "undefined" && typeof document !== "undefined") {
-      document.body.style.overflowY = mobilenav ? "hidden" : "auto";
+      document.body.style.overflowY = mobilenav ? "hidden" : "auto"; 
     }
   }, [mobilenav]);
-
+  
   return (
     <div className={`w-screen text-white flex flex-row items-center justify-between px-6 lg:px-0 lg:justify-around py-3 fixed top-0 z-20 transition-all duration-300 ${
         scrolled ? "bg-[#00000070] backdrop-blur" : "bg-transparent"
@@ -106,7 +106,7 @@ const Navbar = () => {
             key={index}
             href={item.link}
             className="font-syne-medium text-sm group text-gray-light transition-all duration-300 ease-in-out lg:ml-8"
-            onClick={() => setmobilenav(!mobilenav)}
+            onClick={() => mobilenav && setmobilenav(!mobilenav)}
           >
             <span className="bg-left-bottom font-normal bg-gradient-to-r from-red to-red bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-300 ease-out">
               {item.title}
