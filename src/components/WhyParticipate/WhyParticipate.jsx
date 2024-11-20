@@ -87,7 +87,7 @@ const WhyParticipate = () => {
 
   return (
     // <div className="container max-w-full md:max-w-[70%] mx-auto  py-8">
-    //   <h2 className="text-3xl text-left text-white py-5 tracking-wide">
+    //   <h2 className="py-5 text-3xl tracking-wide text-left text-white">
     //     Why Participate ?
     //   </h2>
     //   <div className="relative overflow-hidden" ref={sliderRef}>
@@ -117,13 +117,13 @@ const WhyParticipate = () => {
     //     </div>
     //     <button
     //       onClick={() => handleSlide(1)}
-    //       className="absolute left-0 top-1/2 -translate-y-1/2  p-2 rounded-full shadow-md z-10 scale-150"
+    //       className="absolute left-0 z-10 p-2 scale-150 -translate-y-1/2 rounded-full shadow-md top-1/2"
     //     >
     //       <FaChevronLeft />
     //     </button>
     //     <button
     //       onClick={() => handleSlide(-1)}
-    //       className="absolute right-0 top-1/2 -translate-y-1/2  p-2 rounded-full shadow-md z-10 scale-150"
+    //       className="absolute right-0 z-10 p-2 scale-150 -translate-y-1/2 rounded-full shadow-md top-1/2"
     //     >
     //       <FaChevronRight />
     //     </button>
@@ -131,15 +131,15 @@ const WhyParticipate = () => {
     // </div>
 
     <>
-      <div id="why" className="main-container">
+      <div id="why" className="main-container pt-[80px]">
         <Image className="top-left1" src={top_left} />
         <Image className="bottom-right1" src={bottom_right} />
         {/* <Image className="circle11" src={circle1} /> */}
         <Image className="circle21" src={circle2} />
         {/* <Image className="circle31" src={circle3} /> */}
         <div className="container h-[100%] block place-content-center  md:max-w-[80%] mx-auto  py-8">
-          <h2 className=" titleh2 text-4xl sm:text-6xl font-base-neue-bold sm:mb-[50px] text-center text-white py-5 tracking-wide ">
-            WHY PARTICIPATE
+          <h2 className=" titleh2 text-5xl max-md:text-4xl font-base-neue-bold sm:mb-[50px] text-center text-white py-5 tracking-wide ">
+            WHY <br className="hidden max-sm:flex"/>  PARTICIPATE
           </h2>
 
           <Swiper
