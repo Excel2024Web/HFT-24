@@ -85,6 +85,30 @@ const About = () => {
               </filter>
             </defs>
           </svg>
+          <svg className="aboutsvg1" width="393" height="812" viewBox="0 0 393 812" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+          <g filter="url(#filter0_bd_36_11)">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M10 44C10 25.2223 25.2223 10 44 10H85.4028C96.9908 10 107.781 15.902 114.032 25.6595L114.468 26.3405C120.719 36.098 131.509 42 143.097 42H246.417C256.883 42 266.766 37.1796 273.209 28.9319L277.791 23.0681C284.234 14.8204 294.117 10 304.583 10H349C367.778 10 383 25.2223 383 44V750C383 768.778 367.778 784 349 784H298.967C291.836 784 284.887 786.242 279.1 790.408L271.9 795.592C266.113 799.758 259.164 802 252.033 802H137.308C129.053 802 121.079 798.996 114.875 793.549L113.625 792.451C107.421 787.004 99.4473 784 91.1915 784H44C25.2223 784 10 768.778 10 750V44Z" fill="url(#paint0_linear_36_11)" fill-opacity="0.25" shape-rendering="crispEdges"/>
+          </g>
+          <defs>
+          <filter id="filter0_bd_36_11" x="0" y="0" width="393" height="812" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+          <feGaussianBlur in="BackgroundImageFix" stdDeviation="5"/>
+          <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_36_11"/>
+          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+          <feOffset/>
+          <feGaussianBlur stdDeviation="5"/>
+          <feComposite in2="hardAlpha" operator="out"/>
+          <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"/>
+          <feBlend mode="normal" in2="effect1_backgroundBlur_36_11" result="effect2_dropShadow_36_11"/>
+          <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_36_11" result="shape"/>
+          </filter>
+          <linearGradient id="paint0_linear_36_11" x1="50" y1="35.5" x2="285" y2="756" gradientUnits="userSpaceOnUse">
+          <stop offset="0.135809" stop-color="#534E4E"/>
+          <stop offset="0.578659" stop-color="#504C4C"/>
+          </linearGradient>
+          </defs>
+</svg>
+
           <p className="abtp font-syne-medium">
             Level up your coding skills and slay real-world challenges! Whether
             you're a seasoned developer or a coding newbie, HFT is the place to
