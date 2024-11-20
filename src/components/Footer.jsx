@@ -6,8 +6,8 @@ import MECLogo from "@/assets/logos/mec@official.svg";
 import ExcelLogo from "@/assets/logos/excel@2024.svg";
 
 import excel from "@/assets/Footer/excel.svg";
-import {FaInstagram, FaFacebookF, FaLinkedinIn} from "react-icons/fa";
-import {FaXTwitter} from "react-icons/fa6";
+import { FaInstagram, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   const FooterSocials = [
@@ -33,7 +33,7 @@ const Footer = () => {
     },
   ];
   return (
-    <footer className="z-10 flex relative justify-between flex-col items-center container m-auto p-6 sm:p-10">
+    <footer className="container relative z-10 flex flex-col items-center justify-between p-6 m-auto sm:p-10">
       <div className="flex flex-col items-center gap-2rem mb-[52px] sm:my-[128px] z-10">
         <Image
           src={excel}
@@ -41,16 +41,16 @@ const Footer = () => {
           className="skeleton"
           data-aos="fade-up"
         ></Image>
-        <div className="text-center">
+        <div className="mt-3 text-center">
           <h3
-            className="text-4xl font-base-neue-bold title__gradient-text leading-[53px] mb-[12px] h-fit overflow-auto"
+            className="text-4xl font-base-neue-bold title__gradient-text leading-[53px] mb-[12px] h-fit overflow-auto max-md:text-3xl overflow-y-hidden"
             data-aos="fade-up"
             data-aos-duration="1000"
           >
             Are you ready to shape the future?
           </h3>
           <p
-            className="text-lg font-syne-medium title__gradient-text-small font-regular"
+            className="text-lg font-syne-medium title__gradient-text-small font-regular max-md:text-sm"
             data-aos="fade-up"
             data-aos-duration="1100"
           >
@@ -59,19 +59,6 @@ const Footer = () => {
         </div>
         <div className="flex mt-8 max-sm:flex-col-reverse max-md:items-center max-sm:gap-[6px]">
           <div data-aos="zoom-in-up" data-aos-delay="100"></div>
-
-          <div data-aos="zoom-in-up" data-aos-delay="50">
-            {/* <Button
-              text="Submit Your Idea"
-              Icon=""
-              variant="white"
-              handleClick={() => {
-                window.open("https://forms.gle/RqC944r5C9KJXYqG9");
-              }}
-              scale="scale-[91%]"
-              onHoverScale="hover:scale-[100%]"
-            /> */}
-          </div>
         </div>
       </div>
 
@@ -99,7 +86,7 @@ const Footer = () => {
         <Image
           src={MECLogo}
           alt="mec"
-          className="h-[54px] max-md:scale-90 w-fit cursor-pointer max-md:h-[68px]"
+          className="h-[62px] max-md:scale-90 w-fit cursor-pointer max-md:h-[64px]"
           onClick={() => {
             window.open("https://www.mec.ac.in", "_blank");
           }}
@@ -111,7 +98,7 @@ const Footer = () => {
             href={item.link}
             target="_blank"
             key={index}
-            className="hover:scale-[1.1]"
+            className="hover:scale-[1.5]"
           >
             <item.icon className="text-xl text-[#D4D4D8] hover:text-pink_m/[.6] ease-in-out duration-300" />
           </a>
