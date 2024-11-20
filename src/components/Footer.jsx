@@ -68,7 +68,7 @@ const Footer = () => {
           alt="ExcelLogo"
           className="h-[64px] w-fit cursor-pointer max-md:h-[50px]"
           onClick={() => {
-            window.open("https://ibeto.excelmec.org", "_blank");
+            window.open("https://excelmec.org", "_blank");
           }}
         />
         <div className="flex flex-row gap-8 max-md:hidden">

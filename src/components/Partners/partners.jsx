@@ -37,8 +37,8 @@ const Partners = () => {
   }, []);
 
   return (
-    <section className="partners-section" id="partners">
-      <h1 className="partners-title">OUR PARTNERS</h1>
+    <section className="partners-section pt-[80px]" id="partners">
+      <h1 className="text-5xl partners-title max-md:text-4xl">OUR <br className="hidden max-sm:flex"/> PARTNERS</h1>
       <div className="partners-container">
         {/* Title Partner */}
         <div className="partners-row" ref={(el) => (rowRefs.current[0] = el)}>

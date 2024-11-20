@@ -64,15 +64,14 @@ export default function Contact() {
   ];
   return (
     <>
-      <div id = "contacts" className="w-[100vw] flex justify-center items-center flex-col overflow-hidden h-full py-10">
-        <h1 className="mt-10 text-4xl sm:text-5xl text-center font-base-neue-bold text-white tracking-wider">
+      <div id = "contacts" className="w-[100vw] flex justify-center items-center flex-col overflow-hidden h-full py-10 mt-[80px]">
+        <h1 className="mt-10 text-5xl tracking-wider text-center text-white max-md:text-4xl font-base-neue-bold">
           CONTACT US
         </h1>
-        <p className="text-center font-syne-medium md:w-[30vw] w-[90vw] mt-5 mb-10 bg-gradient-to-r  bg-clip-text text-white text-[18px]">
-          If you have questions, feedback, or just want to chat, feel free to
-          reach out to us.
+        <p className="text-center font-syne-medium mt-5 max-md:mt-3 mb-10 max-md:text-sm bg-gradient-to-r bg-clip-text text-white text-[18px] mx-[30px]">
+          If you have questions, feedback, or just want to chat, feel free to reach out to us.
         </p>
-        <div className="grid grid-cols-3 max-sm:grid-cols-1 max-md:grid-cols-2 gap-[50px]">
+        <div className="flex flex-wrap justify-center item-center gap-[28px] max-w-[1200px] mt-[30px]">
           {contactDetails.map((cd, index) => (
             <ContactCard key={index} details={cd} />
           ))}
