@@ -23,14 +23,14 @@ function Pricing() {
   }, []);
 
   return (
-    <div className="pricing-section">
-      <h1 className="pricing-header font-base-neue-bold text-4xl sm:text-6xl tracking-wider">
+    <div className="pricing-section pt-[120px]" id="prizes">
+      <h1 className="text-5xl tracking-wider pricing-header font-base-neue-bold max-md:text-4xl">
         PRIZES
       </h1>
-      <p className="pricing-subheader font-syne-medium">
+      <p className="text-[18px] max-md:text-sm pricing-subheader font-syne-medium pb-[60px]">
         Win exciting prizes in our hackathon!
       </p>
-      <div className="pricing-cards font-syne-semibold tracking-wider">
+      <div className="tracking-wider pricing-cards font-syne-semibold">
         <div className="pricing-card second-prize glass-card">
           <div className="icon icon-website"></div>
           <h2 className="prize-title font-syne-medium">Second Prize</h2>
