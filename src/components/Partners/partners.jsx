@@ -43,13 +43,15 @@ const Partners = () => {
         {/* Title Partner */}
         <div className="partners-row" ref={(el) => (rowRefs.current[0] = el)}>
           <div className="partner title-partner">
-            <Image
-              src={KeyValue}
-              alt="KEYVALUE LOGO"
-              className="partner-logo"
-              width={240}
-              height={70}
-            />
+          <a href="https://keyvalue.systems" target="_blank" rel="noopener noreferrer">
+            <Image 
+                src={KeyValue} 
+                alt="KEYVALUE LOGO" 
+                className="partner-logo" 
+                width={240}
+                height={70}
+              />
+            </a>
             <p className="partner-label font-syne-medium">Platinum Partner</p>
           </div>
         </div>
