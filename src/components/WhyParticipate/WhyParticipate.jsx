@@ -1,16 +1,14 @@
-import React, {useState, useRef, useEffect} from "react";
+import React, { useState, useRef, useEffect } from "react";
 import InfoCard from "./InfoCard";
 import Image from "next/image";
-import {FaChevronLeft, FaChevronRight} from "react-icons/fa";
-import {Swiper, SwiperSlide} from "swiper/react";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import top_left from "../../assets/backgrounds/about/topleft.png";
 import bottom_right from "../../assets/backgrounds/about/bottomright.png";
-import circle1 from "../../assets/backgrounds/about/circle1.png";
-import circle2 from "../../assets/backgrounds/about/circle2.png";
-import circle3 from "../../assets/backgrounds/about/circle3.png";
+import circle2 from "../../assets/backgrounds/about/2circle.png";
 import {
   EffectCoverflow,
   Pagination,
@@ -27,8 +25,8 @@ const WhyParticipate = () => {
 
   const cards = [
     {
-      title: "Win Big",
-      text: "Compete for a massive prize pool of up to ₹70K and reward your efforts with some well-deserved recognition.",
+      title: "WIN BIG",
+      text: "Compete for a massive prize pool of up to ₹40K and reward your efforts with some well-deserved recognition.",
       gradient: "from-[#3b48f9] to-[#a73ffa]",
       color: "text-white",
     },
@@ -89,7 +87,7 @@ const WhyParticipate = () => {
 
   return (
     // <div className="container max-w-full md:max-w-[70%] mx-auto  py-8">
-    //   <h2 className="text-3xl text-left text-white py-5 tracking-wide">
+    //   <h2 className="py-5 text-3xl tracking-wide text-left text-white">
     //     Why Participate ?
     //   </h2>
     //   <div className="relative overflow-hidden" ref={sliderRef}>
@@ -119,13 +117,13 @@ const WhyParticipate = () => {
     //     </div>
     //     <button
     //       onClick={() => handleSlide(1)}
-    //       className="absolute left-0 top-1/2 -translate-y-1/2  p-2 rounded-full shadow-md z-10 scale-150"
+    //       className="absolute left-0 z-10 p-2 scale-150 -translate-y-1/2 rounded-full shadow-md top-1/2"
     //     >
     //       <FaChevronLeft />
     //     </button>
     //     <button
     //       onClick={() => handleSlide(-1)}
-    //       className="absolute right-0 top-1/2 -translate-y-1/2  p-2 rounded-full shadow-md z-10 scale-150"
+    //       className="absolute right-0 z-10 p-2 scale-150 -translate-y-1/2 rounded-full shadow-md top-1/2"
     //     >
     //       <FaChevronRight />
     //     </button>
@@ -133,15 +131,15 @@ const WhyParticipate = () => {
     // </div>
 
     <>
-      <div id="why" className="main-container">
+      <div id="why" className="main-container pt-[80px]">
         <Image className="top-left1" src={top_left} />
         <Image className="bottom-right1" src={bottom_right} />
         {/* <Image className="circle11" src={circle1} /> */}
         <Image className="circle21" src={circle2} />
-        <Image className="circle31" src={circle3} />
+        {/* <Image className="circle31" src={circle3} /> */}
         <div className="container h-[100%] block place-content-center  md:max-w-[80%] mx-auto  py-8">
-          <h2 className=" titleh2 text-4xl sm:text-6xl font-base-neue-bold mb-[50px] text-center text-white py-5 tracking-wide ">
-            WHY PARTICIPATE
+          <h2 className=" titleh2 text-5xl max-md:text-4xl font-base-neue-bold sm:mb-[50px] text-center text-white py-5 tracking-wide ">
+            WHY <br className="hidden max-sm:flex"/>  PARTICIPATE
           </h2>
 
           <Swiper
@@ -158,11 +156,11 @@ const WhyParticipate = () => {
               slideShadows: false,
             }}
             breakpoints={{
-              480: {slidesPerView: 1, spaceBetween: 10},
-              768: {slidesPerView: 1.4, spaceBetween: 20},
-              1024: {slidesPerView: 2, spaceBetween: 20},
-              1280: {slidesPerView: 2, spaceBetween: 40},
-              1536: {slidesPerView: 3, spaceBetween: 60},
+              480: { slidesPerView: 1, spaceBetween: 10 },
+              768: { slidesPerView: 1.4, spaceBetween: 20 },
+              1024: { slidesPerView: 2, spaceBetween: 20 },
+              1280: { slidesPerView: 2, spaceBetween: 40 },
+              1536: { slidesPerView: 3, spaceBetween: 30 },
             }}
             // autoplay={{
             //   delay: 3000,

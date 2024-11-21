@@ -296,7 +296,7 @@ const BlobAnimation = () => {
           alt="constellation"
         />
         <Image
-          className="hidden lg:block absolute bg-cover right-0 bottom-0 z-0"
+          className="hidden lg:block absolute bg-cover right-0 top-0 h-full z-0"
           src={right}
           alt="bot-right"
         />
