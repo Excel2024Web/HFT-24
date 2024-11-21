@@ -20,7 +20,23 @@
   color: white;
   text-align: center;
 }
+.styled-partner {
+  background-color: white; /* Set background to white */
+  border-radius: 12px; /* Add border-radius */
+  padding: 20px; /* Add some padding */
+  width: 250px; /* Consistent width */
+  height: 115px; /* Consistent height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for better aesthetics */
+  margin: 10px auto; /* Center align and add spacing */
+}
 
+.partner-logo {
+  object-fit: contain;
+}
 
 .partners-title {
   font-family: 'neue'; /* Updated Typography */

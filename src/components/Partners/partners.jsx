@@ -5,7 +5,8 @@ import Image from "next/image";
 import Devfolio from "../../assets/Gallery/devfolio.png";
 import EthIndia from "../../assets/Gallery/Ethindia.png";
 import Polygon from "../../assets/Gallery/polygon.png";
-import KeyValue from "../../assets/Gallery/keyvalue.png";
+import KeyValue from "../../assets/Gallery/keyvalue2.jpg";
+import KSUM from "../../assets/Gallery/ksumw.jpg";
 
 const Partners = () => {
   const rowRefs = useRef([]);
@@ -42,14 +43,13 @@ const Partners = () => {
       <div className="partners-container">
         {/* Title Partner */}
         <div className="partners-row" ref={(el) => (rowRefs.current[0] = el)}>
-          <div className="partner title-partner">
+          <div className="partner title-partner ">
           <a href="https://keyvalue.systems" target="_blank" rel="noopener noreferrer">
             <Image 
                 src={KeyValue} 
                 alt="KEYVALUE LOGO" 
-                className="partner-logo" 
-                width={240}
-                height={70}
+                className="partner-logo styled-partner" 
+                
               />
             </a>
             <p className="partner-label font-syne-medium">Platinum Partner</p>
@@ -88,6 +88,21 @@ const Partners = () => {
             />
             <p className="partner-label font-syne-medium">Gold Partner</p>
           </div>
+        </div>
+        <div className="partners-row" ref={(el) => (rowRefs.current[2] = el)}>
+        <a href="https://startupmission.kerala.gov.in/" target="_blank" rel="noopener noreferrer">
+          <div className="partner ">
+            <Image
+              src={KSUM}
+              alt="KERALA STARTUP MISSION LOGO"
+              className="partner-logo styled-partner"
+              width={240}
+              height={70}
+            />
+            <p className="partner-label font-syne-medium">Ecosystem Partner</p>
+           
+          </div>
+          </a>
         </div>
       </div>
     </section>
