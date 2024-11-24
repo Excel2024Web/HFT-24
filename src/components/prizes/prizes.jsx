@@ -24,6 +24,7 @@ function Pricing() {
 
   return (
     <div className="pricing-section pt-[120px]" id="prizes">
+      <div className="absolute bg-gradient-to-b from-transparent from-95% to-[#2d0c14] bg-no-repeat inset-0" />
       <h1 className="text-5xl tracking-wider pricing-header font-base-neue-bold max-md:text-4xl">
         PRIZES
       </h1>

@@ -10,7 +10,8 @@ import circle3 from "../../assets/backgrounds/about/circle3.png";
 
 const About = () => {
   return (
-    <>
+    <div className="relative">
+      <div className="absolute bg-gradient-to-b from-[#0a0a0a] from-10% to-transparent z-50 bg-no-repeat right-0 left-0 top-0 min-h-32" />
       <div id="about" className="about-container pt-[80px]">
         <Image className="top-left" src={top_left} />
         <Image className="bottom-right" src={bottom_right} />
@@ -171,7 +172,7 @@ const About = () => {
           </p>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
