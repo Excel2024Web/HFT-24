@@ -1,7 +1,7 @@
 "use client";
 import "./About.css";
 import Image from "next/image";
-import { useState } from "react";
+import {useState} from "react";
 import top_left from "../../assets/backgrounds/about/topleft.png";
 import bottom_right from "../../assets/backgrounds/about/bottomright.png";
 import circle1 from "../../assets/backgrounds/about/circle1.png";
@@ -168,7 +168,7 @@ const About = () => {
             <br />
             Join us for a 24-hour coding marathon filled with caffeine, food,
             and endless possibilities. So, gather your squad and let's code a
-            better tomorrow at Hack for Tomorrow!
+            better tomorrow at Hack For Tomorrow!
           </p>
         </div>
       </div>
