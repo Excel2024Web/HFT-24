@@ -285,6 +285,7 @@ const BlobAnimation = () => {
   return (
     <>
       <div className="relative h-screen w-screen overflow-hidden">
+        <div className="absolute bg-gradient-to-b from-transparent from-95% to-[#0a0a0a] z-50 bg-no-repeat right-0 left-0 top-0 bottom-0" />
         <Image
           className="absolute top-0 left-0 z-0"
           src={topleft}

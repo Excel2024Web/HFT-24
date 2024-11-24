@@ -132,6 +132,7 @@ const WhyParticipate = () => {
 
     <>
       <div id="why" className="main-container pt-[80px]">
+        <div className="absolute bg-gradient-to-b from-transparent from-95% to-black z-50 bg-no-repeat right-0 left-0 top-0 bottom-0" />
         <Image className="top-left1" src={top_left} />
         <Image className="bottom-right1" src={bottom_right} />
         {/* <Image className="circle11" src={circle1} /> */}
@@ -139,7 +140,7 @@ const WhyParticipate = () => {
         {/* <Image className="circle31" src={circle3} /> */}
         <div className="container h-[100%] block place-content-center  md:max-w-[80%] mx-auto  py-8">
           <h2 className=" titleh2 text-5xl max-md:text-4xl font-base-neue-bold sm:mb-[50px] text-center text-white py-5 tracking-wide ">
-            WHY <br className="hidden max-sm:flex"/>  PARTICIPATE
+            WHY <br className="hidden max-sm:flex" /> PARTICIPATE
           </h2>
 
           <Swiper
