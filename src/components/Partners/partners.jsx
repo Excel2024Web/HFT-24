@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import "./partners.css";
 import Image from "next/image";
-
+import top_left from "../../assets/backgrounds/about/topleft.png";
 import Devfolio from "../../assets/Gallery/devfolio.png";
 import EthIndia from "../../assets/Gallery/Ethindia.png";
 import Polygon from "../../assets/Gallery/polygon.png";
@@ -39,7 +39,8 @@ const Partners = () => {
 
   return (
     <section className="partners-section pt-[80px]" id="partners">
-      <div className="absolute bg-gradient-to-b from-[#2d0c14] to-5% to-transparent bg-no-repeat inset-0" />
+      <Image className="top-left1" src={top_left} />
+      {/* <div className="absolute bg-gradient-to-b from-[#2d0c14] to-5% to-transparent bg-no-repeat inset-0" /> */}
       <div className="absolute bg-gradient-to-b from-transparent from-90% to-[#0a0a0a] bg-no-repeat inset-0" />
       <h1 className="text-5xl partners-title max-md:text-4xl">
         OUR <br className="hidden max-sm:flex" /> PARTNERS
