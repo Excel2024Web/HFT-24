@@ -28,9 +28,9 @@
 .faq-container {
   border-radius: 30px;
   /* background: rgba(0, 0, 0, 0.21); */
-  background: linear-gradient(
+  /* background: linear-gradient(
     145deg,
-    /* #885d5f 0%, */ rgba(249, 208, 191, 0.8183474073223039) 0%,
+     rgba(249, 208, 191, 0.8183474073223039) 0%,
     rgb(129, 68, 78) 8%,
     #783646 14%,
     #783b50 20%,
@@ -44,7 +44,7 @@
     #783b50 20%,
     #540015 40%,
     rgba(255, 255, 255, 0) 65%
-  );
+  ); */
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10.5px);
@@ -103,7 +103,6 @@
 @media screen and (max-width: 768px) {
   .faq-container {
     margin-top: 60px;
-    border-radius: 0;
     padding: 0;
   }
   .faq-heading {

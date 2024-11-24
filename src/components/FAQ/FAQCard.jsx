@@ -12,7 +12,7 @@ const FAQCard = ({ question, answer, index }) => {
 
   return (
     <div className="container py-5 sm:px-5 faq-card-container" onClick={handleExpand}>
-      <div className="faq-question">
+      <div className="faq-question hover:cursor-pointer">
         <h1>{question}</h1>
         <div
           className={
@@ -25,8 +25,8 @@ const FAQCard = ({ question, answer, index }) => {
       <p
         className="faq-answer"
         style={{
-          "max-height": height,
-          "margin-top": height == 0 ? "0px" : "10px",
+          maxHeight: height,
+          marginTop: height == 0 ? "0px" : "10px",
           opacity: height == 0 ? "0" : "1",
         }}
       >
@@ -35,8 +35,8 @@ const FAQCard = ({ question, answer, index }) => {
       <div
         className="faq-line"
         style={{
-          "max-height": height,
-          "margin-top": "10px",
+          maxHeight: height,
+          marginTop: "10px",
           opacity: "0.4",
         }}
       >

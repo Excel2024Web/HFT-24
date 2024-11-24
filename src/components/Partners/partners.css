@@ -1,15 +1,15 @@
-@font-face{
-  font-family: 'neue';
+@font-face {
+  font-family: "neue";
   src: url(../../assets/fonts/BaseNeue/BaseNeue-Black.woff);
 }
 .partners-section {
-  background: linear-gradient(
+  /* background: linear-gradient(
     to bottom left,
     rgb(50, 21, 28),
     rgb(45, 12, 20),
     rgb(44, 0, 10),
     transparent 45%
-  );
+  ); */
   background-color: black;
   min-height: 100vh;
   padding: 50px 20px;
@@ -39,12 +39,12 @@
 }
 
 .partners-title {
-  font-family: 'neue'; /* Updated Typography */
+  font-family: "neue"; /* Updated Typography */
   font-size: 3.5rem;
   letter-spacing: 0.1rem;
   padding-top: 50px;
   margin-bottom: 50px;
-  color: #FFFFFF;/* Primary Color */
+  color: #ffffff; /* Primary Color */
 }
 
 .partners-container {
@@ -73,9 +73,7 @@
   padding: 10px;
   text-align: center;
   color: white;
- 
 }
-
 
 .partner-label {
   margin-top: 15px;
