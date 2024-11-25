@@ -13,7 +13,7 @@ function Pricing() {
         // Start counting prizes
         setTimeout(() => {
           setStartCount(true);
-        }, 3000);
+        }, 1000);
         window.removeEventListener("scroll", handleScroll);
       }
     };
