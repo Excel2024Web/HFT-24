@@ -48,7 +48,7 @@ const Partners = () => {
         alt="bot-right"
       />
       {/* <div className="absolute bg-gradient-to-b from-[#2d0c14] to-5% to-transparent bg-no-repeat inset-0" /> */}
-      <div className="absolute bg-no-repeat inset-0" />
+      {/* <div className="absolute bg-no-repeat inset-0" /> */}
       <h1 className="text-5xl partners-title max-md:text-4xl">
         OUR <br className="hidden max-sm:flex" /> PARTNERS
       </h1>
