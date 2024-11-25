@@ -232,10 +232,6 @@
   opacity: 0.5;
 }
 
-.aboutsvg1{
-  display: none;
-  border-radius: 30px;
-}
 
 .circle3 {
   position: absolute;
@@ -247,6 +243,48 @@
   animation: rotate 25s linear infinite;
   z-index: 2;
   opacity: 0.5;
+}
+
+
+.circle11 {
+  position: absolute;
+  top: -450px;
+  height: 900px;
+  width: auto;
+  z-index: 2;
+  right: -450px;
+  transform: rotate(-200deg);
+  animation: rotate 15s linear infinite;
+  opacity: 0.5;
+}
+
+.circle22 {
+  position: absolute;
+  top: -350px;
+  height: 700px;
+  width: auto;
+  right: -350px;
+  transform: rotate(-180deg);
+  animation: rotate 20s linear infinite;
+  z-index: 2;
+  opacity: 0.5;
+}
+
+
+.circle33 {
+  position: absolute;
+  top: -150px;
+  height: 300px;
+  width: auto;
+  right: -150px;
+  width: auto;
+  animation: rotate 25s linear infinite;
+  z-index: 2;
+  opacity: 0.5;
+}
+.aboutsvg1{
+  display: none;
+  border-radius: 30px;
 }
 
 .aboutsvg {

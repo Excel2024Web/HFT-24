@@ -3,6 +3,8 @@ import "./prizes.css";
 import right from "@/assets/Landing/right2.svg";
 import Image from "next/image";
 import top_left from "../../assets/backgrounds/about/topleft.png";
+import bottom_right from "../../assets/backgrounds/about/bottomright.png";
+import circle2 from "../../assets/backgrounds/about/2circle.png";
 
 function Pricing() {
   const [startCount, setStartCount] = useState(false);
@@ -28,11 +30,13 @@ function Pricing() {
   return (
     <div className="pricing-section pt-[120px]" id="prizes">
       <Image
-        className="absolute bg-cover right-0 top-0 h-full z-0 opacity-50"
-        src={right}
+        className="bottom-right"
+        src={bottom_right}
         alt="bot-right"
       />
-      <div className="absolute bg-gradient-to-b from-transparent from-95% to-black z-20 bg-no-repeat right-0 left-0 top-0 bottom-0" />
+      <Image className="top-left12" src={top_left} />
+      <Image className="circle21 scale-[1.5] right-[100px] opacity-60" src={circle2} />
+      <div className="absolute right-0 left-0 top-0 bottom-0" />
       {/* <div className="absolute bg-gradient-to-b from-transparent from-95% to-[#2d0c14] bg-no-repeat inset-0" /> */}
       <h1 className="text-5xl tracking-wider pricing-header font-base-neue-bold max-md:text-4xl">
         PRIZES

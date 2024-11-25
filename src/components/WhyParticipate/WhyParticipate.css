@@ -24,6 +24,14 @@
   transform: scaleY(-1);
 }
 
+.top-left12{
+  position: absolute;
+  top: -0.7px;
+  left: -100px;
+  transform: rotate(90deg);
+  transform: scaleX(1);
+}
+
 /* .swiper-button-next{
     position: absolute;
     color: #fff;
@@ -317,7 +325,7 @@ html{
   }
 
   .main-container {
-    background-image: url(../../assets/WhyParticipate/bgimg3.png);
+    /* background-image: url(../../assets/WhyParticipate/bgimg3.png); */
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -334,6 +342,7 @@ html{
   .swiper-button-prev {
     left: 5px;
   }
+
 
   .circle21,
   .circle31 {

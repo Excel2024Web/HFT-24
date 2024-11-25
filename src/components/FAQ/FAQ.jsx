@@ -3,6 +3,7 @@ import Bg from "@/assets/faq/11.png"
 import Image from "next/image";
 import astro2 from "@/assets/Landing/astro2.svg";
 import astro3 from "@/assets/Landing/astro3.svg";
+import bottom_right from "../../assets/backgrounds/about/bottomright.png";
 
 const FAQ = () => {
   const QA = [
@@ -36,8 +37,9 @@ const FAQ = () => {
     },
   ];
   return (
-    <div id="faq" className="faq mt-[80px] px-4">
-      <div className="relative container flex flex-col items-start px-10 py-10 mx-auto faq-container overflow-hidden">
+    <div id="faq" className="faq mt-[80px] px-4 relative">
+      <Image className="bottom-right1 top-[-80px] z-[0]" src={bottom_right} />
+      <div className="relative container flex flex-col z-10 items-start px-10 py-10 mx-auto faq-container overflow-hidden ">
         <Image src={Bg} alt="bg" className="absolute z-0 top-0 bottom-0 right-0 left-0 opacity-80" fill />
         {/* <Image
             className="hidden sm:block absolute bottom-0 md:bottom-0 md:right-[-8rem] z-0"
