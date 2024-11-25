@@ -4,13 +4,26 @@ import TimelineCard from "./TimelineCard";
 import { TimelineData } from "@/constants";
 import { timelineItemClasses } from "@mui/lab";
 import Timeline from "@mui/lab/Timeline";
+import "../About/About.css";
+import circle1 from "../../assets/backgrounds/about/circle1.png";
+import circle2 from "../../assets/backgrounds/about/circle2.png";
+import circle3 from "../../assets/backgrounds/about/circle3.png";
+import Image from "next/image";
+import bottom_right from "../../assets/backgrounds/about/bottomright.png";
+import "../WhyParticipate/WhyParticipate.css";
 
 const TimelineSection = () => {
   return (
     <div
       id="timeline"
-      className="relative flex flex-col font-syne-medium items-center justify-center min-h-screen p-2 text-white pb-12 mt-[80px]"
+      className="relative flex flex-col font-syne-medium items-center justify-center min-h-screen p-2 text-white pb-12 mt-[80px] overflow-hidden"
     >
+      <div className="absolute bg-gradient-to-b z-30 from-transparent from-95% to-[#0a0a0a] bg-no-repeat inset-0" />
+
+      <Image className="bottom-right" src={bottom_right} />
+      <Image className="circle1" src={circle1} />
+      <Image className="circle2" src={circle2} />
+      <Image className="circle3" src={circle3} />
       <div className="container flex flex-col items-center justify-center min-h-screen m-auto font-generalSans text-our_white">
         <h2
           className="font-base-neue-bold text-5xl tracking-widest mirror-vertical text-center text-white xl:scale-100 max-md:text-4xl text-[#FFFFFF]/[0.8] "

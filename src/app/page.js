@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import {useEffect, useRef} from "react";
 import BlobAnimation from "../components/BlobAnimation";
 import Footer from "../components/Footer";
 import About from "../components/About/About";
@@ -16,6 +17,17 @@ import Intro from "../components/Intro";
 import TimelineSection from "../components/Timeline/Timeline";
 
 export default function Home() {
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://apply.devfolio.co/v2/sdk.js";
+    script.async = true;
+    script.defer = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
   return (
     <div className="text-white">
       <Navbar />

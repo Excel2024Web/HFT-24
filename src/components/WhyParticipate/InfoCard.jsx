@@ -12,7 +12,7 @@ const InfoCard = ({
         </h3>
         <div className="separation mt-[10%] w-full relative flex justify-center items-center">
           <svg className="w-[85%] absolute" width="205" height="1" viewBox="0 0 205 1" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-            <line y1="0.9" x2="205" y2="0.9" stroke="white" stroke-opacity="0.8" stroke-width="0.2"/>
+            <line y1="0.9" x2="205" y2="0.9" stroke="white" strokeOpacity="0.8" strokeWidth="0.2"/>
           </svg>
           <svg className = "absolute" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
             <rect y="7.07108" width="10" height="10" transform="rotate(-45 0 7.07108)" fill="#ffffff90"/>

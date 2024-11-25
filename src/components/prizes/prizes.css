@@ -1,11 +1,11 @@
 .pricing-section {
-  background: linear-gradient(
+  /* background: linear-gradient(
     to top right,
     rgb(50, 21, 28),
     rgb(45, 12, 20),
     rgb(44, 0, 10),
     transparent 30%
-  );
+  ); */
   background-color: black;
   min-height: 100vh;
   padding: 50px 20px;
