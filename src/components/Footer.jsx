@@ -62,7 +62,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="flex w-full h-[36px] md:justify-between justify-around text-white items-center z-10 p-4">
+      <div className="flex w-full h-[36px] md:justify-between justify-around text-white items-center z-10 p-4 md:mb-0 sm:mb-[50px]">
         <Image
           src={ExcelLogo}
           alt="ExcelLogo"
@@ -92,7 +92,7 @@ const Footer = () => {
           }}
         />
       </div>
-      <div className="flex-row hidden gap-8 mt-10 max-md:flex absolute bottom-5  ">
+      <div className="flex-row hidden gap-8 mt-10 max-md:flex relative md:absolute md:bottom-5  ">
         {FooterSocials.map((item, index) => (
           <a
             href={item.link}

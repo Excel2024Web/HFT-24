@@ -19,7 +19,7 @@ const TimelineSection = () => {
       id="timeline"
       className="relative flex flex-col font-syne-medium items-center justify-center min-h-screen p-2 text-white pb-12 mt-[80px]"
     >
-      <div className="absolute " />
+      {/* <div className="absolute " /> */}
 
       <Image className="top-left12 top-[-80px]" src={top_left} />
       <Image className="bottom-right" src={bottom_right} />

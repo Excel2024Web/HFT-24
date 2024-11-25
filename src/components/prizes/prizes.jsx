@@ -36,7 +36,7 @@ function Pricing() {
       />
       <Image className="top-left12" src={top_left} />
       <Image className="circle21 scale-[1.5] right-[100px] opacity-60" src={circle2} />
-      <div className="absolute right-0 left-0 top-0 bottom-0" />
+      {/* <div className="absolute right-0 left-0 top-0 bottom-0" /> */}
       {/* <div className="absolute bg-gradient-to-b from-transparent from-95% to-[#2d0c14] bg-no-repeat inset-0" /> */}
       <h1 className="text-5xl tracking-wider pricing-header font-base-neue-bold max-md:text-4xl">
         PRIZES
