@@ -97,12 +97,14 @@ const BlobAnimation = () => {
                 <Image src={arrow} className="scale-75"></Image>
               </span>
             </div> */}
-            <div
-              className="apply-button"
-              data-hackathon-slug="hackfortomorrow2024"
-              data-button-theme="dark-inverted"
-              style={{height: "44px", width: "312px"}}
-            ></div>
+            <a href="https://hackfortomorrow2024.devfolio.co/">
+              <div
+                className="apply-button"
+                data-hackathon-slug="hackfortomorrow2024"
+                data-button-theme="dark-inverted"
+                style={{height: "44px", width: "312px"}}
+              ></div>
+            </a>
           </div>
         </div>
       </div>
