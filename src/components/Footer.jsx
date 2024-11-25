@@ -33,8 +33,8 @@ const Footer = () => {
     },
   ];
   return (
-    <footer className="max-md:min-h-dvh container relative z-10 flex flex-col items-center justify-between pt-32 px-6 pb-6 m-auto mt-[80px] sm:p-10">
-      <div className="flex flex-col items-center gap-2rem mb-[52px] sm:my-[128px] z-10">
+    <footer className="max-md:min-h-dvh container relative z-10 flex flex-col items-center justify-around pt-32 px-6 pb-6 m-auto mt-[80px] sm:p-10">
+      <div className="flex flex-col items-center gap-2rem mb-[72px]  md:mt-[150px] mt-[15vh] z-10">
         <Image
           src={excel}
           alt="excellogo"
@@ -62,7 +62,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="flex w-full h-[36px] md:container justify-between text-white items-center z-10 p-4">
+      <div className="flex w-full h-[36px] md:justify-between justify-around text-white items-center z-10 p-4">
         <Image
           src={ExcelLogo}
           alt="ExcelLogo"
@@ -92,7 +92,7 @@ const Footer = () => {
           }}
         />
       </div>
-      <div className="flex-row hidden gap-8 mt-10 max-md:flex">
+      <div className="flex-row hidden gap-8 mt-10 max-md:flex absolute bottom-5  ">
         {FooterSocials.map((item, index) => (
           <a
             href={item.link}
