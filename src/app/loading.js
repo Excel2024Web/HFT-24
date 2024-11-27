@@ -25,7 +25,7 @@ function Loading() {
           </div>
         </div>
       </div>
-      <Script src="./script.js" />
+      <Script src="./script.js" strategy="beforeInteractive"  />
     </div>
   );
 }
