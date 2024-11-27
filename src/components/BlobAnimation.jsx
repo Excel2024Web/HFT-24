@@ -31,7 +31,6 @@ const BlobAnimation = () => {
   return (
     <>
       <div className="relative h-screen w-screen overflow-hidden">
-        {/* <div className="absolute bg-gradient-to-b from-transparent z-0 from-95% to-[#0a0a0a] bg-no-repeat right-0 left-0 top-0 bottom-0" /> */}
         <Image
           className="absolute top-0 left-0 z-0"
           src={topleft}
@@ -47,9 +46,10 @@ const BlobAnimation = () => {
           src={right}
           alt="bot-right"
         />
-        <Image className="lcircle1 max-lg:hidden" src={circle1} />
-        <Image className="lcircle2 max-md:hidden" src={circle2} />
-        <Image className="lcircle3 max-md:hidden" src={circle3} />
+        <Image className="lcircle1" src={circle1} />
+        <Image className="lcircle2" src={circle2} />
+        <Image className="lcircle3" src={circle3} />
+        <div className="absolute bg-gradient-to-b from-transparent from-95% to-[#0a0a0a] z-0 to-100% bg-no-repeat right-0 left-0 top-0 bottom-0" />
         <div
           className="container max-w-full md:max-w-[70%] relative m-auto flex flex-col min-h-screen text-our_white justify-center gap-[20px] z-0"
           data-aos="fade-up"
@@ -65,6 +65,7 @@ const BlobAnimation = () => {
             src={astro3}
             alt="astro-mob"
           />
+        <div className="lg:hidden absolute bg-gradient-to-b from-transparent from-95% to-[#0a0a0a] z-0 to-100% bg-no-repeat right-0 left-0 top-0 bottom-0" />
 
           <div className="flex z-50 flex-col gap-24 sm:gap-12 items-center sm:items-start max-sm:scale-90">
             <div className="flex flex-col gap-1 mt-[-8rem] sm:mt-0">
@@ -104,7 +105,7 @@ const BlobAnimation = () => {
               </span>
             </div> */}
             <div
-              className="apply-button"
+              className="apply-button z-50"
               data-hackathon-slug="hackfortomorrow2024"
               data-button-theme="dark-inverted"
               style={{ height: "44px", width: "312px" }}
