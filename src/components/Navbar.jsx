@@ -3,7 +3,7 @@
 import {useState, useEffect} from "react";
 import Image from "next/image";
 import ExcelLogo from "@/assets/excel_logo_crop.png";
-import ExcelLogoMob from "@/assets/excel_logo.png";
+import ExcelLogoMob from "@/assets/excel_white.png";
 import {RxHamburgerMenu} from "react-icons/rx";
 import {MdArrowOutward} from "react-icons/md";
 import {IoCloseOutline} from "react-icons/io5";
@@ -77,7 +77,7 @@ const Navbar = () => {
 
   return (
     <div
-      className={`w-screen text-white flex flex-row items-center justify-between px-5 lg:px-16  py-3 fixed top-0 z-[999] transition-all duration-300 ${
+      className={`w-screen text-white flex flex-row items-center justify-between px-5 lg:px-[3.5rem] py-3 fixed top-0 z-[999] transition-all duration-300 ${
         scrolled ? "bg-[#00000070] backdrop-blur" : "bg-transparent"
       }`}
     >
