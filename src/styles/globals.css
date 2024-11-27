@@ -73,6 +73,42 @@ body {
   }
 }
 
+.lcircle1 {
+  position: absolute;
+  top: -284px;
+  height: 883px;
+  width: auto;
+  z-index: 0;
+  right: -100px;
+  transform: rotate(-200deg);
+  animation: rotate 15s linear infinite;
+}
+
+.lcircle2 {
+  position: absolute;
+  top: -198px;
+  height: 711px;
+  width: auto;
+  right: -35px;
+  transform: rotate(-180deg);
+  animation: rotate 20s linear infinite;
+  z-index: 0;
+}
+
+
+.lcircle3 {
+  position: absolute;
+  top: -67px;
+  height: 448px;
+  width: auto;
+  right:95px;
+  width: auto;
+  animation: rotate 25s linear infinite;
+  z-index: 0;
+}
+
+
+
 .skeleton {
   background-image: linear-gradient(
     90deg,

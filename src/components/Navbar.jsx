@@ -56,7 +56,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > window.innerHeight/5) {
+      if (window.scrollY > window.innerHeight / 5) {
         setScrolled(true);
       } else {
         setScrolled(false);
@@ -69,14 +69,16 @@ const Navbar = () => {
 
   useEffect(() => {
     if (typeof window !== "undefined" && typeof document !== "undefined") {
-      document.body.style.overflowY = mobilenav ? "hidden" : "auto"; 
+      document.body.style.overflowY = mobilenav ? "hidden" : "auto";
     }
   }, [mobilenav]);
-  
+
   return (
-    <div className={`w-screen text-white flex flex-row items-center justify-between px-6 lg:px-0 lg:justify-around py-3 fixed top-0 z-[999] transition-all duration-300 ${
+    <div
+      className={`w-screen text-white flex flex-row items-center justify-between px-6 lg:px-0 lg:justify-around py-3 fixed top-0 z-[999] transition-all duration-300 ${
         scrolled ? "bg-[#00000070] backdrop-blur" : "bg-transparent"
-      }`}>
+      }`}
+    >
       <div className="tracking-[0.1rem] font-base-neue-black text-3xl">
         <a href="/">
           <p className="pt-1">HFT</p>
@@ -105,7 +107,7 @@ const Navbar = () => {
           <Link
             key={index}
             href={item.link}
-            className="font-syne-medium text-sm group text-gray-light transition-all duration-300 ease-in-out lg:ml-8"
+            className="font-syne-medium text-base group text-gray-light transition-all duration-300 ease-in-out lg:ml-8"
             onClick={() => mobilenav && setmobilenav(!mobilenav)}
           >
             <span className="bg-left-bottom font-normal bg-gradient-to-r from-red to-red bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-300 ease-out">

@@ -1,6 +1,6 @@
 "use client";
 import Spline from "@splinetool/react-spline";
-import {useEffect, useRef} from "react";
+import { useEffect, useRef } from "react";
 import astro from "@/assets/Landing/astro.svg";
 import astro2 from "@/assets/Landing/astro2.svg";
 import astro3 from "@/assets/Landing/astro3.svg";
@@ -10,6 +10,9 @@ import constel from "@/assets/Landing/constellation.svg";
 import arrow from "@/assets/Landing/arrow.svg";
 import Image from "next/image";
 import dynamic from "next/dynamic";
+import circle1 from "../assets/backgrounds/landing/circle1.svg";
+import circle2 from "../assets/backgrounds/landing/circle2.svg";
+import circle3 from "../assets/backgrounds/landing/circle3.svg";
 
 const BlobAnimation = () => {
   const canvasRef = useRef(null);
@@ -34,18 +37,21 @@ const BlobAnimation = () => {
           src={topleft}
           alt="topleft"
         />
-        <Image
+        {/* <Image
           className="hidden lg:block absolute overflow-clip mt-[-4rem] mr-[-4rem] sm:mt-[-2rem] sm:mr-[-2rem] right-0 z-0"
           src={constel}
           alt="constellation"
-        />
+        /> */}
         <Image
           className="hidden lg:block absolute bg-cover right-0 top-0 h-full z-0"
           src={right}
           alt="bot-right"
         />
+        <Image className="lcircle1 max-lg:hidden" src={circle1} />
+        <Image className="lcircle2 max-md:hidden" src={circle2} />
+        <Image className="lcircle3 max-md:hidden" src={circle3} />
         <div
-          className="container max-w-full md:max-w-[70%] relative m-auto flex flex-col min-h-screen text-our_white justify-center gap-[20px] max-sm:scale-90 z-0"
+          className="container max-w-full md:max-w-[70%] relative m-auto flex flex-col min-h-screen text-our_white justify-center gap-[20px] z-0"
           data-aos="fade-up"
           data-aos-duration="1100"
         >
@@ -55,12 +61,12 @@ const BlobAnimation = () => {
             alt="astro"
           />
           <Image
-            className="sm:hidden absolute bottom-0 sm:bottom-0 right-0 sm:right-[-4rem] z-0"
+            className="sm:hidden absolute bottom-0 sm:bottom-0 right-0 max-sm: sm:right-[-4rem] z-0"
             src={astro3}
             alt="astro-mob"
           />
 
-          <div className="flex z-50 flex-col gap-24 sm:gap-12 items-center sm:items-start">
+          <div className="flex z-50 flex-col gap-24 sm:gap-12 items-center sm:items-start max-sm:scale-90">
             <div className="flex flex-col gap-1 mt-[-8rem] sm:mt-0">
               <div className="uppercase  text-center sm:text-left text-white font-base-neue-black max-w-[100vw] text-5xl md:text-[6rem] font-bold leading-[90px] max-lg:text-[61px] max-lg:max-w-[480px] max-lg:leading-[70px] md:max-w-[700px] small-screen:text-[50px] small-screen:leading-[50px]">
                 Hack For Tomorrow
@@ -101,7 +107,7 @@ const BlobAnimation = () => {
               className="apply-button"
               data-hackathon-slug="hackfortomorrow2024"
               data-button-theme="dark-inverted"
-              style={{height: "44px", width: "312px"}}
+              style={{ height: "44px", width: "312px" }}
             ></div>
           </div>
         </div>
