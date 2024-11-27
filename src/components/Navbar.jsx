@@ -3,6 +3,7 @@
 import {useState, useEffect} from "react";
 import Image from "next/image";
 import ExcelLogo from "@/assets/excel_logo_crop.png";
+import ExcelLogoMob from "@/assets/excel_logo.png";
 import {RxHamburgerMenu} from "react-icons/rx";
 import {IoCloseOutline} from "react-icons/io5";
 import Link from "next/link";
@@ -79,9 +80,14 @@ const Navbar = () => {
         scrolled ? "bg-[#00000070] backdrop-blur" : "bg-transparent"
       }`}
     >
-      <div className="tracking-[0.1rem] font-base-neue-black text-3xl">
+      {/* <div className="hidden lg:block tracking-[0.1rem] font-base-neue-black text-3xl">
         <a href="https://www.excelmec.org">
           <Image src={ExcelLogo} className="w-24" />
+        </a>
+      </div> */}
+      <div className=" tracking-[0.1rem] font-base-neue-black text-3xl">
+        <a href="https://www.excelmec.org">
+          <Image src={ExcelLogoMob} className="w-8" />
         </a>
       </div>
 

@@ -15,7 +15,7 @@ const FAQCard = ({question, answer, index}) => {
       className="container py-5 sm:px-5 faq-card-container"
       onClick={handleExpand}
     >
-      <div className="faq-question text-xl sm:text-2xl lg:text-3xl font-[500] hover:cursor-pointer">
+      <div className="faq-question text-xl sm:text-2xl sm:leading-9 font-[500] hover:cursor-pointer">
         <h3>{question}</h3>
         <div
           className={

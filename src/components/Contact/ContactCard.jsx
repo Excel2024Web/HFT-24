@@ -81,6 +81,7 @@ const ContactCard = ({details}) => {
       </motion.div> */}
       <div
         className="card-container"
+        data-aos="fade-up"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
         onClick={() => setIsHovered(!isHovered)}

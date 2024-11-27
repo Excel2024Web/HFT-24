@@ -15,7 +15,7 @@ const TimelineCard = ({item, mobile, index}) => {
           className="font-syne-medium text-white text-[16px]"
           sx={{m: "auto 0"}}
         >
-          <div className={`flex gap-2 ml-8`}>
+          <div className="flex gap-2 ml-8" data-aos="fade-up">
             <span className="text-xs font-medium">0{index + 1}</span>
             <h3 className="text-3xl">
               {item.title}
