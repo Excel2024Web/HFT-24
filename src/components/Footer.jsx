@@ -38,7 +38,7 @@ const Footer = () => {
     },
     {
       item: "GMap",
-      link: "https://maps.app.goo.gl/PycGaWgidy8eDQsx9",
+      link: "https://maps.app.goo.gl/LMwde9LfTuAvWuBV9",
       icon: FaMapMarkerAlt,
     },
   ];
