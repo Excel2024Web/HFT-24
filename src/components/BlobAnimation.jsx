@@ -1,6 +1,6 @@
 "use client";
 import Spline from "@splinetool/react-spline";
-import {useEffect, useRef} from "react";
+import { useEffect, useRef } from "react";
 import astro from "@/assets/Landing/astro.svg";
 import astro2 from "@/assets/Landing/astro2.svg";
 import astro3 from "@/assets/Landing/astro3.svg";
@@ -10,10 +10,9 @@ import constel from "@/assets/Landing/constellation.svg";
 import arrow from "@/assets/Landing/arrow.svg";
 import Image from "next/image";
 import dynamic from "next/dynamic";
-import circle1 from "../assets/backgrounds/about/circle1.png";
-import circle2 from "../assets/backgrounds/about/circle2.png";
-import circle3 from "../assets/backgrounds/about/circle3.png";
-
+import circle1 from "../assets/backgrounds/landing/circle1.svg";
+import circle2 from "../assets/backgrounds/landing/circle2.svg";
+import circle3 from "../assets/backgrounds/landing/circle3.svg";
 
 const BlobAnimation = () => {
   const canvasRef = useRef(null);
@@ -108,7 +107,7 @@ const BlobAnimation = () => {
               className="apply-button"
               data-hackathon-slug="hackfortomorrow2024"
               data-button-theme="dark-inverted"
-              style={{height: "44px", width: "312px"}}
+              style={{ height: "44px", width: "312px" }}
             ></div>
           </div>
         </div>
