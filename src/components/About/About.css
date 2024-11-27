@@ -232,7 +232,6 @@
   opacity: 0.5;
 }
 
-
 .circle3 {
   position: absolute;
   bottom: -150px;
@@ -244,7 +243,6 @@
   z-index: 2;
   opacity: 0.5;
 }
-
 
 .circle11 {
   position: absolute;
@@ -270,7 +268,6 @@
   opacity: 0.5;
 }
 
-
 .circle33 {
   position: absolute;
   top: -150px;
@@ -282,7 +279,7 @@
   z-index: 2;
   opacity: 0.5;
 }
-.aboutsvg1{
+.aboutsvg1 {
   display: none;
   border-radius: 30px;
 }
@@ -307,7 +304,7 @@
   position: absolute;
   width: 60%;
   font-size: 1.5rem;
-  text-align: justify;
+  text-align: center;
   z-index: 10;
 }
 
@@ -338,7 +335,7 @@
   }
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -372,7 +369,7 @@ html{
     display: none;
   }
 
-  .aboutsvg1{
+  .aboutsvg1 {
     height: 90%;
     display: flex;
     width: 95%;

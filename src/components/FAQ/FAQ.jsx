@@ -19,7 +19,7 @@ const FAQ = () => {
     },
     {
       question: "How many people should be there in a team?",
-      answer: "You can form teams of 2-4 members.",
+      answer: "You can form teams of 2-5 members.",
     },
     {
       question: "What about food?",

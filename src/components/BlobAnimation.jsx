@@ -1,6 +1,6 @@
 "use client";
 import Spline from "@splinetool/react-spline";
-import { useEffect, useRef } from "react";
+import {useEffect, useRef} from "react";
 import astro from "@/assets/Landing/astro.svg";
 import astro2 from "@/assets/Landing/astro2.svg";
 import astro3 from "@/assets/Landing/astro3.svg";
@@ -51,7 +51,7 @@ const BlobAnimation = () => {
         <Image className="lcircle3" src={circle3} />
         <div className="absolute bg-gradient-to-b from-transparent from-95% to-[#0a0a0a] z-0 to-100% bg-no-repeat right-0 left-0 top-0 bottom-0" />
         <div
-          className="container max-w-full md:max-w-[70%] relative m-auto flex flex-col min-h-screen text-our_white justify-center gap-[20px] z-0"
+          className="container max-w-full sm:max-w-[70%] relative m-auto flex flex-col min-h-screen text-our_white justify-center gap-[20px] z-0"
           data-aos="fade-up"
           data-aos-duration="1100"
         >
@@ -65,7 +65,7 @@ const BlobAnimation = () => {
             src={astro3}
             alt="astro-mob"
           />
-        <div className="lg:hidden absolute bg-gradient-to-b from-transparent from-95% to-[#0a0a0a] z-0 to-100% bg-no-repeat right-0 left-0 top-0 bottom-0" />
+          <div className="lg:hidden absolute bg-gradient-to-b from-transparent from-95% to-[#0a0a0a] z-0 to-100% bg-no-repeat right-0 left-0 top-0 bottom-0" />
 
           <div className="flex z-50 flex-col gap-24 sm:gap-12 items-center sm:items-start max-sm:scale-90">
             <div className="flex flex-col gap-1 mt-[-8rem] sm:mt-0">
@@ -108,7 +108,7 @@ const BlobAnimation = () => {
               className="apply-button z-50"
               data-hackathon-slug="hackfortomorrow2024"
               data-button-theme="dark-inverted"
-              style={{ height: "44px", width: "312px" }}
+              style={{height: "44px", width: "312px"}}
             ></div>
           </div>
         </div>
