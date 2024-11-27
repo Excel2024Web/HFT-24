@@ -6,7 +6,7 @@ import excel from "@/assets/Footer/excel.svg";
 
 function Loading() {
   return (
-    <div>
+    <div className="landingbody" >
       <div id="root ">
         <div id="particles-background" className="vertical-centered-box"></div>
         <div id="particles-foreground" className="vertical-centered-box"></div>
@@ -25,7 +25,7 @@ function Loading() {
           </div>
         </div>
       </div>
-      <Script src="./script.js" />
+      <Script src="./script.js" strategy="beforeInteractive"  />
     </div>
   );
 }
