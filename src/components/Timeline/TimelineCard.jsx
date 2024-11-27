@@ -6,14 +6,14 @@ import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
 
-const TimelineCard = ({ item, mobile, index }) => {
+const TimelineCard = ({item, mobile, index}) => {
   return (
     <TimelineItem className="font-syne-medium">
       {!mobile && (
         <TimelineOppositeContent
           color="white"
           className="font-syne-medium text-white text-[16px]"
-          sx={{ m: "auto 0" }}
+          sx={{m: "auto 0"}}
         >
           <div className={`flex gap-2 ml-8`}>
             <span className="text-xs font-medium">0{index + 1}</span>
@@ -33,22 +33,22 @@ const TimelineCard = ({ item, mobile, index }) => {
           </div>
         )}
         {index === 0 ? (
-          <TimelineConnector style={{ backgroundColor: "transparent" }} />
+          <TimelineConnector style={{backgroundColor: "transparent"}} />
         ) : (
           <TimelineConnector
-            style={{ backgroundColor: "rgba(255, 255, 255, 1)" }}
+            style={{backgroundColor: "rgba(255, 255, 255, 1)"}}
           />
         )}
         <TimelineDot />
         {index === 4 ? (
-          <TimelineConnector style={{ backgroundColor: "transparent" }} />
+          <TimelineConnector style={{backgroundColor: "transparent"}} />
         ) : (
           <TimelineConnector
-            style={{ backgroundColor: "rgba(255, 255, 255, 1)" }}
+            style={{backgroundColor: "rgba(255, 255, 255, 1)"}}
           />
         )}
       </TimelineSeparator>
-      <TimelineContent sx={{ m: "auto 0" }}>
+      <TimelineContent sx={{m: "auto 0"}}>
         <div
           className={`relative p-8 max-md:p-6 text-left flex flex-col overflow-hidden`}
           data-aos="fade-up"
@@ -58,7 +58,7 @@ const TimelineCard = ({ item, mobile, index }) => {
               <span className="font-syne-medium text-[#FFF] text-xl font-[500]">
                 {item.title}
               </span>
-              <span className="font-syne-medium text-xs text-[#FFF] font-[500]">
+              <span className="font-syne-medium text-sm text-[#FFF] font-[500]">
                 {item.date}
               </span>
               <span className="font-syne-medium mt-[11px] text-[#FFF]/[0.85]">

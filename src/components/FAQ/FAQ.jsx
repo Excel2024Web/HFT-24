@@ -1,5 +1,5 @@
 import FAQCard from "./FAQCard";
-import Bg from "@/assets/faq/11.png"
+import Bg from "@/assets/faq/11.png";
 import Image from "next/image";
 import astro2 from "@/assets/Landing/astro2.svg";
 import astro3 from "@/assets/Landing/astro3.svg";
@@ -10,7 +10,7 @@ const FAQ = () => {
     {
       question: "What is the theme of the Hackathon?",
       answer:
-        "HFT is open-themed, so let your imagination run wild and build whatever your heart desires.",
+        "This time, we’re diving into Gen AI and fintech, but open innovation welcomes bold ideas beyond these themes",
     },
     {
       question: "How much is the registration fee?",
@@ -31,6 +31,11 @@ const FAQ = () => {
       answer: "No. Feel free to brainstorm and create wireframes though",
     },
     {
+      question: "Is hybrid participation allowed?",
+      answer:
+        "Nope! Everyone on the team needs to show up offline. Think of it as a team-building exercise—you can’t share pizza or high-fives over Zoom! 😉",
+    },
+    {
       question: "I’m a beginner, can I participate?",
       answer:
         "New to coding? No problem! HFT is for everyone and is sure to add wings to your coding journey.",
@@ -40,7 +45,12 @@ const FAQ = () => {
     <div id="faq" className="faq mt-[80px] px-4 relative">
       <Image className="bottom-right1 top-[-80px] z-[0]" src={bottom_right} />
       <div className="relative container flex flex-col z-10 items-start px-10 py-10 mx-auto faq-container overflow-hidden ">
-        <Image src={Bg} alt="bg" className="absolute z-0 top-0 bottom-0 right-0 left-0 opacity-80" fill />
+        <Image
+          src={Bg}
+          alt="bg"
+          className="absolute z-0 top-0 bottom-0 right-0 left-0 opacity-80"
+          fill
+        />
         {/* <Image
             className="hidden sm:block absolute bottom-0 md:bottom-0 md:right-[-8rem] z-0"
             src={astro2}
@@ -67,7 +77,7 @@ const FAQ = () => {
           ))}
           <div className="pt-5 m-auto text-md">
             Have more questions? Feel free to contact us at{" "}
-            <a className="text-red-500" href="mailto:support@excelmec.org">
+            <a className="underline" href="mailto:support@excelmec.org">
               support@excelmec.org
             </a>
           </div>

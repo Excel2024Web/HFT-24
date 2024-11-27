@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, {useEffect, useRef} from "react";
 import "./partners.css";
 import Image from "next/image";
 import top_left from "../../assets/backgrounds/about/topleft.png";
@@ -6,6 +6,7 @@ import Devfolio from "../../assets/Gallery/devfolio.png";
 import EthIndia from "../../assets/Gallery/Ethindia.png";
 import Polygon from "../../assets/Gallery/polygon.png";
 import KeyValue from "../../assets/Gallery/keyvalue2.jpg";
+import Geojit from "../../assets/Gallery/geo.jpg";
 import KSUM from "../../assets/Gallery/ksumw.jpg";
 import right from "@/assets/Landing/right2.svg";
 import bottom_right from "../../assets/backgrounds/about/bottomright.png";
@@ -42,11 +43,7 @@ const Partners = () => {
   return (
     <section className="partners-section pt-[80px] " id="partners">
       <Image className="top-left1" src={top_left} />
-      <Image
-        className="bottom-right1"
-        src={bottom_right}
-        alt="bot-right"
-      />
+      <Image className="bottom-right1" src={bottom_right} alt="bot-right" />
       {/* <div className="absolute bg-gradient-to-b from-[#2d0c14] to-5% to-transparent bg-no-repeat inset-0" /> */}
       {/* <div className="absolute bg-no-repeat inset-0" /> */}
       <h1 className="text-5xl partners-title max-md:text-4xl">
@@ -64,6 +61,20 @@ const Partners = () => {
               <Image
                 src={KeyValue}
                 alt="KEYVALUE LOGO"
+                className="partner-logo styled-partner"
+              />
+            </a>
+            <p className="partner-label font-syne-medium">Platinum Partner</p>
+          </div>
+          <div className="partner title-partner ">
+            <a
+              href="https://keyvalue.systems"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                src={Geojit}
+                alt="GEOJIT LOGO"
                 className="partner-logo styled-partner"
               />
             </a>

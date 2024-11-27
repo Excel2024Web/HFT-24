@@ -62,7 +62,6 @@
 } */
 
 .faq-question {
-  font-size: 1.5em;
   font-weight: bold;
   display: flex;
   flex-direction: row;
@@ -70,7 +69,6 @@
   align-items: center;
 }
 .faq-answer {
-  font-size: 1.3em;
   overflow: hidden;
   transition: all 0.2s ease;
 }
