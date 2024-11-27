@@ -2,9 +2,9 @@
 
 import {useState, useEffect} from "react";
 import Image from "next/image";
+import ExcelLogo from "@/assets/excel_logo_crop.png";
 import {RxHamburgerMenu} from "react-icons/rx";
 import {IoCloseOutline} from "react-icons/io5";
-
 import Link from "next/link";
 
 const Navbar = () => {
@@ -75,13 +75,13 @@ const Navbar = () => {
 
   return (
     <div
-      className={`w-screen text-white flex flex-row items-center justify-between px-6 lg:px-0 lg:justify-around py-3 fixed top-0 z-[999] transition-all duration-300 ${
+      className={`w-screen text-white flex flex-row items-center justify-between px-5 lg:px-16  py-3 fixed top-0 z-[999] transition-all duration-300 ${
         scrolled ? "bg-[#00000070] backdrop-blur" : "bg-transparent"
       }`}
     >
       <div className="tracking-[0.1rem] font-base-neue-black text-3xl">
-        <a href="/">
-          <p className="pt-1">HFT</p>
+        <a href="https://www.excelmec.org">
+          <Image src={ExcelLogo} className="w-24" />
         </a>
       </div>
 
@@ -97,7 +97,7 @@ const Navbar = () => {
       </button>
 
       <div
-        className={`text-gray-light transition-all duration-300 ease-in-out font-medium lg:static lg:w-max lg:h-max lg:pt-0 lg:bg-transparent lg:block lg:mr-3 fixed top-0 w-screen pt-24 h-screen z-[-1] text-center items-center ${
+        className={`text-gray-light transition-all duration-300 ease-in-out font-medium lg:static lg:w-max lg:h-max lg:pt-0 lg:bg-transparent lg:block lg:mr-8 fixed top-0 w-screen pt-24 h-screen z-[-1] text-center items-center ${
           mobilenav
             ? "right-0 flex flex-col gap-8 bg-zinc-900"
             : "right-full flex flex-col gap-8 text-opacity-0"
