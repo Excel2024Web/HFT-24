@@ -1,24 +1,24 @@
-body {
+.landingbody {
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
     font-family: "proxima-nova-soft", sans-serif;
     -webkit-user-select: none;
     overflow: hidden;
   }
-  body .vertical-centered-box {
+  .landingbody .vertical-centered-box {
     position: absolute;
     width: 100%;
     height: 100%;
     text-align: center;
   }
-  body .vertical-centered-box:after {
+  .landingbody .vertical-centered-box:after {
     content: '';
     display: inline-block;
     height: 100%;
     vertical-align: middle;
     margin-right: -0.25em;
   }
-  body .vertical-centered-box .content {
+  .landingbody .vertical-centered-box .content {
     box-sizing: border-box;
     display: inline-block;
     vertical-align: middle;
@@ -28,7 +28,7 @@ body {
   * {
     transition: all 0.3s;
   }
-  body {
+  .landingbody {
     background: #2c2d44;
   }
   .loader-circle {
