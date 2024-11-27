@@ -47,9 +47,9 @@ const BlobAnimation = () => {
           src={right}
           alt="bot-right"
         />
-        <Image className="lcircle1 max-lg:hidden" src={circle1} />
-        <Image className="lcircle2 max-md:hidden" src={circle2} />
-        <Image className="lcircle3 max-md:hidden" src={circle3} />
+        <Image className="lcircle1" src={circle1} />
+        <Image className="lcircle2" src={circle2} />
+        <Image className="lcircle3" src={circle3} />
         <div
           className="container max-w-full md:max-w-[70%] relative m-auto flex flex-col min-h-screen text-our_white justify-center gap-[20px] z-0"
           data-aos="fade-up"

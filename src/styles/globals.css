@@ -95,19 +95,106 @@ body {
   z-index: 0;
 }
 
-
 .lcircle3 {
   position: absolute;
   top: -67px;
   height: 448px;
   width: auto;
-  right:95px;
+  right: 95px;
   width: auto;
   animation: rotate 25s linear infinite;
   z-index: 0;
 }
 
+@media (max-width: 1700px) {
+  .lcircle1 {
+    top: -239.6px;
+    height: 745px;
+    width: auto;
+    right: -84.3px;
+  }
 
+  .lcircle2 {
+    top: -167px;
+    height: 600px;
+    width: auto;
+    right: -29.5px;
+  }
+
+  .lcircle3 {
+    top: -56.5px;
+    height: 378px;
+    right: 80.15px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .lcircle1 {
+    top: -199.7px;
+    height: 621px;
+    width: auto;
+    right: -70.2px;
+  }
+
+  .lcircle2 {
+    top: -139.2px;
+    height: 500px;
+    width: auto;
+    right: -24.5px;
+  }
+
+  .lcircle3 {
+    top: -47px;
+    height: 315px;
+    right: 66.79px;
+  }
+}
+
+@media (max-width: 900px) {
+  .lcircle1 {
+    top: -139.8px;
+    height: 434.7px;
+    width: auto;
+    right: -49.14px;
+  }
+
+  .lcircle2 {
+    top: -97.44px;
+    height: 350px;
+    width: auto;
+    right: -17.15px;
+  }
+
+  .lcircle3 {
+    top: -32.9px;
+    width: auto;
+    height: 220.5px;
+    right: 46.76px;
+  }
+}
+
+@media (max-width: 530px) {
+  .lcircle1 {
+    top: -80px;
+    height: 248.4px;
+    width: auto;
+    right: -28px;
+  }
+
+  .lcircle2 {
+    top: -55.68px;
+    height: 200px;
+    width: auto;
+    right: -9.8px;
+  }
+
+  .lcircle3 {
+    top: -18.88px;
+    width: auto;
+    height: 126.6px;
+    right: 26.84px;
+  }
+}
 
 .skeleton {
   background-image: linear-gradient(
