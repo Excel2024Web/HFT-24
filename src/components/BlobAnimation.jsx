@@ -28,7 +28,7 @@ const BlobAnimation = () => {
   return (
     <>
       <div className="relative h-screen w-screen overflow-hidden">
-        <div className="absolute bg-gradient-to-b from-transparent from-95% to-[#0a0a0a] z-50 bg-no-repeat right-0 left-0 top-0 bottom-0" />
+        {/* <div className="absolute bg-gradient-to-b from-transparent z-0 from-95% to-[#0a0a0a] bg-no-repeat right-0 left-0 top-0 bottom-0" /> */}
         <Image
           className="absolute top-0 left-0 z-0"
           src={topleft}
@@ -45,7 +45,7 @@ const BlobAnimation = () => {
           alt="bot-right"
         />
         <div
-          className="container max-w-full md:max-w-[70%] relative m-auto flex flex-col min-h-screen text-our_white justify-center gap-[20px] max-sm:scale-90 z-10"
+          className="container max-w-full md:max-w-[70%] relative m-auto flex flex-col min-h-screen text-our_white justify-center gap-[20px] max-sm:scale-90 z-0"
           data-aos="fade-up"
           data-aos-duration="1100"
         >
@@ -60,7 +60,7 @@ const BlobAnimation = () => {
             alt="astro-mob"
           />
 
-          <div className="flex z-10 flex-col gap-24 sm:gap-12 items-center sm:items-start">
+          <div className="flex z-50 flex-col gap-24 sm:gap-12 items-center sm:items-start">
             <div className="flex flex-col gap-1 mt-[-8rem] sm:mt-0">
               <div className="uppercase  text-center sm:text-left text-white font-base-neue-black max-w-[100vw] text-5xl md:text-[6rem] font-bold leading-[90px] max-lg:text-[61px] max-lg:max-w-[480px] max-lg:leading-[70px] md:max-w-[700px] small-screen:text-[50px] small-screen:leading-[50px]">
                 Hack For Tomorrow
