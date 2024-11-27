@@ -10,11 +10,11 @@ import circle3 from "../../assets/backgrounds/about/circle3.png";
 
 const About = () => {
   return (
-    <div className="relative">
+    <div className="relative overflow-hidden">
       <div className="absolute bg-gradient-to-b from-[#0a0a0a] from-10% to-transparent z-50 bg-no-repeat right-0 left-0 top-0 min-h-32" />
       <div id="about" className="about-container pt-[80px]">
         <Image className="top-left" src={top_left} />
-        <Image className="bottom-right" src={bottom_right} />
+        <Image className="bottom-right z-0" src={bottom_right} />
         <Image className="circle1" src={circle1} />
         <Image className="circle2" src={circle2} />
         <Image className="circle3" src={circle3} />
