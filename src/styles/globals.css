@@ -75,11 +75,11 @@ body {
 
 .lcircle1 {
   position: absolute;
-  top: -450px;
-  height: 1000px;
+  top: -284px;
+  height: 900px;
   width: auto;
   z-index: 2;
-  right: -450px;
+  right: -230px;
   transform: rotate(-200deg);
   animation: rotate 15s linear infinite;
   opacity: 0.5;
@@ -87,10 +87,10 @@ body {
 
 .lcircle2 {
   position: absolute;
-  top: -350px;
-  height: 800px;
+  top: -200px;
+  height: 700px;
   width: auto;
-  right: -350px;
+  right: -125px;
   transform: rotate(-180deg);
   animation: rotate 20s linear infinite;
   z-index: 2;
@@ -100,14 +100,75 @@ body {
 
 .lcircle3 {
   position: absolute;
-  top: -150px;
-  height: 400px;
+  top: -67px;
+  height: 450px;
   width: auto;
-  right: -150px;
+  right:10px;
   width: auto;
   animation: rotate 25s linear infinite;
   z-index: 2;
   opacity: 0.5;
+}
+
+@media (max-width: 900px) {
+  .lcircle1 {
+    height: 800px;
+    width: auto;
+    top: -400px;
+    right: -400px;
+  }
+
+  .lcircle2 {
+    height: 600px;
+    width: auto;
+    top: -300px;
+    right: -300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .lcircle1 {
+    height: 600px;
+    width: auto;
+    top: -300px;
+    right: -300px;
+  }
+
+  .lcircle2 {
+    height: 500px;
+    width: auto;
+    top: -250px;
+    right: -250px;
+  }
+}
+
+@media (max-width: 530px) {
+  .lcircle1 {
+    height: 450px;
+    width: auto;
+    top: -225px;
+    right: -225px;
+  }
+
+  .lcircle2 {
+    height: 300px;
+    width: auto;
+    top: -150px;
+    right: -150px;
+  }
+
+  .lcircle3 {
+    height: 100px;
+    width: auto;
+    top: -50px;
+    right: -50px;
+  }
+}
+
+@media (max-width: 420px) {
+  .lcircle1 {
+    display: none;
+  }
 }
 
 .skeleton {
