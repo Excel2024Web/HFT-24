@@ -1,21 +1,33 @@
+import React from "react";
+import "../styles/loading.css";
 import Script from "next/script";
+import Image from "next/image";
+import excel from "@/assets/Footer/excel.svg";
 
-export default function Loading() {
+function Loading() {
   return (
-    <div className="flex items-center justify-center">
-      {/* Include the external script */}
-      <Script
-        src="https://cdn.jsdelivr.net/npm/ldrs/dist/auto/grid.js"
-        type="module"
-        strategy="beforeInteractive"
-      />
-      
-      {/* Loading grid component */}
-      <l-grid
-        size="80"
-        speed="1.5"
-        color="white"
-      ></l-grid>
+    <div>
+      <div id="root ">
+        <div id="particles-background" className="vertical-centered-box"></div>
+        <div id="particles-foreground" className="vertical-centered-box"></div>
+        <div className="vertical-centered-box w-screen h-screen absolute left-0">
+          <div className="content">
+            <div className="loader-circle"></div>
+            <div className="loader-line-mask">
+              <div className="loader-line"></div>
+            </div>
+            <Image
+              src={excel}
+              alt="excellogo"
+              className="skeleton_sped_up"
+              data-aos="fade-up"
+            ></Image>
+          </div>
+        </div>
+      </div>
+      <Script src="./script.js" />
     </div>
   );
 }
+
+export default Loading;
