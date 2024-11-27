@@ -76,100 +76,38 @@ body {
 .lcircle1 {
   position: absolute;
   top: -284px;
-  height: 900px;
+  height: 883px;
   width: auto;
-  z-index: 2;
-  right: -230px;
+  z-index: 0;
+  right: -100px;
   transform: rotate(-200deg);
   animation: rotate 15s linear infinite;
-  opacity: 0.5;
 }
 
 .lcircle2 {
   position: absolute;
-  top: -200px;
-  height: 700px;
+  top: -198px;
+  height: 711px;
   width: auto;
-  right: -125px;
+  right: -35px;
   transform: rotate(-180deg);
   animation: rotate 20s linear infinite;
-  z-index: 2;
-  opacity: 0.5;
+  z-index: 0;
 }
 
 
 .lcircle3 {
   position: absolute;
   top: -67px;
-  height: 450px;
+  height: 448px;
   width: auto;
-  right:10px;
+  right:95px;
   width: auto;
   animation: rotate 25s linear infinite;
-  z-index: 2;
-  opacity: 0.5;
+  z-index: 0;
 }
 
-@media (max-width: 900px) {
-  .lcircle1 {
-    height: 800px;
-    width: auto;
-    top: -400px;
-    right: -400px;
-  }
 
-  .lcircle2 {
-    height: 600px;
-    width: auto;
-    top: -300px;
-    right: -300px;
-  }
-}
-
-@media (max-width: 768px) {
-  .lcircle1 {
-    height: 600px;
-    width: auto;
-    top: -300px;
-    right: -300px;
-  }
-
-  .lcircle2 {
-    height: 500px;
-    width: auto;
-    top: -250px;
-    right: -250px;
-  }
-}
-
-@media (max-width: 530px) {
-  .lcircle1 {
-    height: 450px;
-    width: auto;
-    top: -225px;
-    right: -225px;
-  }
-
-  .lcircle2 {
-    height: 300px;
-    width: auto;
-    top: -150px;
-    right: -150px;
-  }
-
-  .lcircle3 {
-    height: 100px;
-    width: auto;
-    top: -50px;
-    right: -50px;
-  }
-}
-
-@media (max-width: 420px) {
-  .lcircle1 {
-    display: none;
-  }
-}
 
 .skeleton {
   background-image: linear-gradient(
