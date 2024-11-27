@@ -45,7 +45,7 @@ const BlobAnimation = () => {
           alt="bot-right"
         />
         <div
-          className="container max-w-full md:max-w-[70%] relative m-auto flex flex-col min-h-screen text-our_white justify-center gap-[20px] max-sm:scale-90 z-0"
+          className="container max-w-full md:max-w-[70%] relative m-auto flex flex-col min-h-screen text-our_white justify-center gap-[20px] z-0"
           data-aos="fade-up"
           data-aos-duration="1100"
         >
@@ -55,12 +55,12 @@ const BlobAnimation = () => {
             alt="astro"
           />
           <Image
-            className="sm:hidden absolute bottom-0 sm:bottom-0 right-0 sm:right-[-4rem] z-0"
+            className="sm:hidden absolute bottom-0 sm:bottom-0 right-0 max-sm: sm:right-[-4rem] z-0"
             src={astro3}
             alt="astro-mob"
           />
 
-          <div className="flex z-50 flex-col gap-24 sm:gap-12 items-center sm:items-start">
+          <div className="flex z-50 flex-col gap-24 sm:gap-12 items-center sm:items-start max-sm:scale-90">
             <div className="flex flex-col gap-1 mt-[-8rem] sm:mt-0">
               <div className="uppercase  text-center sm:text-left text-white font-base-neue-black max-w-[100vw] text-5xl md:text-[6rem] font-bold leading-[90px] max-lg:text-[61px] max-lg:max-w-[480px] max-lg:leading-[70px] md:max-w-[700px] small-screen:text-[50px] small-screen:leading-[50px]">
                 Hack For Tomorrow
