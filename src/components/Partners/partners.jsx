@@ -42,8 +42,12 @@ const Partners = () => {
 
   return (
     <section className="partners-section pt-[80px] " id="partners">
-      <Image className="top-left1" src={top_left} />
-      <Image className="bottom-right1" src={bottom_right} alt="bot-right" />
+      <Image className="pointer-events-none top-left1" src={top_left} />
+      <Image
+        className="pointer-events-none bottom-right1"
+        src={bottom_right}
+        alt="bot-right"
+      />
       {/* <div className="absolute bg-gradient-to-b from-[#2d0c14] to-5% to-transparent bg-no-repeat inset-0" /> */}
       {/* <div className="absolute bg-no-repeat inset-0" /> */}
       <h1 className="text-5xl partners-title max-md:text-4xl">
@@ -61,7 +65,7 @@ const Partners = () => {
               <Image
                 src={KeyValue}
                 alt="KEYVALUE LOGO"
-                className="partner-logo styled-partner"
+                className="pointer-events-none partner-logo styled-partner"
               />
             </a>
             <p className="partner-label font-syne-medium">Platinum Partner</p>
@@ -75,7 +79,7 @@ const Partners = () => {
               <Image
                 src={Geojit}
                 alt="GEOJIT LOGO"
-                className="partner-logo styled-partner"
+                className="pointer-events-none partner-logo styled-partner"
               />
             </a>
             <p className="partner-label font-syne-medium">Platinum Partner</p>
@@ -88,7 +92,7 @@ const Partners = () => {
             <Image
               src={Polygon}
               alt="POLYGON LOGO"
-              className="partner-logo"
+              className="pointer-events-none partner-logo"
               width={240}
               height={70}
             />
@@ -98,7 +102,7 @@ const Partners = () => {
             <Image
               src={Devfolio}
               alt="DEVFOLIO LOGO"
-              className="partner-logo"
+              className="pointer-events-none partner-logo"
               width={240}
               height={70}
             />
@@ -108,7 +112,7 @@ const Partners = () => {
             <Image
               src={EthIndia}
               alt="ETHINDIA LOGO"
-              className="partner-logo"
+              className="pointer-events-none partner-logo"
               width={240}
               height={70}
             />
@@ -125,7 +129,7 @@ const Partners = () => {
               <Image
                 src={KSUM}
                 alt="KERALA STARTUP MISSION LOGO"
-                className="partner-logo styled-partner"
+                className="pointer-events-none partner-logo styled-partner"
                 width={240}
                 height={70}
               />

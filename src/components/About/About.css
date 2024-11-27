@@ -304,7 +304,6 @@
   position: absolute;
   width: 60%;
   font-size: 1.5rem;
-  text-align: center;
   z-index: 10;
 }
 
@@ -314,12 +313,6 @@
   }
   100% {
     transform: rotate(359deg);
-  }
-}
-
-@media (max-width: 1390px) {
-  .abtp {
-    font-size: 1.2rem;
   }
 }
 
@@ -361,6 +354,7 @@ html {
 
   .abouth1 {
     font-size: 2.5rem;
+    margin-bottom: -64px;
   }
 }
 
@@ -370,9 +364,9 @@ html {
   }
 
   .aboutsvg1 {
-    height: 90%;
+    height: 75%;
     display: flex;
-    width: 95%;
+    width: 92%;
     backdrop-filter: blur(10px);
     z-index: 3;
   }
@@ -415,19 +409,19 @@ html {
   }
 }
 
+@media (max-height: 550px) {
+  .abtp {
+    font-size: 1rem;
+  }
+}
+
 @media (max-width: 420px) {
   .circle1 {
     display: none;
   }
 
   .abtp {
-    font-size: 0.9rem;
+    font-size: 0.97rem;
     width: 80%;
-  }
-}
-
-@media (max-height: 550px) {
-  .abtp {
-    font-size: 1rem;
   }
 }

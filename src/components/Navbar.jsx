@@ -87,7 +87,7 @@ const Navbar = () => {
       </div> */}
       <div className=" tracking-[0.1rem] font-base-neue-black text-3xl">
         <a href="https://www.excelmec.org">
-          <Image src={ExcelLogoMob} className="w-8" />
+          <Image src={ExcelLogoMob} className="pointer-events-none w-8" />
         </a>
       </div>
 

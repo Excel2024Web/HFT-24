@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, {useEffect, useState} from "react";
 import "./prizes.css";
 import right from "@/assets/Landing/right2.svg";
 import Image from "next/image";
@@ -30,12 +30,15 @@ function Pricing() {
   return (
     <div className="pricing-section pt-[120px]" id="prizes">
       <Image
-        className="bottom-right"
+        className="pointer-events-none bottom-right"
         src={bottom_right}
         alt="bot-right"
       />
-      <Image className="top-left12" src={top_left} />
-      <Image className="circle21 scale-[1.5] right-[100px] opacity-60" src={circle2} />
+      <Image className="pointer-events-none top-left12" src={top_left} />
+      <Image
+        className="pointer-events-none circle21 scale-[1.5] right-[100px] opacity-60"
+        src={circle2}
+      />
       {/* <div className="absolute right-0 left-0 top-0 bottom-0" /> */}
       {/* <div className="absolute bg-gradient-to-b from-transparent from-95% to-[#2d0c14] bg-no-repeat inset-0" /> */}
       <h1 className="text-5xl tracking-wider pricing-header font-base-neue-bold max-md:text-4xl">
@@ -73,7 +76,7 @@ function Pricing() {
   );
 }
 
-function CyclingCount({ end }) {
+function CyclingCount({end}) {
   const [displayedCount, setDisplayedCount] = useState("0000");
   const endString = end.toString().padStart(4, "0");
 

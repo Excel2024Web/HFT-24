@@ -6,11 +6,21 @@ import MECLogo from "@/assets/logos/mec@official.svg";
 import ExcelLogo from "@/assets/logos/excel@2024.svg";
 
 import excel from "@/assets/Footer/excel.svg";
-import { FaInstagram, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+import {
+  FaInstagram,
+  FaFacebookF,
+  FaLinkedinIn,
+  FaMapMarkerAlt,
+} from "react-icons/fa";
+import {FaXTwitter} from "react-icons/fa6";
 
 const Footer = () => {
   const FooterSocials = [
+    {
+      item: "Instagram",
+      link: "https://www.instagram.com/excelmec",
+      icon: FaInstagram,
+    },
     {
       item: "Twitter",
       link: "https://x.com/excelmec",
@@ -22,14 +32,14 @@ const Footer = () => {
       icon: FaFacebookF,
     },
     {
-      item: "Instagram",
-      link: "https://www.instagram.com/excelmec",
-      icon: FaInstagram,
-    },
-    {
       item: "LinkedIn",
       link: "https://www.linkedin.com/company/excelmec",
       icon: FaLinkedinIn,
+    },
+    {
+      item: "GMap",
+      link: "https://maps.app.goo.gl/PycGaWgidy8eDQsx9",
+      icon: FaMapMarkerAlt,
     },
   ];
   return (
@@ -38,7 +48,7 @@ const Footer = () => {
         <Image
           src={excel}
           alt="excellogo"
-          className="skeleton"
+          className="skeleton pointer-events-none"
           data-aos="fade-up"
         ></Image>
         <div className="mt-3 text-center">
@@ -66,7 +76,7 @@ const Footer = () => {
         <Image
           src={ExcelLogo}
           alt="ExcelLogo"
-          className="h-[64px] w-fit cursor-pointer max-md:h-[50px]"
+          className="h-[64px] pointer-events-none w-fit cursor-pointer max-md:h-[50px]"
           onClick={() => {
             window.open("https://excelmec.org", "_blank");
           }}
@@ -86,7 +96,7 @@ const Footer = () => {
         <Image
           src={MECLogo}
           alt="mec"
-          className="h-[62px] max-md:scale-90 w-fit cursor-pointer max-md:h-[64px]"
+          className="h-[62px] pointer-events-none max-md:scale-90 w-fit cursor-pointer max-md:h-[64px]"
           onClick={() => {
             window.open("https://www.mec.ac.in", "_blank");
           }}

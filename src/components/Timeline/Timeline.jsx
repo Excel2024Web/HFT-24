@@ -1,8 +1,8 @@
 "use client";
 
 import TimelineCard from "./TimelineCard";
-import { TimelineData } from "@/constants";
-import { timelineItemClasses } from "@mui/lab";
+import {TimelineData} from "@/constants";
+import {timelineItemClasses} from "@mui/lab";
 import Timeline from "@mui/lab/Timeline";
 import "../About/About.css";
 import circle1 from "../../assets/backgrounds/about/circle1.png";
@@ -21,11 +21,14 @@ const TimelineSection = () => {
     >
       {/* <div className="absolute " /> */}
 
-      <Image className="top-left12 top-[-80px]" src={top_left} />
-      <Image className="bottom-right" src={bottom_right} />
-      <Image className="circle1" src={circle1} />
-      <Image className="circle2" src={circle2} />
-      <Image className="circle3" src={circle3} />
+      <Image
+        className="pointer-events-none top-left12 top-[-80px]"
+        src={top_left}
+      />
+      <Image className="pointer-events-none bottom-right" src={bottom_right} />
+      <Image className="pointer-events-none circle1" src={circle1} />
+      <Image className="pointer-events-none circle2" src={circle2} />
+      <Image className="pointer-events-none circle3" src={circle3} />
       <div className="container flex flex-col items-center justify-center min-h-screen m-auto font-generalSans text-our_white">
         <h2
           className="font-base-neue-bold text-5xl tracking-widest mirror-vertical text-center text-white xl:scale-100 max-md:text-4xl text-[#FFFFFF]/[0.8] "

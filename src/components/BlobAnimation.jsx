@@ -32,7 +32,7 @@ const BlobAnimation = () => {
     <>
       <div className="relative h-screen w-screen overflow-hidden">
         <Image
-          className="absolute top-0 left-0 z-0"
+          className="pointer-events-none absolute top-0 left-0 z-0"
           src={topleft}
           alt="topleft"
         />
@@ -42,13 +42,13 @@ const BlobAnimation = () => {
           alt="constellation"
         /> */}
         <Image
-          className="hidden lg:block absolute bg-cover right-0 top-0 h-full z-0"
+          className="hidden pointer-events-none lg:block absolute bg-cover right-0 top-0 h-full z-0"
           src={right}
           alt="bot-right"
         />
-        <Image className="lcircle1" src={circle1} />
-        <Image className="lcircle2" src={circle2} />
-        <Image className="lcircle3" src={circle3} />
+        <Image className="pointer-events-none lcircle1" src={circle1} />
+        <Image className="pointer-events-none lcircle2" src={circle2} />
+        <Image className="pointer-events-none lcircle3" src={circle3} />
         <div className="absolute bg-gradient-to-b from-transparent from-95% to-[#0a0a0a] z-0 to-100% bg-no-repeat right-0 left-0 top-0 bottom-0" />
         <div
           className="container max-w-full sm:max-w-[70%] relative m-auto flex flex-col min-h-screen text-our_white justify-center gap-[20px] z-0"
@@ -56,12 +56,12 @@ const BlobAnimation = () => {
           data-aos-duration="1100"
         >
           <Image
-            className="hidden sm:block absolute bottom-0 md:bottom-0 md:right-[-8rem] z-0"
+            className="pointer-events-none hidden sm:block absolute bottom-0 md:bottom-0 md:right-[-8rem] z-0"
             src={astro2}
             alt="astro"
           />
           <Image
-            className="sm:hidden absolute bottom-0 sm:bottom-0 right-0 max-sm: sm:right-[-4rem] z-0"
+            className="pointer-events-none sm:hidden absolute bottom-0 sm:bottom-0 right-0 max-sm: sm:right-[-4rem] z-0"
             src={astro3}
             alt="astro-mob"
           />
