@@ -6,7 +6,7 @@ import excel from "@/assets/Footer/excel.svg";
 
 function Loading() {
   return (
-    <div>
+    <div className="landingbody" >
       <div id="root ">
         <div id="particles-background" className="vertical-centered-box"></div>
         <div id="particles-foreground" className="vertical-centered-box"></div>
