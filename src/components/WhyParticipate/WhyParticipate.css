@@ -24,7 +24,7 @@
   transform: scaleY(-1);
 }
 
-.top-left12{
+.top-left12 {
   position: absolute;
   top: -0.7px;
   left: -100px;
@@ -159,6 +159,7 @@ html{
   /* background-size: cover; */
   /* background-repeat: no-repeat; */
   background-color: #000;
+  color: white;
   min-height: 800px;
   background-repeat: no-repeat;
   height: 100vh;
@@ -343,7 +344,6 @@ html{
     left: 5px;
   }
 
-
   .circle21,
   .circle31 {
     display: none;
@@ -523,26 +523,22 @@ html{
   .cardp {
     font-size: 1.2rem;
   }
-
-  .cardp {
-    font-size: 1.2rem;
-  }
 }
 
-@media (max-height: 500px) and (max-width: 1224px){
-  .cardp{
+@media (max-height: 500px) and (max-width: 1224px) {
+  .cardp {
     line-height: 2rem;
   }
 }
 
 @media (max-height: 790px) {
   .cardp {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 }
 @media (min-height: 790px) and (max-height: 850px) {
   .cardp {
-    font-size: 1.03rem;
+    font-size: 1.2rem;
   }
 }
 

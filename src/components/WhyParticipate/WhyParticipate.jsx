@@ -44,7 +44,7 @@ const WhyParticipate = () => {
     },
     {
       title: "Expert Guidance",
-      text: "Benefit from the guidance of our experienced mentors who will provide valuable insights, troubleshooting tips, and support throughout the event to supercharge your project.",
+      text: "Benefit from the guidance of our experienced mentors who will provide insights, troubleshooting tips, and support throughout the event to supercharge your project.",
       gradient: "from-[#5f72be] to-[#06e1ae]",
       color: "text-white",
     },
