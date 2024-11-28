@@ -208,6 +208,14 @@
   width: 100vw;
 }
 
+.bottom-rightt{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
 .circle1 {
   position: absolute;
   bottom: -450px;
@@ -232,11 +240,6 @@
   opacity: 0.5;
 }
 
-.aboutsvg1{
-  display: none;
-  border-radius: 30px;
-}
-
 .circle3 {
   position: absolute;
   bottom: -150px;
@@ -247,6 +250,46 @@
   animation: rotate 25s linear infinite;
   z-index: 2;
   opacity: 0.5;
+}
+
+.circle11 {
+  position: absolute;
+  top: -450px;
+  height: 900px;
+  width: auto;
+  z-index: 2;
+  right: -450px;
+  transform: rotate(-200deg);
+  animation: rotate 15s linear infinite;
+  opacity: 0.5;
+}
+
+.circle22 {
+  position: absolute;
+  top: -350px;
+  height: 700px;
+  width: auto;
+  right: -350px;
+  transform: rotate(-180deg);
+  animation: rotate 20s linear infinite;
+  z-index: 2;
+  opacity: 0.5;
+}
+
+.circle33 {
+  position: absolute;
+  top: -150px;
+  height: 300px;
+  width: auto;
+  right: -150px;
+  width: auto;
+  animation: rotate 25s linear infinite;
+  z-index: 2;
+  opacity: 0.5;
+}
+.aboutsvg1 {
+  display: none;
+  border-radius: 30px;
 }
 
 .aboutsvg {
@@ -269,7 +312,6 @@
   position: absolute;
   width: 60%;
   font-size: 1.5rem;
-  text-align: justify;
   z-index: 10;
 }
 
@@ -279,12 +321,6 @@
   }
   100% {
     transform: rotate(359deg);
-  }
-}
-
-@media (max-width: 1390px) {
-  .abtp {
-    font-size: 1.2rem;
   }
 }
 
@@ -300,7 +336,7 @@
   }
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -326,6 +362,7 @@ html{
 
   .abouth1 {
     font-size: 2.5rem;
+    margin-bottom: -64px;
   }
 }
 
@@ -334,10 +371,10 @@ html{
     display: none;
   }
 
-  .aboutsvg1{
-    height: 90%;
+  .aboutsvg1 {
+    height: 75%;
     display: flex;
-    width: 95%;
+    width: 92%;
     backdrop-filter: blur(10px);
     z-index: 3;
   }
@@ -380,19 +417,19 @@ html{
   }
 }
 
+@media (max-height: 550px) {
+  .abtp {
+    font-size: 1rem;
+  }
+}
+
 @media (max-width: 420px) {
   .circle1 {
     display: none;
   }
 
   .abtp {
-    font-size: 0.9rem;
+    font-size: 0.97rem;
     width: 80%;
-  }
-}
-
-@media (max-height: 550px) {
-  .abtp {
-    font-size: 1rem;
   }
 }

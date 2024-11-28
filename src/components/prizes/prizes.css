@@ -63,13 +63,13 @@
   border: 1px solid rgba(255, 255, 255, 0.4);
   backdrop-filter: blur(20px);
   border-radius: 15px;
-  padding: 40px;
-  width: 320px;
+  padding: 20px 30px;
+  width: 300px;
   text-align: center;
   color: #ffffff;
   position: relative;
   z-index: 1;
-  margin: 0 -20px;
+  margin: 0 -15px;
   transform: scale(0.95);
   transition: transform 0.3s ease-in-out, z-index 0.3s ease-in-out;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -91,41 +91,32 @@
 }
 
 .icon {
-  height: 200px;
-  width: 250px;
+  height: 160px;
+  width: 190px;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  margin-bottom: 20px;
+  margin: auto;
 }
 
 .second-prize .icon {
   background: url("../../assets/Gallery/silver.png") no-repeat center center;
   background-size: cover;
-  height: 200px;
-  width: 250px;
   position: relative;
-  margin-bottom: 20px;
   backdrop-filter: blur(8px);
 }
 
 .first-prize .icon {
   background: url("../../assets/Gallery/gold.png") no-repeat center center;
   background-size: cover;
-  height: 200px;
-  width: 250px;
   position: relative;
-  margin-bottom: 20px;
   backdrop-filter: blur(8px);
 }
 
 .third-prize .icon {
   background: url("../../assets/Gallery/bronze.png") no-repeat center center;
   background-size: cover;
-  height: 200px;
-  width: 250px;
   position: relative;
-  margin-bottom: 20px;
   backdrop-filter: blur(8px);
 }
 
@@ -141,13 +132,13 @@
 .price {
   font-size: 2.5rem;
   font-weight: bold;
-  margin: 20px 0;
+  margin: 10px 0;
 }
 
 @media (max-width: 768px) {
   .pricing-cards {
     flex-direction: column;
-    gap: 30px;
+    gap: 0px;
   }
 
   .glass-card {
@@ -158,10 +149,16 @@
 
   .first-prize {
     order: 1;
+    transform: translateY(-30px) scale(1);
+  }
+  .first-prize:hover {
+    order: 1;
+    transform: translateY(-30px) scale(1.05);
   }
 
   .second-prize {
     order: 2;
+    margin-bottom: 1rem;
   }
 
   .third-prize {
@@ -169,8 +166,8 @@
   }
 
   .icon {
-    height: 120px;
-    width: 120px;
+    height: 180px;
+    width: 230px;
   }
 
   .pricing-header {
@@ -197,11 +194,6 @@
 
   .glass-card {
     padding: 15px;
-  }
-
-  .icon {
-    height: 100px;
-    width: 100px;
   }
 
   .prize-title {

@@ -10,6 +10,9 @@ import constel from "@/assets/Landing/constellation.svg";
 import arrow from "@/assets/Landing/arrow.svg";
 import Image from "next/image";
 import dynamic from "next/dynamic";
+import circle1 from "../assets/backgrounds/landing/circle1.svg";
+import circle2 from "../assets/backgrounds/landing/circle2.svg";
+import circle3 from "../assets/backgrounds/landing/circle3.svg";
 
 const BlobAnimation = () => {
   const canvasRef = useRef(null);
@@ -28,39 +31,43 @@ const BlobAnimation = () => {
   return (
     <>
       <div className="relative h-screen w-screen overflow-hidden">
-        <div className="absolute bg-gradient-to-b from-transparent from-95% to-[#0a0a0a] z-50 bg-no-repeat right-0 left-0 top-0 bottom-0" />
         <Image
-          className="absolute top-0 left-0 z-0"
+          className="pointer-events-none absolute top-0 left-0 z-0"
           src={topleft}
           alt="topleft"
         />
-        <Image
+        {/* <Image
           className="hidden lg:block absolute overflow-clip mt-[-4rem] mr-[-4rem] sm:mt-[-2rem] sm:mr-[-2rem] right-0 z-0"
           src={constel}
           alt="constellation"
-        />
+        /> */}
         <Image
-          className="hidden lg:block absolute bg-cover right-0 top-0 h-full z-0"
+          className="hidden pointer-events-none lg:block absolute bg-cover right-0 top-0 h-full z-0"
           src={right}
           alt="bot-right"
         />
+        <Image className="pointer-events-none lcircle1" src={circle1} />
+        <Image className="pointer-events-none lcircle2" src={circle2} />
+        <Image className="pointer-events-none lcircle3" src={circle3} />
+        <div className="absolute bg-gradient-to-b from-transparent from-95% to-[#0a0a0a] z-0 to-100% bg-no-repeat right-0 left-0 top-0 bottom-0" />
         <div
-          className="container max-w-full md:max-w-[70%] relative m-auto flex flex-col min-h-screen text-our_white justify-center gap-[20px] max-sm:scale-90 z-10"
+          className="container max-w-full sm:max-w-[70%] relative m-auto flex flex-col min-h-screen text-our_white justify-center gap-[20px] z-0"
           data-aos="fade-up"
           data-aos-duration="1100"
         >
           <Image
-            className="hidden sm:block absolute bottom-0 md:bottom-0 md:right-[-8rem] z-0"
+            className="pointer-events-none hidden sm:block absolute bottom-0 md:bottom-0 md:right-[-8rem] z-0"
             src={astro2}
             alt="astro"
           />
           <Image
-            className="sm:hidden absolute bottom-0 sm:bottom-0 right-0 sm:right-[-4rem] z-0"
+            className="pointer-events-none sm:hidden absolute bottom-0 sm:bottom-0 right-0 max-sm: sm:right-[-4rem] z-0"
             src={astro3}
             alt="astro-mob"
           />
+          <div className="lg:hidden absolute bg-gradient-to-b from-transparent from-95% to-[#0a0a0a] z-0 to-100% bg-no-repeat right-0 left-0 top-0 bottom-0" />
 
-          <div className="flex z-10 flex-col gap-24 sm:gap-12 items-center sm:items-start">
+          <div className="flex z-50 flex-col gap-24 sm:gap-12 items-center sm:items-start max-sm:scale-90">
             <div className="flex flex-col gap-1 mt-[-8rem] sm:mt-0">
               <div className="uppercase  text-center sm:text-left text-white font-base-neue-black max-w-[100vw] text-5xl md:text-[6rem] font-bold leading-[90px] max-lg:text-[61px] max-lg:max-w-[480px] max-lg:leading-[70px] md:max-w-[700px] small-screen:text-[50px] small-screen:leading-[50px]">
                 Hack For Tomorrow
@@ -98,7 +105,7 @@ const BlobAnimation = () => {
               </span>
             </div> */}
             <div
-              className="apply-button"
+              className="apply-button z-50"
               data-hackathon-slug="hackfortomorrow2024"
               data-button-theme="dark-inverted"
               style={{height: "44px", width: "312px"}}

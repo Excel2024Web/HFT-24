@@ -46,7 +46,7 @@
     rgba(255, 255, 255, 0) 65%
   ); */
   border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0px 30px rgba(20, 20, 20, 0.404);
   backdrop-filter: blur(10.5px);
   -webkit-backdrop-filter: blur(10.5px);
 }
@@ -62,7 +62,6 @@
 } */
 
 .faq-question {
-  font-size: 1.5em;
   font-weight: bold;
   display: flex;
   flex-direction: row;
@@ -70,7 +69,6 @@
   align-items: center;
 }
 .faq-answer {
-  font-size: 1.3em;
   overflow: hidden;
   transition: all 0.2s ease;
 }

@@ -13,12 +13,15 @@ const About = () => {
     <div className="relative">
       <div className="absolute bg-gradient-to-b from-[#0a0a0a] from-10% to-transparent z-50 bg-no-repeat right-0 left-0 top-0 min-h-32" />
       <div id="about" className="about-container pt-[80px]">
-        <Image className="top-left" src={top_left} />
-        <Image className="bottom-right" src={bottom_right} />
-        <Image className="circle1" src={circle1} />
-        <Image className="circle2" src={circle2} />
-        <Image className="circle3" src={circle3} />
-        <h1 className="text-5xl abouth1 font-base-neue-bold max-md:text-4xl pb-[18px] text-center">
+        <Image className="pointer-events-none top-left" src={top_left} />
+        <Image
+          className="pointer-events-none bottom-rightt z-0"
+          src={bottom_right}
+        />
+        <Image className="pointer-events-none circle1" src={circle1} />
+        <Image className="pointer-events-none circle2" src={circle2} />
+        <Image className="pointer-events-none circle3" src={circle3} />
+        <h1 className="text-5xl abouth1 font-base-neue-bold max-md:text-4xl pb-0 md:pb-[18px] text-center">
           ABOUT
         </h1>
         <div className="details-container">
@@ -160,11 +163,12 @@ const About = () => {
             </defs>
           </svg>
 
-          <p className="abtp font-syne-medium">
+          <p className="px-2 md:p-0 abtp text-left sm:text-center font-syne-medium">
             Level up your coding skills and slay real-world challenges! Whether
             you're a seasoned developer or a coding newbie, HFT is the place to
             collaborate with like-minded tech enthusiasts to build
             groundbreaking solutions.
+            <br />
             <br />
             Join us for a 24-hour coding marathon filled with caffeine, food,
             and endless possibilities. So, gather your squad and let's code a

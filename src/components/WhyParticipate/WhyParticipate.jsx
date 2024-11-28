@@ -1,8 +1,8 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, {useState, useRef, useEffect} from "react";
 import InfoCard from "./InfoCard";
 import Image from "next/image";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import { Swiper, SwiperSlide } from "swiper/react";
+import {FaChevronLeft, FaChevronRight} from "react-icons/fa";
+import {Swiper, SwiperSlide} from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
@@ -44,7 +44,7 @@ const WhyParticipate = () => {
     },
     {
       title: "Expert Guidance",
-      text: "Benefit from the guidance of our experienced mentors who will provide valuable insights, troubleshooting tips, and support throughout the event to supercharge your project.",
+      text: "Benefit from the guidance of our experienced mentors who will provide insights, troubleshooting tips, and support throughout the event to supercharge your project.",
       gradient: "from-[#5f72be] to-[#06e1ae]",
       color: "text-white",
     },
@@ -132,11 +132,14 @@ const WhyParticipate = () => {
 
     <>
       <div id="why" className="main-container pt-[80px]">
-        <div className="absolute bg-gradient-to-b from-transparent from-95% to-black z-20 bg-no-repeat right-0 left-0 top-0 bottom-0" />
-        <Image className="top-left1" src={top_left} />
-        <Image className="bottom-right1" src={bottom_right} />
+        <div className="absolute  right-0 left-0 top-0 bottom-0" />
+        <Image className="pointer-events-none top-left1" src={top_left} />
+        <Image
+          className="pointer-events-none bottom-right1"
+          src={bottom_right}
+        />
         {/* <Image className="circle11" src={circle1} /> */}
-        <Image className="circle21" src={circle2} />
+        {/* <Image className="circle21" src={circle2} /> */}
         {/* <Image className="circle31" src={circle3} /> */}
         <div className="container h-[100%] block place-content-center  md:max-w-[80%] mx-auto z-50  py-8">
           <h2 className=" titleh2 text-5xl max-md:text-4xl font-base-neue-bold sm:mb-[50px] text-center text-white py-5 tracking-wide ">
@@ -157,11 +160,11 @@ const WhyParticipate = () => {
               slideShadows: false,
             }}
             breakpoints={{
-              480: { slidesPerView: 1, spaceBetween: 10 },
-              768: { slidesPerView: 1.4, spaceBetween: 20 },
-              1024: { slidesPerView: 2, spaceBetween: 20 },
-              1280: { slidesPerView: 2, spaceBetween: 40 },
-              1536: { slidesPerView: 3, spaceBetween: 30 },
+              480: {slidesPerView: 1, spaceBetween: 10},
+              768: {slidesPerView: 1.4, spaceBetween: 20},
+              1024: {slidesPerView: 2, spaceBetween: 20},
+              1280: {slidesPerView: 2, spaceBetween: 40},
+              1536: {slidesPerView: 3, spaceBetween: 30},
             }}
             // autoplay={{
             //   delay: 3000,
