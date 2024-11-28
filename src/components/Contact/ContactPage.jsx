@@ -56,7 +56,7 @@ export default function Contact() {
     {
       name: "Rohit Anish",
       title: "Event Head",
-      email: "",
+      email: "rohitanish158@gmail.com",
       phone: "+918301037205",
       linkedin: "https://www.linkedin.com/in/rohit-anish-b6b587140",
       img: eventhead2,
