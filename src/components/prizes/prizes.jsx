@@ -1,5 +1,8 @@
-import React, {useEffect, useState} from "react";
+import React, { useEffect, useState } from "react";
 import "./prizes.css";
+import right from "@/assets/Landing/right2.svg";
+import Image from "next/image";
+import top_left from "../../assets/backgrounds/about/topleft.png";
 
 function Pricing() {
   const [startCount, setStartCount] = useState(false);
@@ -24,13 +27,20 @@ function Pricing() {
 
   return (
     <div className="pricing-section pt-[120px]" id="prizes">
+      <Image
+        className="absolute bg-cover right-0 top-0 h-full z-0 opacity-50"
+        src={right}
+        alt="bot-right"
+      />
+      <div className="absolute bg-gradient-to-b from-transparent from-95% to-black z-20 bg-no-repeat right-0 left-0 top-0 bottom-0" />
+      {/* <div className="absolute bg-gradient-to-b from-transparent from-95% to-[#2d0c14] bg-no-repeat inset-0" /> */}
       <h1 className="text-5xl tracking-wider pricing-header font-base-neue-bold max-md:text-4xl">
         PRIZES
       </h1>
       <p className="text-[18px] max-md:text-sm pricing-subheader font-syne-medium pb-[60px]">
         Win exciting prizes in our hackathon!
       </p>
-      <div className="tracking-wider pricing-cards font-syne-semibold">
+      <div className="tracking-wider pricing-cards font-syne-semibold z-50">
         <div className="pricing-card second-prize glass-card">
           <div className="icon icon-website"></div>
           <h2 className="prize-title font-syne-medium">Second Prize</h2>
@@ -59,7 +69,7 @@ function Pricing() {
   );
 }
 
-function CyclingCount({end}) {
+function CyclingCount({ end }) {
   const [displayedCount, setDisplayedCount] = useState("0000");
   const endString = end.toString().padStart(4, "0");
 

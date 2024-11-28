@@ -1,7 +1,7 @@
-import React, {useEffect, useRef} from "react";
+import React, { useEffect, useRef } from "react";
 import "./partners.css";
 import Image from "next/image";
-
+import top_left from "../../assets/backgrounds/about/topleft.png";
 import Devfolio from "../../assets/Gallery/devfolio.png";
 import EthIndia from "../../assets/Gallery/Ethindia.png";
 import Polygon from "../../assets/Gallery/polygon.png";
@@ -39,17 +39,25 @@ const Partners = () => {
 
   return (
     <section className="partners-section pt-[80px]" id="partners">
-      <h1 className="text-5xl partners-title max-md:text-4xl">OUR <br className="hidden max-sm:flex"/> PARTNERS</h1>
+      <Image className="top-left1" src={top_left} />
+      {/* <div className="absolute bg-gradient-to-b from-[#2d0c14] to-5% to-transparent bg-no-repeat inset-0" /> */}
+      <div className="absolute bg-gradient-to-b from-transparent from-90% to-[#0a0a0a] bg-no-repeat inset-0" />
+      <h1 className="text-5xl partners-title max-md:text-4xl">
+        OUR <br className="hidden max-sm:flex" /> PARTNERS
+      </h1>
       <div className="partners-container">
         {/* Title Partner */}
         <div className="partners-row" ref={(el) => (rowRefs.current[0] = el)}>
           <div className="partner title-partner ">
-          <a href="https://keyvalue.systems" target="_blank" rel="noopener noreferrer">
-            <Image 
-                src={KeyValue} 
-                alt="KEYVALUE LOGO" 
-                className="partner-logo styled-partner" 
-                
+            <a
+              href="https://keyvalue.systems"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                src={KeyValue}
+                alt="KEYVALUE LOGO"
+                className="partner-logo styled-partner"
               />
             </a>
             <p className="partner-label font-syne-medium">Platinum Partner</p>
@@ -90,18 +98,23 @@ const Partners = () => {
           </div>
         </div>
         <div className="partners-row" ref={(el) => (rowRefs.current[2] = el)}>
-        <a href="https://startupmission.kerala.gov.in/" target="_blank" rel="noopener noreferrer">
-          <div className="partner ">
-            <Image
-              src={KSUM}
-              alt="KERALA STARTUP MISSION LOGO"
-              className="partner-logo styled-partner"
-              width={240}
-              height={70}
-            />
-            <p className="partner-label font-syne-medium">Ecosystem Partner</p>
-           
-          </div>
+          <a
+            href="https://startupmission.kerala.gov.in/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="partner ">
+              <Image
+                src={KSUM}
+                alt="KERALA STARTUP MISSION LOGO"
+                className="partner-logo styled-partner"
+                width={240}
+                height={70}
+              />
+              <p className="partner-label font-syne-medium">
+                Ecosystem Partner
+              </p>
+            </div>
           </a>
         </div>
       </div>
