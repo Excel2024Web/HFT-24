@@ -71,7 +71,11 @@ const Partners = () => {
             <p className="partner-label font-syne-medium">Platinum Partner</p>
           </div>
           <div className="partner title-partner ">
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://geojit.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Image
                 src={Geojit}
                 alt="GEOJIT LOGO"
