@@ -22,6 +22,6 @@ export const TimelineData = [
   {
     date: "22nd Decemeber",
     title: "Hackathon - Day 2",
-    para: "Hackathon Concludes and Closing Ceremony",
+    para: "Hackathon Concludes and Closing Ceremony at 12 pm",
   },
 ];
