@@ -1,4 +1,4 @@
-import React, {useEffect, useRef} from "react";
+import React, { useEffect, useRef } from "react";
 import "./partners.css";
 import Image from "next/image";
 import top_left from "../../assets/backgrounds/about/topleft.png";
@@ -71,11 +71,7 @@ const Partners = () => {
             <p className="partner-label font-syne-medium">Platinum Partner</p>
           </div>
           <div className="partner title-partner ">
-            <a
-              href="https://keyvalue.systems"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href="#" target="_blank" rel="noopener noreferrer">
               <Image
                 src={Geojit}
                 alt="GEOJIT LOGO"
