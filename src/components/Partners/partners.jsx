@@ -9,6 +9,8 @@ import KeyValue from "../../assets/Gallery/keyvalue2.jpg";
 import Geojit from "../../assets/Gallery/geo.jpg";
 import KSUM from "../../assets/Gallery/ksumw.jpg";
 import right from "@/assets/Landing/right2.svg";
+import Tinkher from "../../assets/Gallery/tinkerhubbb.png";
+import Devarmy from "../../assets/Gallery/devarmy.png";
 import bottom_right from "../../assets/backgrounds/about/bottomright.png";
 
 const Partners = () => {
@@ -120,6 +122,41 @@ const Partners = () => {
           </div>
         </div>
         <div className="partners-row" ref={(el) => (rowRefs.current[2] = el)}>
+          <div className="partner">
+            <a
+              href="https://mec.tinkerhub.org"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                src={Tinkher}
+                alt="TINKERHUB MEC LOGO"
+                className="partner-logo styled-partnernew"
+                width={240}
+                height={70}
+              />
+            </a>
+            <p className="partner-label font-syne-medium">Community Partner</p>
+          </div>
+          <div className="partner">
+            <a
+              href="https://theDevArmy.com/branding"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                src={Devarmy}
+                alt="DEVARMY LOGO"
+                className="partner-logo styled-partnernew"
+                width={240}
+                height={70}
+              />
+            </a>
+            <p className="partner-label font-syne-medium">Community Partner</p>
+          </div>
+        </div>
+
+        <div className="partners-row" ref={(el) => (rowRefs.current[3] = el)}>
           <a
             href="https://startupmission.kerala.gov.in/"
             target="_blank"
@@ -138,6 +175,7 @@ const Partners = () => {
               </p>
             </div>
           </a>
+          
         </div>
       </div>
     </section>
