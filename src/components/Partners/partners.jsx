@@ -11,6 +11,7 @@ import KSUM from "../../assets/Gallery/ksumw.jpg";
 import right from "@/assets/Landing/right2.svg";
 import Tinkher from "../../assets/Gallery/tinkerhubbb.png";
 import Devarmy from "../../assets/Gallery/devarmy.png";
+import Carestack from "../../assets/Gallery/carestack.jpeg"
 import bottom_right from "../../assets/backgrounds/about/bottomright.png";
 
 const Partners = () => {
@@ -85,6 +86,20 @@ const Partners = () => {
               />
             </a>
             <p className="partner-label font-syne-medium">Platinum Partner</p>
+          </div>
+          <div className="partner title-partner ">
+            <a
+              href="https://carestack.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                src={Carestack}
+                alt="CARESTACK LOGO"
+                className="pointer-events-none partner-logo styled-partner"
+              />
+            </a>
+            <p className="partner-label font-syne-medium">Gold Partner</p>
           </div>
         </div>
 
